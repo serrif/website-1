@@ -203,7 +203,7 @@ input[type="text"] {
     color: #488c1d;
     background-color: transparent;
 padding: 7px;
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 input[type="text"]:hover,
@@ -219,5 +219,5 @@ input[type="text"]:focus {
     background-color: #488c1d;
 padding: 7px;
 display:inline-block;
-    margin-top: 40px;
+    margin-top: 45px;
 }
