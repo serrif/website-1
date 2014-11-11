@@ -158,7 +158,6 @@ a:focus {
 .about-body {
     display: table-cell;
     vertical-align: middle;
-    padding: 100px 0;
 margin-left: 65px;
 margin-right: 65px;
 }
