@@ -105,7 +105,7 @@ a:focus {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     margin-bottom: 20px;
-margin-top: 0px;
+margin-top: -20px;
 }
 
 @media(min-width:767px) {
@@ -122,7 +122,7 @@ margin-top: 0px;
 .btn-circle {
     width: 70px;
     height: 70px;
-    padding: 7px 22px;
+    padding: 7px 20px;
     border: 2px solid #fff;
     border-radius: 35px;
     font-size: 40px;
