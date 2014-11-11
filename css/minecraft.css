@@ -158,8 +158,8 @@ a:focus {
 .about-body {
     display: table-cell;
     vertical-align: middle;
-margin-left: 65px;
-margin-right: 65px;
+padding-left: 65px;
+padding-right: 65px;
 }
 
 @media(min-width:767px) {
@@ -172,9 +172,8 @@ margin-right: 65px;
     }
 
     .about-body {
-    padding: 50px 0;
-margin-left: 20px;
-margin-right: 20px;
+padding-left: 50px;
+padding-right: 50px;
     }
 }
 
