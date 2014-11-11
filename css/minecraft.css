@@ -149,7 +149,7 @@ a:focus {
 
 .about-section {
     width: 100%;
-    height: auto;
+    height: 100%;
     color: #fff;
     display: table;
     background: #000;
