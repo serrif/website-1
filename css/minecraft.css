@@ -273,3 +273,16 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+input[type="text"] {
+    border: 1px solid #488c1d;
+    color: #488c1d;
+    background-color: transparent;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+    border: 1px solid #488c1d;
+    outline: 0;
+    color: #000;
+    background-color: #488c1d;
+}
