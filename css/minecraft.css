@@ -98,7 +98,7 @@ a:focus {
 
 .brand-heading {
     font-size: 40px;
-    margin: 0 0 0px;
+    margin-bottom: 20px;
 }
 
 .intro-text {
@@ -121,8 +121,7 @@ a:focus {
 .btn-circle {
     width: 70px;
     height: 70px;
-    margin-top: 25px;
-    padding: 7px 16px;
+    padding: 14px 16px;
     border: 2px solid #fff;
     border-radius: 35px;
     font-size: 40px;
