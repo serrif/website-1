@@ -102,7 +102,7 @@ a:focus {
 
 .intro-text {
     font-size: 18px;
-    text-transform: uppercase;
+    text-transfo    font-family: 'Open Sans', sans-serif;rm: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 margin-top: -35px;
 }
@@ -201,6 +201,8 @@ input[type="text"] {
     color: #488c1d;
     background-color: transparent;
 padding: 7px;
+    font-family: 'Open Sans', sans-serif;
+font-size: 21px;
     margin-top: 25px;
 -webkit-border-top-right-radius: 3px;
 -webkit-border-bottom-right-radius: 3px;
@@ -230,4 +232,7 @@ display:inline-block;
 -moz-border-radius-bottomleft: 3px;
 border-top-left-radius: 3px;
 border-bottom-left-radius: 3px;
+}
+#ip {
+text-align: center;
 }
