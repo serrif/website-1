@@ -161,7 +161,7 @@ a:focus {
     padding: 100px 0;
 }
 
-@media(min-width:767px) {
+@media(min-width:500px) {
     .content-section {
         height: 100%;
     }
