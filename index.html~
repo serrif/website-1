@@ -4,51 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Minecraft.ga is a server where you can test out whatever you like. Whether it be OP Commands, Command Blocks, or just building, Minecraft.ga gives you freedom.">
-    <meta name="author" content="Minecraft.ga">
-    <title>Minecraft.ga</title>
-    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <title>Minecraft.ga - OP Server</title>
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/minecraft.css" rel="stylesheet">
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+<body>
     <section class="intro">
         <div class="intro-body">
-            <div class="container">
                 <h1 class="brand-heading">Minecraft.ga</h1>
-                        <p class="intro-text">An All-OP Minecraft Server</p>
+                        <p class="intro-text">An OP Minecraft Server</p>
                         <div class="page-scroll">
                             <a href="#about" class="btn btn-circle">
                                 <i class="fa fa-angle-double-down"></i>
                    </a>
                 </div>
-            </div>
         </div>
     </section>
-    <section id="about" class="container content-section text-center about-section">
+    <section id="about" class="about-section">
        <div class="about-body">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
                 <h2>About minecraft.ga</h2>
-                <p>Build, destroy, act like an admin or simply go crazy. Minecraft.ga gives you an opportunity to feel the experience of being an admin or moderator on a server. With access to operator (OP) commands and features used by server staff, you can do heaps of stuff. We have to block a few commands, such as /ban, /kick, /stop etc, to prevent people from abusing too much.</p>
-				<p>
-				The world on Minecraft.ga resets automatically once every week, simply to provide you a fresh and lag-free experience. You can save your buildings and continue working on them after the world has reset; more info concerning this will be given once you join the server.
+                <p>Build, destroy, act like an admin or simply go crazy. Minecraft.ga tries to simulate the experience of being an admin or moderator on a server. With access to operator (OP) commands and features used by server staff, you can do heaps of stuff. We have to block a few commands, such as /ban, /kick, /stop etc, to prevent people from abusing too much.</p>
+				<p>The world on Minecraft.ga resets automatically once every week, simply to provide you a fresh and lag-free experience. You can save your buildings and continue working on them after the world has reset; more info concerning this will be given once you join the server.
 </p>
-            </div>
-        </div>
+  <div id="ip"><div id="ipbox">IP</div><input type="text" value="minecraft.ga" onfocus="this.select();" onmouseup="return false;" size="10"></div>
       </div>
     </section>
-    <section id="ip" class="text-center">
-      <div class="ip-section">
-        <div class="container">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Server IP</h2>
-                <p>Join the server at: minecraft.ga</p>
-            </div>
-        </div>
-     </div>
-    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/minecraft.js"></script>
 </body>
