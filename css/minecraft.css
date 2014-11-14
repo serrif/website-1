@@ -230,7 +230,7 @@ input[type="text"] {
 padding: 7px;
     font-family: 'Open Sans', sans-serif;
 font-size: 16px;
-    margin-top: 25px;
+    margin: 25px 0 0 0;
 -webkit-border-top-right-radius: 3px;
 -webkit-border-bottom-right-radius: 3px;
 -moz-border-radius-topright: 3px;
@@ -253,7 +253,7 @@ input[type="text"]:focus {
 padding: 7px;
 display:inline-block;
 font-size: 16px;
-    margin-top: 25px;
+    margin: 25px 0 0 0;
 -webkit-border-top-left-radius: 3px;
 -webkit-border-bottom-left-radius: 3px;
 -moz-border-radius-topleft: 3px;
