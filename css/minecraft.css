@@ -154,8 +154,10 @@ margin-top: -35px;
 .about-body {
     display: table-cell;
     vertical-align: middle;
-padding-left: 65px;
-padding-right: 65px;
+padding-left: 40px;
+padding-right: 40px;
+padding-top: 40px;
+padding-bottom: 40px;
 }
 
 @media(min-width:767px) {
