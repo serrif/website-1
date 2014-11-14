@@ -138,6 +138,7 @@ margin-top: -35px;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+margin-top: 20px;
 }
 
 .btn-circle:hover,
@@ -179,10 +180,13 @@ padding-bottom: 40px;
     }
 
     .about-body {
-padding-left: 65px;
-padding-right: 65px;
+padding-left: 85px;
+padding-right: 85px;
     font-size: 21px;
     }
+input[type="text"] {
+font-size: 21px;
+}
 }
 
 ::-moz-selection {
@@ -214,7 +218,7 @@ input[type="text"] {
     background-color: transparent;
 padding: 7px;
     font-family: 'Open Sans', sans-serif;
-font-size: 21px;
+font-size: 18px;
     margin-top: 25px;
 -webkit-border-top-right-radius: 3px;
 -webkit-border-bottom-right-radius: 3px;
