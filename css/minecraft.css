@@ -113,6 +113,7 @@ a:focus {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 margin-top: -35px;
+margin-bottom: 30px;
 }
 
 @media(min-width:767px) {
@@ -138,7 +139,6 @@ margin-top: -35px;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
-margin-top: 20px;
 }
 
 .btn-circle:hover,
