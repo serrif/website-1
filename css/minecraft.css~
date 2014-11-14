@@ -21,7 +21,6 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 21px;
     color: #fff;
     background-color: #595959;
 margin: 0;
@@ -33,13 +32,12 @@ html {
 margin:0;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
+    margin: 0 0 25px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -48,16 +46,23 @@ text-align: center;
 }
 
 p {
-    margin: 0 0 35px;
-    line-height: 1.6;
+    margin: 0 0 15px;
+    line-height: 1.4;
 text-align: center;
 }
 
 @media(min-width:767px) {
     p {
-    margin: 0 0 25px;
+    margin: 0 0 20px;
         line-height: 1.5;
     }
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 30px;
+}
 }
 
 a {
@@ -97,14 +102,21 @@ a:focus {
 }
 
 .brand-heading {
-    font-size: 40px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+text-align: center;
+margin: 0;
 }
 
 .intro-text {
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-margin-top: -35px;
+margin-top: 0px;
+margin-bottom: 30px;
 }
 
 @media(min-width:767px) {
@@ -119,17 +131,16 @@ margin-top: -35px;
 }
 
 .btn-circle {
-    width: 70px;
-    height: 70px;
-    padding: 7px 21px;
-    border: 2px solid #fff;
+    padding: 7px 14px;
+    border: 1px solid #fff;
     border-radius: 35px;
-    font-size: 40px;
+    font-size: 20px;
     color: #fff;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+text-decoration: none;
 }
 
 .btn-circle:hover,
@@ -154,8 +165,11 @@ margin-top: -35px;
 .about-body {
     display: table-cell;
     vertical-align: middle;
-padding-left: 65px;
-padding-right: 65px;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 40px;
+padding-bottom: 40px;
+    font-size: 16px;
 }
 
 @media(min-width:767px) {
@@ -168,9 +182,20 @@ padding-right: 65px;
     }
 
     .about-body {
-padding-left: 30px;
-padding-right: 30px;
+padding-left: 90px;
+padding-right: 90px;
+    font-size: 21px;
     }
+input[type="text"] {
+font-size: 21px;
+}
+#ipbox {
+font-size: 21px;
+}
+.btn-circle {
+    padding: 7px 18px;
+    font-size: 30px;
+}
 }
 
 ::-moz-selection {
@@ -202,7 +227,7 @@ input[type="text"] {
     background-color: transparent;
 padding: 7px;
     font-family: 'Open Sans', sans-serif;
-font-size: 21px;
+font-size: 16px;
     margin-top: 25px;
 -webkit-border-top-right-radius: 3px;
 -webkit-border-bottom-right-radius: 3px;
@@ -225,6 +250,7 @@ input[type="text"]:focus {
     background-color: #488c1d;
 padding: 7px;
 display:inline-block;
+font-size: 16px;
     margin-top: 25px;
 -webkit-border-top-left-radius: 3px;
 -webkit-border-bottom-left-radius: 3px;
