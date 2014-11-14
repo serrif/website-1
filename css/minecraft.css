@@ -49,14 +49,13 @@ text-align: center;
 p {
     margin: 0 0 15px;
     line-height: 1.4;
-text-align: left;
+text-align: center;
 }
 
 @media(min-width:767px) {
     p {
     margin: 0 0 20px;
         line-height: 1.5;
-text-align: center;
     }
 h2,
 h3,
@@ -229,7 +228,7 @@ input[type="text"] {
     background-color: transparent;
 padding: 7px;
     font-family: 'Open Sans', sans-serif;
-font-size: 18px;
+font-size: 16px;
     margin-top: 25px;
 -webkit-border-top-right-radius: 3px;
 -webkit-border-bottom-right-radius: 3px;
@@ -252,7 +251,7 @@ input[type="text"]:focus {
     background-color: #488c1d;
 padding: 7px;
 display:inline-block;
-font-size: 18px;
+font-size: 16px;
     margin-top: 25px;
 -webkit-border-top-left-radius: 3px;
 -webkit-border-bottom-left-radius: 3px;
