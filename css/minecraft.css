@@ -132,7 +132,7 @@ margin-bottom: 30px;
 }
 
 .btn-circle {
-    padding: 7px 17px;
+    padding: 7px 14px;
     border: 1px solid #fff;
     border-radius: 35px;
     font-size: 20px;
@@ -166,8 +166,8 @@ text-decoration: none;
 .about-body {
     display: table-cell;
     vertical-align: middle;
-padding-left: 30px;
-padding-right: 30px;
+padding-left: 20px;
+padding-right: 20px;
 padding-top: 40px;
 padding-bottom: 40px;
     font-size: 18px;
@@ -183,8 +183,8 @@ padding-bottom: 40px;
     }
 
     .about-body {
-padding-left: 85px;
-padding-right: 85px;
+padding-left: 95px;
+padding-right: 95px;
     font-size: 21px;
     }
 input[type="text"] {
