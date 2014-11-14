@@ -33,7 +33,6 @@ html {
 margin:0;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -58,7 +57,6 @@ text-align: center;
     margin: 0 0 20px;
         line-height: 1.5;
     }
-h1,
 h2,
 h3,
 h4,
@@ -106,6 +104,11 @@ a:focus {
 
 .brand-heading {
     font-size: 35px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+text-align: center;
 }
 
 .intro-text {
