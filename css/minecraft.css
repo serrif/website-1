@@ -115,7 +115,7 @@ text-align: center;
     font-size: 18px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-margin-top: -30px;
+margin-top: 0px;
 margin-bottom: 30px;
 }
 
@@ -195,9 +195,7 @@ font-size: 21px;
 font-size: 21px;
 }
 .btn-circle {
-    width: 70px;
-    height: 70px;
-    padding: 7px 21px;
+    padding: 7px 17px;
     border-radius: 35px;
     font-size: 20px;
 }
