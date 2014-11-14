@@ -49,13 +49,14 @@ text-align: center;
 p {
     margin: 0 0 15px;
     line-height: 1.4;
-text-align: center;
+text-align: left;
 }
 
 @media(min-width:767px) {
     p {
     margin: 0 0 20px;
         line-height: 1.5;
+text-align: center;
     }
 h2,
 h3,
