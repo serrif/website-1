@@ -131,8 +131,6 @@ margin-bottom: 30px;
 }
 
 .btn-circle {
-    width: 70px;
-    height: 70px;
     padding: 7px 21px;
     border: 2px solid #fff;
     border-radius: 35px;
@@ -195,7 +193,7 @@ font-size: 21px;
 font-size: 21px;
 }
 .btn-circle {
-    padding: 7px 17px;
+    padding: 7px 14px;
     border-radius: 35px;
     font-size: 20px;
 }
