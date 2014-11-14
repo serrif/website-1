@@ -1,7 +1,7 @@
 (function() // Code in a function to create an isolate scope
 {
 var speed = 500;
-var moving_frequency = 35; // Affects performance !
+var moving_frequency = 15; // Affects performance !
 var links = document.getElementsByTagName('a');
 var href;
 for(var i=0; i<links.length; i++)
