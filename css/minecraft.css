@@ -251,15 +251,3 @@ font-size: 25px;
 margin-bottom: 30px;
 }
 }
-@-ms-viewport {
-width: device-width;
-zoom: 2;
-}
-@-o-viewport { 
-width: device-width;
-zoom: 2;
-}
-@viewport {
-width: device-width;
-zoom: 2; 
-}
