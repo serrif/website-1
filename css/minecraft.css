@@ -38,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 25px;
+  margin: 0 0 15px;
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
@@ -48,7 +48,7 @@ h6 {
 
 p {
   margin: 0 0 15px;
-  line-height: 1.4;
+  line-height: 1.5;
   text-align: center;
 }
 
@@ -175,7 +175,7 @@ input[type="text"] {
   padding: 7px;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  margin: 25px 0 0 0;
+  margin: 15px 0 0 0;
   -moz-border-radius: 0px 3px 3px 0px;
   -webkit-border-radius: 0px 3px 3px 0px;
   border-radius: 0px 3px 3px 0px;
@@ -197,7 +197,7 @@ input[type="text"]:focus {
   background: #488c1d;
   padding: 7px;
   display: inline-block;
-  margin: 25px 0 0 0;
+  margin: 15px 0 0 0;
   font-size: 14px;
   -moz-border-radius: 3px 0px 0px 3px;
   -webkit-border-radius: 3px 0px 0px 3px;
@@ -207,6 +207,13 @@ input[type="text"]:focus {
   text-align: center;
 }
 @media(min-width:767px) {
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin: 0 0 25px;
+}
 p {
 margin: 0 0 20px;
 line-height: 1.5;
@@ -221,9 +228,11 @@ font-size: 21px;
 }
 input[type="text"] {
 font-size: 21px;
+margin: 25px 0 0 0;
 }
 #ipbox {
 font-size: 21px;
+margin: 25px 0 0 0;
 }
 .btn-circle {
 font-size: 30px;
