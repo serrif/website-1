@@ -74,7 +74,7 @@ a:focus {
     height: 100%;
     color: #fff;
     background: url(/img/intro-bg.jpg) no-repeat bottom center scroll;
-    background: #000;
+    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -189,12 +189,12 @@ input[type="text"]:focus {
     border: 1px solid #488c1d;
     outline: 0;
     color: #000;
-    background: #488c1d;
+    background-color: #488c1d;
 }
 #ipbox {
     border: 1px solid #488c1d;
     color: #000;
-    background: #488c1d;
+    background-color: #488c1d;
 padding: 7px;
 display:inline-block;
 font-size: 16px;
