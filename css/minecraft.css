@@ -224,7 +224,8 @@ font-size: 21px;
 font-size: 21px;
 }
 .btn-circle {
-padding: 9px 15px 9px 15px;
+width: 30px;
+height: 30px;
 font-size: 30px;
 }
 .brand-heading {
