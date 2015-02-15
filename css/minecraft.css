@@ -108,7 +108,7 @@ a:focus {
 .btn-circle {
   width: 40px;
   height: 40px;
-  line-height:40px;
+  line-height: 40px;
   border: 2px solid #fff;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -225,8 +225,6 @@ font-size: 21px;
 font-size: 21px;
 }
 .btn-circle {
-width: 30px;
-height: 30px;
 font-size: 30px;
 }
 .brand-heading {
