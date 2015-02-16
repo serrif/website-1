@@ -36,7 +36,6 @@ body {
   animation: fadein 1.5s;
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
 }
 
 h2 {
@@ -54,7 +53,7 @@ p {
   text-align: center;
 }
 
-a,
+a,/
 a:hover,
 a:focus {
   text-decoration: none;
