@@ -34,6 +34,9 @@ body {
   -ms-animation: fadein 1.5s;
   -o-animation: fadein 1.5s;
   animation: fadein 1.5s;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
 }
 
 h2 {
