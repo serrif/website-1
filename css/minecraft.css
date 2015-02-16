@@ -70,9 +70,9 @@ a:focus {
   width: 100%;
   height: 100%;
   color: #fff;
-  background-color: #488c1d;
-  background-image: linear-gradient(90deg, rgba(0,0,0,.06) 50%, transparent 50%),
-linear-gradient(rgba(255,255,255,.06) 50%, transparent 50%);
+  background-color: #5b8731;
+  background-image: linear-gradient(90deg, rgba(74,111,40,.3) 50%, transparent 50%),
+linear-gradient(rgba(62,92,32,.2) 50%, transparent 50%);
   background-size: 20px 20px;
 }
 
@@ -157,8 +157,8 @@ h1 {
 }
 
 input {
-  border: 1px solid #488c1d;
-  color: #488c1d;
+  border: 1px solid #4a6f28;
+  color: #4a6f28;
   background: none;
   padding: 7px;
   width: 123px;
@@ -175,15 +175,15 @@ input {
 
 input:hover,
 input:focus {
-  border: 1px solid #488c1d;
+  border: 1px solid #4a6f28;
   outline: 0;
   color: #000;
-  background: #488c1d;
+  background: #4a6f28;
 }
 #ipbox {
-  border: 1px solid #488c1d;
+  border: 1px solid #4a6f28;
   color: #000;
-  background: #488c1d;
+  background: #4a6f28;
   padding: 7px;
   margin: 15px 0 0 0;
   font-size: 13px;
