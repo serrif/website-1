@@ -65,32 +65,32 @@ a:focus {
   text-decoration: none;
 }
 
-#intro {
-  display: table;
-  width: 100%;
-  height: 100%;
-  color: #fff;
+#bg {
   background: #000 url(/img/bg.svg) repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+    -webkit-filter: blur(13px);
+    -moz-filter: blur(13px);
+    -o-filter: blur(13px);
+    -ms-filter: blur(13px);
+    filter: blur(13px);
+  width: 100%;
+  height: 100%;
+}
+
+#intro {
+  display: table;
+  width: 100%;
+  height: 100%;
+  color: #fff;
 }
 
 #intro-body {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  -webkit-filter: blur(0px)!important;
-  -moz-filter: blur(0px)!important;
-  -o-filter: blur(0px)!important;
-  -ms-filter: blur(0px)!important;
-  filter: blur(0px)!important;
 }
 
 #logo {
