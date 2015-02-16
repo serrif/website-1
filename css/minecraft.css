@@ -29,11 +29,11 @@ body {
   color: #fff;
   background: #000;
   webkit-tap-highlight-color: rgba(255,255,255,.2);
-  -webkit-animation: fadein 1s;
-  -moz-animation: fadein 1s;
-  -ms-animation: fadein 1s;
-  -o-animation: fadein 1s;
-  animation: fadein 1s;
+  -webkit-animation: ease-in 1s;
+  -moz-animation: ease-in 1s;
+  -ms-animation: ease-in 1s;
+  -o-animation: ease-in 1s;
+  animation: ease-in 1s;
 }
 
 h2 {
