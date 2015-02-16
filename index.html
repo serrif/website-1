@@ -7,6 +7,16 @@
     <title>Minecraft.ga &#187; Sandbox OP Server</title>
     <style type="text/css">
 @font-face {
+	font-family: 'icon';
+	src:url('fonts/icon.eot');
+	src:url('fonts/icon.eot') format('embedded-opentype'),
+		url('fonts/icon.woff') format('woff'),
+		url('fonts/icon.ttf') format('truetype'),
+		url('fonts/icon.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -126,12 +136,17 @@ linear-gradient(rgba(62,92,32,.2) 50%, transparent 50%);
 }
 
 #icon {
-  font-size: 460px;
-  line-height: 320px;
+  font-size: 230px;
+  line-height: 220px;
   margin-top: -35px;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 400;
+  font-family: 'icon';
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.11);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#icon:before {
+  content: "\e602";
 }
 
 #logo {
@@ -252,9 +267,9 @@ line-height:1.5;
 background-size:30px 30px;
 }
 #icon {
-font-size: 590px;
-line-height: 420px;
-margin-top: -70px;
+font-size: 310px;
+line-height: 310px;
+margin-top: 0px;
 }
 #about-body{
 padding-left:90px;
@@ -292,7 +307,7 @@ margin-bottom:30px;
 <body>
 <div id="intro">
 <div id="intro-body">
-<p id="icon">&#9830;</p>
+<p id="icon"></p>
 <p id="logo">Minecraft.ga</p>
 <h1>Sandbox OP Server in Minecraft</h1>
 <a href="#about" id="circle">&#9660;</a>
