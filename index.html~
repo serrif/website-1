@@ -229,7 +229,7 @@ input {
   color: #4a6f28;
   background: none;
   padding: 7px;
-  width: 78px;
+  width: 80px;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 12px;
   margin: 15px 0 0 0;
@@ -266,7 +266,7 @@ font-size:30px;
 }
 p{
 margin:0 0 20px;
-line-height:1.5/;
+line-height:1.5;
 }
 #intro{
 background-size:30px 30px;
@@ -281,15 +281,15 @@ padding-left:90px;
 padding-right:90px;
 padding-top:40px;
 padding-bottom:40px;
-font-size:16px;
+font-size:18px;
 }
 input{
-font-size:16px;
+font-size:18px;
 margin:25px 0 0 0;
-width:102px;
+width:113px;
 }
 #ip{
-font-size:16px;
+font-size:18px;
 margin:25px 0 0 0;
 }
 #circle{
