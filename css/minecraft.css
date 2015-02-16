@@ -65,30 +65,15 @@ a:focus {
   text-decoration: none;
 }
 
-#bg {
-  background: #000 url(/img/bg.svg) repeat bottom center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    -webkit-filter: blur(13px);
-    -moz-filter: blur(13px);
-    -o-filter: blur(13px);
-    -ms-filter: blur(13px);
-    filter: blur(13px);
-  width: 100%;
-  height: 10%;
-}
-
 #intro {
   display: table;
   width: 100%;
   height: 100%;
   color: #fff;
-background-color:#488c1d;
-background-image: linear-gradient(90deg, rgba(0,0,0,.06) 50%, transparent 50%),
+  background-color: #488c1d;
+  background-image: linear-gradient(90deg, rgba(0,0,0,.06) 50%, transparent 50%),
 linear-gradient(rgba(255,255,255,.06) 50%, transparent 50%);
-background-size:20px 20px;
+  background-size: 20px 20px;
 }
 
 #intro-body {
@@ -248,19 +233,19 @@ font-size: 25px;
 margin-bottom: 45px;
 }
 }
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+@keyframes fadein{
+from{opacity:0;}
+to{opacity:1;}
 }
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+@-moz-keyframes fadein{
+from{opacity:0;}
+to{opacity:1;}
 }
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+@-webkit-keyframes fadein{
+from{opacity:0;}
+to{opacity:1;}
 }
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+@-ms-keyframes fadein{
+from{opacity:0;}
+to{opacity:1;}
 }
