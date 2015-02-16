@@ -31,11 +31,7 @@ body {
   webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   margin: 0 0 15px;
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -56,7 +52,7 @@ a:focus {
   text-decoration: none;
 }
 
-.intro {
+#intro {
   display: table;
   width: 100%;
   height: 100%;
@@ -68,13 +64,13 @@ a:focus {
   background-size: cover;
 }
 
-.intro-body {
+#intro-body {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
 
-.brand-heading {
+#logo {
   font-size: 35px;
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -84,14 +80,16 @@ a:focus {
   margin: 0;
 }
 
-.intro-text {
+h1 {
   font-size: 13px;
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   margin-bottom: 12px;
+  margin-top: 0;
+  font-weight: 400;
 }
 
-.btn-circle {
+#btn-circle {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -109,14 +107,14 @@ a:focus {
   text-decoration: none;
 }
 
-.btn-circle:hover,
-.btn-circle:focus {
+#btn-circle:hover,
+#btn-circle:focus {
   outline: 0;
   color: #fff;
   background: rgba(255,255,255,.1);
 }
 
-.about-section {
+#about {
   width: 100%;
   height: 100%;
   color: #fff;
@@ -124,7 +122,7 @@ a:focus {
   background: #000;
 }
 
-.about-body {
+#about-body {
   display: table-cell;
   vertical-align: middle;
   padding-left: 10px;
@@ -180,21 +178,14 @@ input[type="text"]:focus {
   border-radius: 3px 0px 0px 3px;
 }
 @media(min-width:767px) {
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
 margin: 0 0 25px;
 }
 p {
 margin: 0 0 20px;
 line-height: 1.5;
 }
-h2,h3,h4,h5,h6 {
-margin: 0 0 30px;
-}
-.about-body {
+#about-body {
 padding-left: 90px;
 padding-right: 90px;
 padding-top: 40px;
@@ -209,17 +200,17 @@ margin: 25px 0 0 0;
 font-size: 21px;
 margin: 25px 0 0 0;
 }
-.btn-circle {
+#btn-circle {
 font-size: 29px;
 width: 60px;
 height: 60px;
 line-height: 60px;
 border: 2px solid #fff;
 }
-.brand-heading {
+#logo {
 font-size: 100px;
 }
-.intro-text {
+h1 {
 font-size: 25px;
 margin-bottom: 30px;
 }
