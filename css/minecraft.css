@@ -70,11 +70,23 @@ a:focus {
   width: 100%;
   height: 100%;
   color: #fff;
+}
+
+#intro:before {
+    content: "";
+    position: absolute;
   background: #000 url(/img/bg.svg) repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+    z-index: -1; /* Keep the background behind the content */
+    height: 20%; width: 20%; /* Using Glen Maddern's trick /via @mente */
+
+    /* don't forget to use the prefixes you need */
+    transform: scale(5);
+    transform-origin: top left;
+    filter: blur(2px);
 }
 
 #intro-body {
