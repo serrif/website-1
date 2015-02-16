@@ -70,11 +70,7 @@ a:focus {
   width: 100%;
   height: 100%;
   color: #fff;
-  background: #000 url(/img/intro-bg.jpg) no-repeat bottom center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #000 url(/img/bg.svg) repeat bottom center scroll;
 }
 
 #intro-body {
@@ -157,11 +153,12 @@ h1 {
   background: rgba(255,255,255,.2);
 }
 
-input[type="text"] {
+input {
   border: 1px solid #488c1d;
   color: #488c1d;
   background: none;
   padding: 7px;
+  width: 123px;
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   margin: 15px 0 0 0;
@@ -173,8 +170,8 @@ input[type="text"] {
   transition: background .3s ease-in-out;
 }
 
-input[type="text"]:hover,
-input[type="text"]:focus {
+input:hover,
+input:focus {
   border: 1px solid #488c1d;
   outline: 0;
   color: #000;
@@ -206,9 +203,10 @@ padding-top: 40px;
 padding-bottom: 40px;
 font-size: 21px;
 }
-input[type="text"] {
+input {
 font-size: 21px;
 margin: 25px 0 0 0;
+width: 100px;
 }
 #ipbox {
 font-size: 21px;
