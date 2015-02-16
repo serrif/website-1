@@ -132,6 +132,7 @@ a:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 13px;
+  text-align: center;
 }
 
 ::-moz-selection {
@@ -172,15 +173,11 @@ input[type="text"]:focus {
   color: #000;
   background: #488c1d;
   padding: 7px;
-  display: inline-block;
   margin: 15px 0 0 0;
   font-size: 13px;
   -moz-border-radius: 3px 0px 0px 3px;
   -webkit-border-radius: 3px 0px 0px 3px;
   border-radius: 3px 0px 0px 3px;
-}
-#ip {
-  text-align: center;
 }
 @media(min-width:767px) {
 h2,
