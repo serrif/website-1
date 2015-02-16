@@ -84,9 +84,10 @@ h1 {
   font-size: 13px;
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  margin-bottom: 12px;
-  margin-top: 0;
   font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 16px;
+  line-height: 9px;
 }
 
 #btn-circle {
@@ -212,6 +213,6 @@ font-size: 100px;
 }
 h1 {
 font-size: 25px;
-margin-bottom: 30px;
+margin-bottom: 45px;
 }
 }
