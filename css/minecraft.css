@@ -110,7 +110,7 @@ h1 {
   line-height: 6px;
 }
 
-#btn-circle {
+#circle {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -128,8 +128,8 @@ h1 {
   text-decoration: none;
 }
 
-#btn-circle:hover,
-#btn-circle:focus {
+#circle:hover,
+#circle:focus {
   outline: 0;
   color: #fff;
   background: rgba(255,255,255,.1);
@@ -188,7 +188,7 @@ input:focus {
   color: #000;
   background: #4a6f28;
 }
-#ipbox {
+#ip {
   border: 1px solid #4a6f28;
   color: #000;
   background: #4a6f28;
@@ -223,11 +223,11 @@ font-size:18px;
 margin:25px 0 0 0;
 width:113px;
 }
-#ipbox{
+#ip{
 font-size:18px;
 margin:25px 0 0 0;
 }
-#btn-circle{
+#circle{
 font-size:29px;
 width:60px;
 height:60px;
