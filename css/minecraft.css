@@ -191,46 +191,46 @@ input:focus {
   -webkit-border-radius: 3px 0px 0px 3px;
   border-radius: 3px 0px 0px 3px;
 }
-@media(min-width:767px) {
-h2 {
-margin: 0 0 25px;
+@media(min-width:767px){
+h2{
+margin:0 0 25px;
 }
-p {
-margin: 0 0 20px;
-line-height: 1.5;
+p{
+margin:0 0 20px;
+line-height:1.5;
 }
-#intro {
+#intro{
 background-size:30px 30px;
 }
-#about-body {
-padding-left: 90px;
-padding-right: 90px;
-padding-top: 40px;
-padding-bottom: 40px;
-font-size: 21px;
+#about-body{
+padding-left:90px;
+padding-right:90px;
+padding-top:40px;
+padding-bottom:40px;
+font-size:21px;
 }
-input {
-font-size: 21px;
-margin: 25px 0 0 0;
-width: 123px;
+input{
+font-size:21px;
+margin:25px 0 0 0;
+width:123px;
 }
-#ipbox {
-font-size: 21px;
-margin: 25px 0 0 0;
+#ipbox{
+font-size:21px;
+margin:25px 0 0 0;
 }
-#btn-circle {
-font-size: 29px;
-width: 60px;
-height: 60px;
-line-height: 60px;
-border: 2px solid #fff;
+#btn-circle{
+font-size:29px;
+width:60px;
+height:60px;
+line-height:60px;
+border:2px solid #fff;
 }
-#logo {
-font-size: 100px;
+#logo{
+font-size:100px;
 }
-h1 {
-font-size: 25px;
-margin-bottom: 45px;
+h1{
+font-size:25px;
+margin-bottom:45px;
 }
 }
 @keyframes fadein{
