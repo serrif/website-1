@@ -100,7 +100,7 @@ a:focus {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  font-size: 20px;
+  font-size: 15px;
   color: #fff;
   background: none;
   -webkit-transition: background .3s ease-in-out;
@@ -223,7 +223,7 @@ font-size: 21px;
 margin: 25px 0 0 0;
 }
 .btn-circle {
-font-size: 30px;
+font-size: 29px;
 width: 60px;
 height: 60px;
 line-height: 60px;
