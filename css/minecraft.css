@@ -17,20 +17,18 @@
   src: local('Open Sans Light'), local('OpenSans-Light'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
 }
 
-body {
+html, body {
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   background: #000;
-  margin: 0;
   webkit-tap-highlight-color: rgba(255,255,255,.2);
-}
-
-html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
 }
 
 h2,
@@ -52,21 +50,10 @@ p {
   text-align: center;
 }
 
-a {
-  color: #28c3ab;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-
+a,
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #176e61;
-}
-
-.light {
-  font-weight: 400;
 }
 
 .intro {
@@ -101,7 +88,6 @@ a:focus {
   font-size: 13px;
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  margin-top: 0;
   margin-bottom: 12px;
 }
 
