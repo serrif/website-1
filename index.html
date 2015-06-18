@@ -104,7 +104,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #CF1D1D;
+  color: rgba(255,255,255,.4);
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -112,7 +112,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #C40000;
+  color: rgba(255,255,255,.2);
 }
 
 #intro {
@@ -120,7 +120,12 @@ a:focus {
   width: 100%;
   height: 100%;
   color: #fff;
-  background-color: #CF1D1D;
+  background-image: url('background.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: -120px;
 }
 
 #intro-body {
@@ -142,7 +147,7 @@ a:focus {
 }
 
 #icon:before {
-  content: "\e604";
+  content: "\e601";
 }
 
 #logo {
@@ -163,55 +168,24 @@ h1 {
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;  
   font-weight: 400;
   margin-top: 0;
-  margin-bottom: 16px;
+  padding-bottom: 22px;
   line-height: 6px;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   cursor: default;
 }
 
-#circle {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  line-height: 38px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  font-size: 17px;
-  color: #fff;
-  background: none;
-  -webkit-transition: background .3s ease-in-out;
-  -moz-transition: background .3s ease-in-out;
-  transition: background .3s ease-in-out;
-  text-decoration: none;
-  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0px 6px 6px -4px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 6px 6px -4px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 6px 6px -4px rgba(0, 0, 0, 0.3);
-}
-
-#circle:hover,
-#circle:focus {
-  outline: 0;
-  color: #fff;
-  background: rgba(255,255,255,.1);
-}
-
-#circle span:before {
-  font-family: 'icon';
-  content: '\e603'
-}
-
-#about {
+#about, #news {
   width: 100%;
   height: 100%;
   color: #fff;
   display: table;
-  background: #080808;
 }
 
-#about-body {
+#about {
+  background: #0A0A0A;
+}
+
+#about-body, #news-body {
   display: table-cell;
   vertical-align: middle;
   padding-left: 10px;
@@ -223,17 +197,17 @@ h1 {
 }
 
 input {
-  border: #CF1D1D solid 1px;
-  color: #CF1D1D;
+  border: #fff solid 1px;
+  color: #fff;
   background: none;
-  padding: 7px;
+  padding: 7px 8px 6px 9px;
   width: 53px;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 12px;
   margin: 10px 0 0 0;
-  -moz-border-radius: 0px 3px 3px 0px;
-  -webkit-border-radius: 0px 3px 3px 0px;
-  border-radius: 0px 3px 3px 0px;
+  -moz-border-radius: 0px 5px 5px 0px;
+  -webkit-border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 5px 5px 0px;
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
@@ -241,42 +215,139 @@ input {
 
 input:hover,
 input:focus {
-  border: #CF1D1D solid 1px;
   outline: 0;
-  color: #D6D6D6;
-  background: #CF1D1D;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  background: rgba(255,255,255,.1);
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 #ip {
-  border: #CF1D1D solid 1px;
-  color: #fff;
-  background: #CF1D1D;
-  padding: 7px;
+  border: #fff solid 1px;
+  color: #000;
+  background: #fff;
+  padding: 6px 6px 6px 9px;
   margin: 10px 0 0 0;
   font-size: 12px;
-  -moz-border-radius: 3px 0px 0px 3px;
-  -webkit-border-radius: 3px 0px 0px 3px;
-  border-radius: 3px 0px 0px 3px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -webkit-border-radius: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
   cursor: default;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+#facebook:before, #twitter:before {
+  border-radius: 50%;
+  display: inline-block;
+  padding: 5px;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.11);
+}
+#facebook {
+  margin-right: 6px;
+}
+#twitter {
+  margin-left: 6px;
 }
 #facebook:before {
+  background: #3b5998;
   font-family: 'icon';
   content: '\e601';
-  font-size: 30px;
-  color: #fff;
-  margin-right: 6px;
-  text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.11);
 }
 #twitter:before {
+  background: #0084b4;
   font-family: 'icon';
   content: '\e602';
-  font-size: 30px;
+}
+#aboutbutton, #newsbutton, #forumbutton {
   color: #fff;
-  margin-left: 6px;
-  text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.11);
+  border: 1px solid #fff;
+  font-size: 14px;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+  text-decoration: none;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 6px 6px -4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 6px 6px -4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 6px 6px -4px rgba(0, 0, 0, 0.3);
+}
+#aboutbutton:hover, #aboutbutton:focus, #newsbutton:hover, #newsbutton:focus, #forumbutton:hover, #forumbutton:focus {
+  outline: 0;
+  background: rgba(255,255,255,.1);
+}
+#newsbutton {
+  border-left: 0;
+  padding: 6px 10px 6px 10px;
+}
+#aboutbutton {
+  -moz-border-radius: 21px 0px 0px 21px;
+  -webkit-border-radius: 21px 0px 0px 21px;
+  border-radius: 21px 0px 0px 21px;
+  padding: 6px 10px 6px 12px;
+}
+#forumbutton {
+  -moz-border-radius: 0px 21px 21px 0px;
+  -webkit-border-radius: 0px 21px 21px 0px;
+  border-radius: 0px 21px 21px 0px;
+  padding: 6px 13px 6px 10px;
+  border-left: 0;
+}
+#aboutbutton:before, #about-title:before {
+  font-family: 'icomoon';
+  content: "\e605";
+}
+
+#newsbutton:before, #news-title:before {
+  font-family: 'icomoon';
+  content: "\e602";
+}
+
+#forumbutton:before {
+  font-family: 'icomoon';
+  content: "\e600";
+}
+
+#aboutbutton:before {
+  top: 1px;
+  position: relative;
+}
+
+#newsbutton:before {
+  top: 1px;
+  position: relative;
+}
+
+#news-title:before {
+  font-weight: normal;
+  margin-right: 12px;
+  position: relative;
+  top: 2px;
+}
+
+#about-title:before {
+  font-weight: normal;
+  margin-right: 8px;
+  position: relative;
+  top: 2px;
+}
+
+#news-list {
+  text-align: left;
+  height:50%;
+  overflow: auto;
+  list-style-type: none;
+  padding-right: 10px;
+  padding: 0;
+  margin-bottom: 15px;
+}
+#news-list li{
+  margin-bottom: 15px;
+}
+.date{
+  font-size: 9px;
+  color: rgba(255,255,255,.4);
 }
 @media (min-width:767px){
+h1{
+padding-bottom: 15px;
+}
 h2{
 margin:0 0 25px;
 font-size:28px;
@@ -287,13 +358,14 @@ line-height:1.5/;
 }
 #intro{
 background-size:35px 35px;
+background-position: left;
 }
 #icon {
 font-size: 340px;
 line-height: 310px;
 margin-top: 0px;
 }
-#about-body{
+#about-body,#news-body{
 padding-left:90px;
 padding-right:90px;
 padding-top:40px;
@@ -304,17 +376,18 @@ input{
 font-size:16px;
 margin:18px 0 0 0;
 width:70px;
+-moz-border-radius: 0px 6px 6px 0px;
+-webkit-border-radius: 0px 6px 6px 0px;
+border-radius: 0px 6px 6px 0px;
+padding: 8px 9px 7px 10px;
 }
 #ip{
 font-size:16px;
 margin:18px 0 0 0;
-}
-#circle{
-font-size:25px;
-width:50px;
-height:50px;
-line-height:53px;
-border:1px solid #fff;
+-moz-border-radius: 6px 0px 0px 6px;
+-webkit-border-radius: 6px 0px 0px 6px;
+border-radius: 6px 0px 0px 6px;
+padding: 7px 7px 7px 10px;
 }
 #logo{
 font-size:47px;
@@ -323,13 +396,40 @@ h1{
 font-size:16px;
 margin-bottom:30px;
 }
-#facebook:before {
-  font-size: 40px;
-  margin-right: 10px;
+#facebook:before, #twitter:before{
+padding: 10px;
+font-size: 20px;
 }
-#twitter:before {
-  font-size: 40px;
-  margin-left: 10px;
+#aboutbutton, #newsbutton, #forumbutton{
+font-size: 19px;
+}
+#newsbutton{
+padding: 8px 15px 8px 15px;
+}
+#aboutbutton{
+padding: 8px 15px 8px 18px;
+}
+#forumbutton{
+padding: 8px 18px 8px 15px;
+}
+#newsbutton:before{
+top: 2px;
+}
+#news-title:before{
+margin-right: 16px;
+}
+#about-title:before{
+margin-right: 13px;
+}
+#news-list{
+margin-bottom: 25px;
+}
+#news-list li{
+margin-bottom: 20px;
+}
+.date{
+font-size: 11px;
+color: rgba(255,255,255,.4);
 }
 }
 </style>
@@ -340,17 +440,41 @@ margin-bottom:30px;
 <p id="icon"></p>
 <p id="logo">Flame.ga</p>
 <h1>All-OP Server in Minecraft</h1>
-<a href="https://www.facebook.com/flameserver" id="facebook"></a>
-<a href="#about" id="circle"><span></span></a>
-<a href="https://twitter.com/flameserver" id="twitter"></a>
+<a href="#about" id="aboutbutton"></a><a href="#news" id="newsbutton"></a><a href="#" id="forumbutton"></a>
 </div>
 </div>
 <div id="about">
 <div id="about-body">
-<h2>About Flame.ga</h2>
+<h2 id="about-title">About</h2>
 <p>Flame.ga provides you a unique and interesting experience in Minecraft. This server allows you to do whatever you want; griefing, acting like a staff member, building - you name it. A large set of operator (OP) commands is granted for you to use whenever you like, as well as a few server plugins, such as WorldEdit. With no rules, this is the perfect place to do what you may not be allowed to do elsewhere.</p>
 <p>Flame.ga uses an auto restart function, which assures the server will always stay up for you to play on. To give you a fresh and lag-free experience, the world will also reset automatically every Sunday. If you need to reach us, please send an e-mail to <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#101;&#108;&#108;&#111;&#64;&#102;&#108;&#97;&#109;&#101;&#46;&#103;&#97;">&#104;&#101;&#108;&#108;&#111;&#64;&#102;&#108;&#97;&#109;&#101;&#46;&#103;&#97;</a>!</p>
 <span id="ip">IP</span><input onClick="this.select();" value="flame.ga"><br/>
+</div>
+</div>
+<div id="news">
+<div id="news-body">
+<h2 id="news-title">News</h2>
+<ul id="news-list">
+<li>A "News" section has been added to our website. We've also created a small forum for questions and issues.<br/>
+<span class="date">June 18, 2015</span></li>
+<li>The server should once again run 24/7, after having to solve a few problems. Apologies for the recent downtime.<br/>
+<span class="date">June 15, 2015</span></li>
+<li>We've migrated to a new hosting provider with better server specifications. ;)<br/>
+<span class="date">May 28, 2015</span></li>
+<li>There have been a few issues with our email address recently, which resulted in emails not getting sent to us. We have now fixed it.<br/>
+<span class="date">May 2, 2015</span></li>
+<li>Recently, DisguiseCraft stopped working due to a new issue in the server software. We will push a fix for this tomorrow. Another little detail; you will also be able to spawn and disguise as a Giant.<br/>
+<span class="date">April 25, 2015</span></li>
+<li>A few new commands have been added to the server.<br/>
+<span class="date">April 12, 2015</span></li>
+<li>The server is finally online again. Please connect with the new IP flame.ga if you want to play on the server.<br/>
+<span class="date">April 12, 2015</span></li>
+<li>Our website has now been updated. Check it out: <a href="https://flame.ga/">https://flame.ga/</a> ;)<br/>
+<span class="date">February 16, 2015</span></li>
+<li>The server was created. Thanks to both myokan and Kit_Kat_Matt for being very supportive and helpful during the early days.<br/>
+<span class="date">June 2, 2014</span></li>
+</ul>
+<a href="https://www.facebook.com/flameserver" id="facebook"></a><a href="https://twitter.com/flameserver" id="twitter"></a>
 </div>
 </div>
 </body>
