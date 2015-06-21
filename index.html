@@ -429,6 +429,11 @@ margin-bottom: 4px;
 font-size: 11px;
 }
 
+label input, label textarea {
+width: 100%;
+box-sizing: border-box;
+}
+
 #second {
 margin-top: 15px;
 display: block;
@@ -599,11 +604,11 @@ margin: 25px 0 0 0;
 <form action="//formspree.io/hello@flame.ga" method="POST">
 <label>
 <span>Email</span>
-<input type="email" name="_replyto" placeholder="Please enter your email" style="width:100%;box-sizing: border-box;" required>
+<input type="email" name="_replyto" placeholder="Please enter your email" required>
 </label>
 <label id="second">
 <span>Message</span>
-<textarea name="body" rows="10" placeholder="Please enter your message" style="width:100%;box-sizing: border-box;" required></textarea>
+<textarea name="body" rows="10" placeholder="Please enter your message" required></textarea>
 </label>
 <input type="hidden" name="_next" value="/sent" />
 <button type="submit">Send</button>
