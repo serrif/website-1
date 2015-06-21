@@ -115,17 +115,20 @@ a:focus {
   color: rgba(255,255,255,.2);
 }
 
-#intro {
+#intro, #news {
   display: table;
   width: 100%;
   height: 100%;
   color: #fff;
-  background-image: url('background.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: -120px;
+}
+
+#intro {
+  background-image: url('background.jpg');
 }
 
 #intro-body {
@@ -170,22 +173,27 @@ h1 {
   margin-top: 0;
   padding-bottom: 22px;
   line-height: 6px;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
   cursor: default;
 }
 
-#about, #news {
+#about, #news, #contact {
   width: 100%;
   height: 100%;
   color: #fff;
   display: table;
 }
 
-#about {
-  background: #0A0A0A;
+#about, #contact {
+  background: #000;
 }
 
-#about-body, #news-body {
+#news {
+  background-image: url('background2.jpg');
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+#about-body, #news-body, #contact-body {
   display: table-cell;
   vertical-align: middle;
   padding-left: 10px;
@@ -196,29 +204,79 @@ h1 {
   text-align: center;
 }
 
-input {
-  border: #fff solid 1px;
-  color: #fff;
-  background: none;
+input, textarea {
+  border: none;
+  color: #000;
+  background: #fff;
   padding: 6px 8px 6px 9px;
-  width: 53px;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 12px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+  resize: none;
+  margin: 0;
+}
+
+::-webkit-input-placeholder {
+  color: #808080;
+}
+:-moz-placeholder {
+  color: #808080;
+}
+::-moz-placeholder {
+  color: #808080;
+}
+:-ms-input-placeholder {
+  color: #808080;
+}
+
+#ipinput {
+  border: #fff solid 1px;
+  background: none;
+  color: #fff;
+  width: 53px;
   margin: 10px 0 0 0;
   -moz-border-radius: 0px 5px 5px 0px;
   -webkit-border-radius: 0px 5px 5px 0px;
   border-radius: 0px 5px 5px 0px;
-  -webkit-transition: background .3s ease-in-out;
-  -moz-transition: background .3s ease-in-out;
-  transition: background .3s ease-in-out;
 }
 
-input:hover,
-input:focus {
+#ipinput:hover, #ipinput:focus {
   outline: 0;
   background: rgba(255,255,255,.1);
   text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+input:focus, textarea:focus {
+  outline: 0;
+  background: rgba(255,255,255,.8);
+}
+
+button {
+  color: #fff;
+  background: none;
+  border: #fff solid 1px;
+  padding: 6px 8px 6px 9px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 12px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover, button:focus {
+  outline: 0;
+  background: rgba(255,255,255,.1);
+}
+
 #ip {
   border: #fff solid 1px;
   color: #000;
@@ -255,7 +313,7 @@ input:focus {
   font-family: 'icon';
   content: '\e604';
 }
-#aboutbutton, #newsbutton, #forumbutton {
+#aboutbutton, #newsbutton, #contactbutton {
   color: #fff;
   border: 1px solid #fff;
   font-size: 14px;
@@ -268,7 +326,7 @@ input:focus {
   -moz-box-shadow: 0px 6px 6px -4px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 6px 6px -4px rgba(0, 0, 0, 0.3);
 }
-#aboutbutton:hover, #aboutbutton:focus, #newsbutton:hover, #newsbutton:focus, #forumbutton:hover, #forumbutton:focus {
+#aboutbutton:hover, #aboutbutton:focus, #newsbutton:hover, #newsbutton:focus, #contactbutton:hover, #contactbutton:focus {
   outline: 0;
   background: rgba(255,255,255,.1);
 }
@@ -282,7 +340,7 @@ input:focus {
   border-radius: 21px 0px 0px 21px;
   padding: 6px 10px 6px 12px;
 }
-#forumbutton {
+#contactbutton {
   -moz-border-radius: 0px 21px 21px 0px;
   -webkit-border-radius: 0px 21px 21px 0px;
   border-radius: 0px 21px 21px 0px;
@@ -299,7 +357,7 @@ input:focus {
   content: "\e602";
 }
 
-#forumbutton:before {
+#contactbutton:before, #contact-title:before {
   font-family: 'icon';
   content: "\e600";
 }
@@ -311,6 +369,11 @@ input:focus {
 
 #newsbutton:before {
   top: 1px;
+  position: relative;
+}
+
+#contactbutton:before {
+  top: 2px;
   position: relative;
 }
 
@@ -326,6 +389,13 @@ input:focus {
   margin-right: 8px;
   position: relative;
   top: 2px;
+}
+
+#contact-title:before {
+  font-weight: normal;
+  margin-right: 12px;
+  position: relative;
+  top: 3px;
 }
 
 #news-box {
@@ -347,6 +417,25 @@ input:focus {
 .date{
   font-size: 9px;
   color: rgba(255,255,255,.4);
+}
+
+label {
+text-align: left;
+}
+
+label span {
+display: block;
+margin-bottom: 4px;
+font-size: 11px;
+}
+
+#second {
+margin-top: 15px;
+display: block;
+}
+
+button {
+  margin: 15px 0 0 0;
 }
 @media (min-width:767px){
 h1{
@@ -375,14 +464,23 @@ padding-top:40px;
 padding-bottom:40px;
 font-size:16px;
 }
-input{
+#contact-body{
+padding-left:230px;
+padding-right:230px;
+padding-top:40px;
+padding-bottom:40px;
 font-size:16px;
+}
+input,textarea,button{
+font-size:16px;
+padding: 7px 9px 7px 10px;
+}
+#ipinput{
 margin:18px 0 0 0;
 width:70px;
 -moz-border-radius: 0px 6px 6px 0px;
 -webkit-border-radius: 0px 6px 6px 0px;
 border-radius: 0px 6px 6px 0px;
-padding: 7px 9px 7px 10px;
 }
 #ip{
 font-size:16px;
@@ -403,7 +501,7 @@ margin-bottom:30px;
 padding: 10px;
 font-size: 20px;
 }
-#aboutbutton, #newsbutton, #forumbutton{
+#aboutbutton, #newsbutton, #contactbutton{
 font-size: 19px;
 }
 #newsbutton{
@@ -412,7 +510,7 @@ padding: 8px 15px 8px 15px;
 #aboutbutton{
 padding: 8px 15px 8px 18px;
 }
-#forumbutton{
+#contactbutton{
 padding: 8px 18px 8px 15px;
 }
 #newsbutton:before{
@@ -423,6 +521,9 @@ margin-right: 16px;
 }
 #about-title:before{
 margin-right: 13px;
+}
+#contact-title:before{
+margin-right: 16px;
 }
 #news-box{
 margin-bottom: 25px;
@@ -435,6 +536,15 @@ margin-bottom: 20px;
 font-size: 11px;
 color: rgba(255,255,255,.4);
 }
+#second{
+margin-top: 20px;
+}
+label span{
+font-size: 14px;
+margin-bottom: 6px;
+}
+button{
+margin: 25px 0 0 0;
 }
 </style>
 </head>
@@ -444,15 +554,15 @@ color: rgba(255,255,255,.4);
 <p id="icon"></p>
 <p id="logo">Flame.ga</p>
 <h1>All-OP Server in Minecraft</h1>
-<a href="#about" id="aboutbutton"></a><a href="#news" id="newsbutton"></a><a href="#" id="forumbutton"></a>
+<a href="#about" title="About" id="aboutbutton"></a><a href="#news" title="News" id="newsbutton"></a><a href="#contact" title="Contact" id="contactbutton"></a>
 </div>
 </div>
 <div id="about">
 <div id="about-body">
 <h2 id="about-title">About</h2>
 <p>Flame.ga provides you a unique and interesting experience in Minecraft. This server allows you to do whatever you want; griefing, acting like a staff member, building - you name it. A large set of operator (OP) commands is granted for you to use whenever you like, as well as a few server plugins, such as WorldEdit. With no rules, this is the perfect place to do what you may not be allowed to do elsewhere.</p>
-<p>Flame.ga uses an auto restart function, which assures the server will always stay up for you to play on. To give you a fresh and lag-free experience, the world will also reset automatically every Sunday. If you need to reach us, please send an e-mail to <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#101;&#108;&#108;&#111;&#64;&#102;&#108;&#97;&#109;&#101;&#46;&#103;&#97;">&#104;&#101;&#108;&#108;&#111;&#64;&#102;&#108;&#97;&#109;&#101;&#46;&#103;&#97;</a>!</p>
-<span id="ip">IP</span><input onClick="this.select();" value="flame.ga"><br/>
+<p>Flame.ga uses an auto restart function, which assures the server will always stay up for you to play on. To give you a fresh and lag-free experience, the world will also reset automatically every Sunday. If you need to reach us, please use the contact form below!</p>
+<span id="ip">IP</span><input id="ipinput" onClick="this.select();" value="flame.ga"><br/>
 </div>
 </div>
 <div id="news">
@@ -460,7 +570,7 @@ color: rgba(255,255,255,.4);
 <h2 id="news-title">News</h2>
 <div id="news-box">
 <ul id="news-list">
-<li>A "News" section has been added to our website. We've also created a small forum for questions and issues.<br/>
+<li>A "News" section has been added to our website. We've also created a contact form for questions and issues.<br/>
 <span class="date">June 18, 2015</span></li>
 <li>The server should once again run 24/7, after having to solve a few problems. Apologies for the recent downtime.<br/>
 <span class="date">June 15, 2015</span></li>
@@ -481,6 +591,23 @@ color: rgba(255,255,255,.4);
 </ul>
 </div>
 <a href="https://www.facebook.com/flameserver" id="facebook"></a><a href="https://twitter.com/flameserver" id="twitter"></a>
+</div>
+</div>
+<div id="contact">
+<div id="contact-body">
+<h2 id="contact-title">Contact</h2>
+<form action="//formspree.io/hello@flame.ga" method="POST">
+<label>
+<span>Email</span>
+<input type="email" name="_replyto" placeholder="Please enter your email" style="width:100%;box-sizing: border-box;" required>
+</label>
+<label id="second">
+<span>Message</span>
+<textarea name="body" rows="10" placeholder="Please enter your message" style="width:100%;box-sizing: border-box;" required></textarea>
+</label>
+<input type="hidden" name="_next" value="/sent" />
+<button type="submit">Send</button>
+</form>
 </div>
 </div>
 </body>
