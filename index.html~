@@ -449,7 +449,7 @@ p{
 margin:0 0 20px;
 line-height:1.5/;
 }
-#intro,#news{
+#intro{
 background-position: left;
 }
 #icon {
