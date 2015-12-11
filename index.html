@@ -4,6 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Flame.ga provides you a fun and interesting experience in Minecraft. On this server, you can do whatever you want, without any consequenses; grief, troll, use hacks - you name it.">
+	<meta property="twitter:title" content="Flame.ga &#187; Free OP Server" />
+	<meta property="og:title" content="Flame.ga &#187; Free OP Server" />
+	<meta property="og:description" content="Flame.ga provides you a fun and interesting experience in Minecraft. On this server, you can do whatever you want, without any consequenses; grief, troll, use hacks - you name it." />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://flame.ga/" />
+	<meta property="og:site_name" content="Flame.ga" />
 	<title>Flame.ga &#187; Free OP Server</title>
 	<style type="text/css">
 	@font-face {
@@ -285,65 +292,63 @@
 		font-family: 'icons';
 		content: '\e604';
 	}
-	#aboutbutton, #newsbutton, #contactbutton {
+	#intro a {
 		background: #fff;
 		color: #aa0000;
 		font-size: 14px;
 		transition: background .1s ease-in-out;
-	}
-	input:focus, textarea:focus, button:hover, button:focus, #aboutbutton:hover, #aboutbutton:focus, #newsbutton:hover, #newsbutton:focus, #contactbutton:hover, #contactbutton:focus {
-		outline: 0;
-	}
-	#newsbutton {
 		border-left: 1px solid #aa0000;
 		padding: 6px 10px 6px 10px;
 	}
-	#aboutbutton {
+	input:focus, textarea:focus, button:hover, button:focus, #intro a:hover, #intro a:focus {
+		outline: 0;
+	}
+	#intro a:first-child {
 		border-radius: 21px 0px 0px 21px;
 		padding: 6px 10px 6px 12px;
 	}
-	#contactbutton {
+	#intro a:last-child {
 		border-radius: 0px 21px 21px 0px;
 		border-left: 1px solid #aa0000;
 		padding: 6px 13px 6px 10px;
 	}
-	#aboutbutton:before, #about-title:before {
+	#intro a:first-child:before, #about h2:before {
 		font-family: 'icons';
 		content: "\e605";
 	}
-	#newsbutton:before, #news-title:before {
+	#intro a:before, #news h2:before {
 		font-family: 'icons';
 		content: "\e602";
 	}
-	#contactbutton:before, #contact-title:before {
+	#intro a:last-child:before, #contact h2:before{
 		font-family: 'icons';
 		content: "\e600";
 	}
-	#aboutbutton:before {
+	#intro a:first-child:before {
 		top: 1px;
 		position: relative;
 	}
-	#newsbutton:before {
+	#intro a:before {
 		top: 1px;
 		position: relative;
 	}
-	#contactbutton:before {
+	#intro a:last-child:before {
 		top: 2px;
 		position: relative;
 	}
-	#about-title:before, #contact-title:before, #news-title:before {
+	#about h2:before, #contact h2:before, #news h2:before {
 		font-weight: normal;
 		position: relative;
 	}
-	#news-title:before {
+	#news h2:before {
 		margin: 0 12px 0 0;
 		top: 2px;
 	}
-	#about-title:before {
+	#about h2:before {
 		margin: 0 8px 0 0;
 		top: 2px;
 	}
-	#contact-title:before {
+	#contact h2:before {
 		margin: 0 12px 0 0;
 		top: 3px;
 	}
@@ -503,19 +508,19 @@ margin: 25px 0 0 0;
 			<p id="icon"></p>
 			<p id="logo">Flame.ga</p>
 			<h1>Free OP Server in Minecraft</h1>
-			<a href="#about" title="About" id="aboutbutton"></a><a href="#news" title="News" id="newsbutton"></a><a href="#contact" title="Contact" id="contactbutton"></a>
+			<a href="#about" title="About"></a><a href="#news" title="News"></a><a href="#contact" title="Contact"></a>
 		</div>
 	</div>
 	<div id="about">
 		<div id="about-body">
-			<h2 id="about-title">About</h2>
+			<h2>About</h2>
 			<p>Flame.ga provides you a fun and interesting experience in Minecraft. On this server, you can do whatever you want, without any consequenses; grief, troll, use hacks - you name it. You get access to a large amount of free OP (operator) commands to use whenever you like, as well as a few server plugins, such as WorldEdit and DisguiseCraft. To give you a fresh and lag-free experience, the server will reset once every day.</p>
-			<span id="ip">IP</span><input id="ipinput" onClick="this.select();" value="flame.ga"><br/>
+			<span id="ip">IP</span><input id="ipinput" onClick="this.select();" value="flame.ga">
 		</div>
 	</div>
 	<div id="news">
 		<div id="news-body">
-			<h2 id="news-title">News</h2>
+			<h2>News</h2>
 			<div id="news-box">
 				<ul id="news-list">
 					<li>
@@ -577,7 +582,7 @@ margin: 25px 0 0 0;
 	</div>
 	<div id="contact">
 		<div id="contact-body">
-			<h2 id="contact-title">Contact</h2>
+			<h2>Contact</h2>
 			<form action="//formspree.io/hello@flame.ga" method="POST">
 				<label>
 					<span>Email</span>
