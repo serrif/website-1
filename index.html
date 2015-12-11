@@ -186,10 +186,9 @@
 		font-size: 285px;
 		line-height: 262px;
 		margin: 0 0 0 10px;
-		font-family: 'icons';
 	}
 	#icon:before {
-		content: "\e601";
+		content: "\f0d2";
 	}
 	#logo {
 		font-size: 35px;
@@ -284,12 +283,10 @@
 	}
 	#facebook:before {
 		background: #3b5998;
-		font-family: 'icons';
 		content: '\e603';
 	}
 	#twitter:before {
 		background: #0084b4;
-		font-family: 'icons';
 		content: '\e604';
 	}
 	#intro a {
@@ -312,17 +309,17 @@
 		border-left: 1px solid #aa0000;
 		padding: 6px 13px 6px 10px;
 	}
-	#intro a:first-of-type:before, #about h2:before {
+	#facebook:before, h2:before, #icon, #intro a:before, #twitter:before {
 		font-family: 'icons';
-		content: "\e605";
+	}
+	#intro a:first-of-type:before, #about h2:before {
+		content: "\f129";
 	}
 	#intro a:before, #news h2:before {
-		font-family: 'icons';
-		content: "\e602";
+		content: "\f0a1";
 	}
-	#intro a:last-of-type:before, #contact h2:before{
-		font-family: 'icons';
-		content: "\e600";
+	#intro a:last-of-type:before, #contact h2:before {
+		content: "\f1d8";
 	}
 	#intro a:first-of-type:before {
 		top: 1px;
@@ -352,18 +349,18 @@
 		margin: 0 12px 0 0;
 		top: 3px;
 	}
-	#news-box {
+	#newsbox {
 		height: 290px;
 		overflow: scroll;
 		overflow-x: hidden;
 		margin: 0 0 15px 0;
 	}
-	#news-list {
+	#newsbox ul {
 		text-align: left;
 		list-style-type: none;
 		padding: 0 10px 0 0;
 	}
-	#news-list li {
+	#newsbox li {
 		margin: 0 0 15px 0;
 	}
 	.date {
@@ -521,8 +518,8 @@ margin: 25px 0 0 0;
 	<div id="news">
 		<div id="news-body">
 			<h2>News</h2>
-			<div id="news-box">
-				<ul id="news-list">
+			<div id="newsbox">
+				<ul>
 					<li>
 						We've created a new spawn for the server and added a Flatlands world for easier building.<br/>
 						<span class="date">November 17, 2015</span>
