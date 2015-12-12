@@ -121,12 +121,17 @@
 	a {
 		text-decoration: none;
 		color: rgba(255,255,255,.4);
-		transition: all .2s ease-in-out;
 	}
 	a:hover, a:focus {
 		color: rgba(255,255,255,.2);
 	}
 	/* Combined Rules */
+	a, a:before, button {
+		-moz-transition: all .15s ease-in-out;
+		-webkit-transition: all .15s ease-in-out;
+		-o-transition: all .15s ease-in-out;
+		transition: all .15s ease-in-out;
+	}
 	h1, h2, p, #box, #logo, #about span {
 		cursor: default;
 	}
@@ -182,7 +187,6 @@
 		background: #fff;
 		color: #aa0000;
 		font-size: 1.188em;
-		transition: background .2s ease-in-out;
 	}
 	#intro a:hover {
 		background: rgba(255,255,255,.9);
@@ -280,7 +284,6 @@
 		padding: 0.188em;
 		font-size: 1.750em;
 		color: #fff;
-		transition: background .2s ease-in-out;
 	}
 	#facebook {
 		margin: 0 0.375em 0 0;
@@ -320,7 +323,6 @@
 		display: block;
 		width: 100%;
 		box-sizing: border-box;
-		transition: background .2s ease-in-out;
 		resize: none;
 	}
 	input {
@@ -340,7 +342,6 @@
 		-o-border-radius: 0.313em;
 		border-radius: 0.313em;
 		cursor: pointer;
-		transition: background .2s ease-in-out;
 	}
 	button:hover, button:focus {
 		background: rgba(255,255,255,.05);
