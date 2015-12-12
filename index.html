@@ -188,7 +188,7 @@
 	#about, #contact {
 		background: #000;
 	}
-	#intro-body, #about-body, #news-body, #contact-body {
+	#introcontainer, #aboutcontainer, #newscontainer, #contactcontainer {
 		display: table-cell;
 		vertical-align: middle;
 		font-size: 16px;
@@ -201,7 +201,7 @@
 	#intro {
 		background: #aa0000;
 	}
-	#intro-body {
+	#introcontainer {
 		padding: 30px 0 30px 0;
 	}
 	#intro i:before {
@@ -237,7 +237,7 @@
 		padding: 8px 20px 6px 14px;
 	}
 	/* About */
-	#about-body {
+	#aboutcontainer {
 		padding: 40px 90px 40px 90px;
 	}
 	#about h2:before, #contact h2:before, #news h2:before {
@@ -270,7 +270,7 @@
 	#news {
 		background: #0b0b0b;
 	}
-	#news-body {
+	#newscontainer {
 		padding: 40px 150px 40px 150px;
 	}
 	#box {
@@ -324,7 +324,7 @@
 		background: rgba(0,132,180,1);
 	}
 	/* Contact */
-	#contact-body {
+	#contactcontainer {
 		padding: 40px 230px 40px 230px;
 	}
 	input, textarea {
@@ -364,7 +364,7 @@
 	</head>
 	<body>
 	<div id="intro">
-		<div id="intro-body">
+		<div id="introcontainer">
 			<i></i>
 			<p>Flame.ga</p>
 			<h1>Free OP Server in Minecraft</h1>
@@ -372,14 +372,14 @@
 		</div>
 	</div>
 	<div id="about">
-		<div id="about-body">
+		<div id="aboutcontainer">
 			<h2>About</h2>
 			<p>Flame.ga provides you a fun and interesting experience in Minecraft. On this server, you can do whatever you want, without any consequenses; grief, troll, use hacks - you name it. You get access to a large amount of free OP (operator) commands to use whenever you like, as well as a few server plugins, such as WorldEdit and DisguiseCraft. To give you a fresh and lag-free experience, the server will reset once every day.</p>
 			<span>IP</span><i>flame.ga</i>
 		</div>
 	</div>
 	<div id="news">
-		<div id="news-body">
+		<div id="newscontainer">
 			<h2>News</h2>
 			<div id="box">
 				<ul>
@@ -441,7 +441,7 @@
 		</div>
 	</div>
 	<div id="contact">
-		<div id="contact-body">
+		<div id="contactcontainer">
 			<h2>Contact</h2>
 			<form action="https://formspree.io/hello@flame.ga" method="POST">
 				<input type="email" name="_replyto" placeholder="Your email address" required>
