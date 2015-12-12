@@ -60,39 +60,6 @@
 		font-weight: normal;
 		font-style: normal;
 	}
-	/* FadeIn Animation */
-	@-webkit-keyframes fadein {
-		from {
-			opacity:0;
-		}
-		to {
-			opacity:1;
-		}
-	}
-	@-moz-keyframes fadein {
-		from {
-			opacity:0;
-		}
-		to {
-			opacity:1;
-		}
-	}
-	@-ms-keyframes fadein {
-		from {
-			opacity:0;
-		}
-		to {
-			opacity:1;
-		}
-	}
-	@keyframes fadein {
-		from {
-			opacity:0;
-		}
-		to {
-			opacity:1;
-		}
-	}
 	/* Main */
 	html, body, div, span, h1, h2, p, a, s, small, strike, strong, sub, b, u, i, ul, li, form {
 		margin: 0;
@@ -194,9 +161,6 @@
 		font-size: 1.000em;
 		text-align: center;
 		padding: 2.000em 0 2.000em 0;
-		-moz-animation: fadein 1s;
-		-webkit-animation: fadein 1s;
-		animation: fadein 1s;
 	}
 	/* Intro */
 	#intro {
@@ -250,9 +214,10 @@
 	}
 	#about span {
 		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		border: #fff solid 1px;
 		color: #000;
 		background: #fff;
-		padding: 0.438em 0.438em 0.438em 0.625em;
+		padding: 0.375em 0.438em 0.438em 0.625em;
 		border-radius: 0.313em 0 0 0.313em;
 	}
 	#about i {
@@ -350,62 +315,62 @@
 		background: rgba(255,255,255,.05);
 	}
 	@media (min-width: 0px) {
-		html { font-size: 64%; }
+		html { font-size: 76%; }
 		#aboutcontainer, #newscontainer, #contactcontainer { padding-right: 3%; padding-left: 3%; }
 	}
 	@media (min-width: 100px) {
-		html { font-size: 67%; }
+		html { font-size: 78%; }
 	}
 	@media (min-width: 200px) {
-		html { font-size: 70%; }
+		html { font-size: 80%; }
 	}
 	@media (min-width: 300px) {
-		html { font-size: 73%; }
+		html { font-size: 82%; }
 		#newscontainer { padding-right: 4%; padding-left: 4%; }
 		#contactcontainer { padding-right: 4%; padding-left: 4%; }
 	}
 	@media (min-width: 400px) {
-		html { font-size: 76%; }
+		html { font-size: 84%; }
 		#newscontainer { padding-right: 5%; padding-left: 5%; }
 		#contactcontainer { padding-right: 6%; padding-left: 6%; }
 	}
 	@media (min-width: 500px) {
-		html { font-size: 79%; }
+		html { font-size: 86%; }
 		#newscontainer { padding-right: 6%; padding-left: 6%; }
 		#contactcontainer { padding-right: 8%; padding-left: 8%; }
 	}
 	@media (min-width: 600px) {
-		html { font-size: 82%; }
+		html { font-size: 88%; }
 		#aboutcontainer { padding-right: 4%; padding-left: 4%; }
 		#newscontainer { padding-right: 7%; padding-left: 7%; }
 		#contactcontainer { padding-right: 10%; padding-left: 10%; }
 	}
 	@media (min-width: 700px) {
-		html { font-size: 85%; }
+		html { font-size: 90%; }
 		#aboutcontainer { padding-right: 5%; padding-left: 5%; }
 		#newscontainer { padding-right: 8%; padding-left: 8%; }
 		#contactcontainer { padding-right: 12%; padding-left: 12%; }
 	}
 	@media (min-width: 800px) {
-		html { font-size: 88%; }
+		html { font-size: 92%; }
 		#aboutcontainer { padding-right: 6%; padding-left: 6%; }
 		#newscontainer { padding-right: 9%; padding-left: 9%; }
 		#contactcontainer { padding-right: 14%; padding-left: 14%; }
 	}
 	@media (min-width: 900px) {
-		html { font-size: 91%; }
+		html { font-size: 94%; }
 		#aboutcontainer { padding-right: 7%; padding-left: 7%; }
 		#newscontainer { padding-right: 10%; padding-left: 10%; }
 		#contactcontainer { padding-right: 16%; padding-left: 16%; }
 	}
 	@media (min-width: 1000px) {
-		html { font-size: 94%; }
+		html { font-size: 96%; }
 		#aboutcontainer { padding-right: 8%; padding-left: 8%; }
 		#newscontainer { padding-right: 11%; padding-left: 11%; }
 		#contactcontainer { padding-right: 18%; padding-left: 18%; }
 	}
 	@media (min-width: 1100px) {
-		html { font-size: 97%; }
+		html { font-size: 98%; }
 		#aboutcontainer { padding-right: 9%; padding-left: 9%; }
 		#newscontainer { padding-right: 12%; padding-left: 12%; }
 		#contactcontainer { padding-right: 20%; padding-left: 20%; }
@@ -417,40 +382,76 @@
 		#contactcontainer { padding-right: 22%; padding-left: 22%; }
 	}
 	@media (min-width: 1300px) {
-		html { font-size: 103%; }
+		html { font-size: 102%; }
 		#aboutcontainer { padding-right: 11%; padding-left: 11%; }
 		#newscontainer { padding-right: 14%; padding-left: 14%; }
 		#contactcontainer { padding-right: 24%; padding-left: 24%; }
 	}
 	@media (min-width: 1400px) {
-		html { font-size: 106%; }
+		html { font-size: 104%; }
 		#aboutcontainer { padding-right: 12%; padding-left: 12%; }
 		#newscontainer { padding-right: 15%; padding-left: 15%; }
 		#contactcontainer { padding-right: 26%; padding-left: 26%; }
 	}
 	@media (min-width: 1500px) {
-		html { font-size: 109%; }
+		html { font-size: 106%; }
 		#aboutcontainer { padding-right: 13%; padding-left: 13%; }
 		#newscontainer { padding-right: 16%; padding-left: 16%; }
 		#contactcontainer { padding-right: 28%; padding-left: 28%; }
 	}
 	@media (min-width: 1600px) {
-		html { font-size: 112%; }
+		html { font-size: 108%; }
 		#aboutcontainer { padding-right: 14%; padding-left: 14%; }
 		#newscontainer { padding-right: 17%; padding-left: 17%; }
 		#contactcontainer { padding-right: 30%; padding-left: 30%; }
 	}
 	@media (min-width: 1700px) {
-		html { font-size: 115%; }
+		html { font-size: 110%; }
 		#aboutcontainer { padding-right: 15%; padding-left: 15%; }
 		#newscontainer { padding-right: 18%; padding-left: 18%; }
 		#contactcontainer { padding-right: 32%; padding-left: 32%; }
 	}
 	@media (min-width: 1800px) {
-		html { font-size: 119%; }
+		html { font-size: 112%; }
 		#aboutcontainer { padding-right: 16%; padding-left: 16%; }
 		#newscontainer { padding-right: 19%; padding-left: 19%; }
 		#contactcontainer { padding-right: 34%; padding-left: 34%; }
+	}
+	@media (min-width: 1900px) {
+		html { font-size: 112%; }
+		#aboutcontainer { padding-right: 17%; padding-left: 17%; }
+		#newscontainer { padding-right: 20%; padding-left: 20%; }
+		#contactcontainer { padding-right: 36%; padding-left: 36%; }
+	}
+	@media (min-width: 2000px) {
+		html { font-size: 112%; }
+		#aboutcontainer { padding-right: 18%; padding-left: 18%; }
+		#newscontainer { padding-right: 21%; padding-left: 21%; }
+		#contactcontainer { padding-right: 38%; padding-left: 38%; }
+	}
+	@media (min-width: 2100px) {
+		html { font-size: 112%; }
+		#aboutcontainer { padding-right: 19%; padding-left: 19%; }
+		#newscontainer { padding-right: 22%; padding-left: 22%; }
+		#contactcontainer { padding-right: 40%; padding-left: 40%; }
+	}
+	@media (min-width: 2200px) {
+		html { font-size: 112%; }
+		#aboutcontainer { padding-right: 20%; padding-left: 20%; }
+		#newscontainer { padding-right: 23%; padding-left: 23%; }
+		#contactcontainer { padding-right: 42%; padding-left: 42%; }
+	}
+	@media (min-width: 2300px) {
+		html { font-size: 112%; }
+		#aboutcontainer { padding-right: 21%; padding-left: 21%; }
+		#newscontainer { padding-right: 24%; padding-left: 24%; }
+		#contactcontainer { padding-right: 44%; padding-left: 44%; }
+	}
+	@media (min-width: 2400px) {
+		html { font-size: 112%; }
+		#aboutcontainer { padding-right: 22%; padding-left: 22%; }
+		#newscontainer { padding-right: 25%; padding-left: 25%; }
+		#contactcontainer { padding-right: 46%; padding-left: 46%; }
 	}
 	</style>
 	</head>
