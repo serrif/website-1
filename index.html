@@ -223,28 +223,32 @@
 		font-size: 1.025em;
 	}
 	#about p {
-		margin: 0 0 2.375em 0;
+		margin: 0 0 2.125em 0;
 		line-height: 1.6;
 	}
-	#about span {
-		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	#ip, #ip span, #ip i {
+		display: inline-block;
+	}
+	#ip {
 		border: #fff solid 1px;
+		-moz-border-radius: 0.313em;
+		-webkit-border-radius: 0.313em;
+		-o-border-radius: 0.313em;
+		border-radius: 0.313em;
+	}
+	#ip span {
+		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		color: #000;
 		background: #fff;
-		padding: 0.375em 0.438em 0.438em 0.625em;
-		-moz-border-radius: 0.313em 0 0 0.313em;
-		-webkit-border-radius: 0.313em 0 0 0.313em;
-		-o-border-radius: 0.313em 0 0 0.313em;
-		border-radius: 0.313em 0 0 0.313em;
+		padding: 0.500em 0.563em 0.500em 0.625em;
+		-moz-border-radius: 0.313em 0 0 0;
+		-webkit-border-radius: 0.313em 0 0 0;
+		-o-border-radius: 0.313em 0 0 0;
+		border-radius: 0.188em 0 0 0.188em;
 	}
-	#about i {
-		border: #fff solid 1px;
+	#ip i {
 		color: #fff;
-		padding: 0.375em 0.625em 0.438em 0.563em;
-		-moz-border-radius: 0 0.313em 0.313em 0;
-		-webkit-border-radius: 0 0.313em 0.313em 0;
-		-o-border-radius: 0 0.313em 0.313em 0;
-		border-radius: 0 0.313em 0.313em 0;
+		padding: 0.438em 0.563em 0.438em 0.563em;
 	}
 	/* News */
 	#news {
@@ -501,7 +505,7 @@
 		<div id="aboutcontainer">
 			<h2>About</h2>
 			<p>Flame.ga provides you a fun and interesting experience in Minecraft. On this server, you can do whatever you want, without any consequenses; grief, troll, use hacks - you name it. You get access to a large amount of free OP (operator) commands to use whenever you like, as well as a few server plugins, such as WorldEdit and DisguiseCraft. To give you a fresh and lag-free experience, the server will reset once every day.</p>
-			<span>IP</span><i>flame.ga</i>
+			<div id="ip"><span>IP</span><i>flame.ga</i></div>
 		</div>
 	</div>
 	<div id="news">
