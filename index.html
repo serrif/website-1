@@ -159,11 +159,13 @@
 		vertical-align: middle;
 		font-size: 1.000em;
 		text-align: center;
-		padding: 2.000em 0 2.000em 0;
 	}
 	/* Intro */
 	#intro {
 		background: #aa0000;
+	}
+	#introcontainer {
+		padding: 1.875em 0 1.875em 0;
 	}
 	#intro i:before {
 		font-size: 21.875em;
@@ -204,6 +206,9 @@
 		padding: 0.438em 1.188em 0.313em 0.813em;
 	}
 	/* About */
+	#aboutcontainer {
+		padding: 2.000em 5.625em 2.000em 5.625em;
+	}
 	#about h2:before, #contact h2:before, #news h2:before {
 		position: relative;
 		top: 2px;
@@ -241,6 +246,9 @@
 	#news {
 		background: #0b0b0b;
 	}
+	#newscontainer {
+		padding: 2.000em 9.375em 2.000em 9.375em;
+	}
 	#box {
 		height: 60%;
 		overflow: scroll;
@@ -264,6 +272,9 @@
 		color: rgba(255,255,255,.4);
 	}
 	#facebook:before, #twitter:before {
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-o-border-radius: 50%;
 		border-radius: 50%;
 		display: inline-block;
 		padding: 0.188em;
@@ -292,6 +303,9 @@
 		background: rgba(0,132,180,1);
 	}
 	/* Contact */
+	#contactcontainer {
+		padding: 2.000em 14.375em 2.000em 14.375em;
+	}
 	input, textarea {
 		font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-size: 1.000em;
@@ -344,132 +358,132 @@
 	}
 	@media (min-width: 300px) {
 		html { font-size: 82%; }
-		#newscontainer { padding-right: 4%; padding-left: 4%; }
-		#contactcontainer { padding-right: 4%; padding-left: 4%; }
+		#newscontainer { padding: 2.000em 4% 2.000em 4%; }
+		#contactcontainer { padding: 2.000em 4% 2.000em 4%; }
 	}
 	@media (min-width: 400px) {
 		html { font-size: 84%; }
-		#newscontainer { padding-right: 5%; padding-left: 5%; }
-		#contactcontainer { padding-right: 6%; padding-left: 6%; }
+		#newscontainer { padding: 2.000em 5% 2.000em 5%; }
+		#contactcontainer { padding: 2.000em 6% 2.000em 6%; }
 	}
 	@media (min-width: 500px) {
 		html { font-size: 86%; }
-		#newscontainer { padding-right: 6%; padding-left: 6%; }
-		#contactcontainer { padding-right: 8%; padding-left: 8%; }
+		#newscontainer { padding: 2.000em 6% 2.000em 6%; }
+		#contactcontainer { padding: 2.000em 8% 2.000em 8%; }
 	}
 	@media (min-width: 600px) {
 		html { font-size: 88%; }
-		#aboutcontainer { padding-right: 4%; padding-left: 4%; }
-		#newscontainer { padding-right: 7%; padding-left: 7%; }
-		#contactcontainer { padding-right: 10%; padding-left: 10%; }
+		#aboutcontainer { padding: 2.000em 4% 2.000em 4%; }
+		#newscontainer { padding: 2.000em 7% 2.000em 7%; }
+		#contactcontainer { padding: 2.000em 10% 2.000em 10%; }
 	}
 	@media (min-width: 700px) {
 		html { font-size: 90%; }
-		#aboutcontainer { padding-right: 5%; padding-left: 5%; }
-		#newscontainer { padding-right: 8%; padding-left: 8%; }
-		#contactcontainer { padding-right: 12%; padding-left: 12%; }
+		#aboutcontainer { padding: 2.000em 5% 2.000em 5%; }
+		#newscontainer { padding: 2.000em 8% 2.000em 8%; }
+		#contactcontainer { padding: 2.000em 12% 2.000em 12%; }
 	}
 	@media (min-width: 800px) {
 		html { font-size: 92%; }
-		#aboutcontainer { padding-right: 6%; padding-left: 6%; }
-		#newscontainer { padding-right: 9%; padding-left: 9%; }
-		#contactcontainer { padding-right: 14%; padding-left: 14%; }
+		#aboutcontainer { padding: 2.000em 6% 2.000em 6%; }
+		#newscontainer { padding: 2.000em 9% 2.000em 9%; }
+		#contactcontainer { padding: 2.000em 14% 2.000em 14%; }
 	}
 	@media (min-width: 900px) {
 		html { font-size: 94%; }
-		#aboutcontainer { padding-right: 7%; padding-left: 7%; }
-		#newscontainer { padding-right: 10%; padding-left: 10%; }
-		#contactcontainer { padding-right: 16%; padding-left: 16%; }
+		#aboutcontainer { padding: 2.000em 7% 2.000em 7%; }
+		#newscontainer { padding: 2.000em 10% 2.000em 10%; }
+		#contactcontainer { padding: 2.000em 16% 2.000em 16%; }
 	}
 	@media (min-width: 1000px) {
 		html { font-size: 96%; }
-		#aboutcontainer { padding-right: 8%; padding-left: 8%; }
-		#newscontainer { padding-right: 11%; padding-left: 11%; }
-		#contactcontainer { padding-right: 18%; padding-left: 18%; }
+		#aboutcontainer { padding: 2.000em 8% 2.000em 8%; }
+		#newscontainer { padding: 2.000em 11% 2.000em 11%; }
+		#contactcontainer { padding: 2.000em 18% 2.000em 18%; }
 	}
 	@media (min-width: 1100px) {
 		html { font-size: 98%; }
-		#aboutcontainer { padding-right: 9%; padding-left: 9%; }
-		#newscontainer { padding-right: 12%; padding-left: 12%; }
-		#contactcontainer { padding-right: 20%; padding-left: 20%; }
+		#aboutcontainer { padding: 2.000em 9% 2.000em 9%; }
+		#newscontainer { padding: 2.000em 12% 2.000em 12%; }
+		#contactcontainer { padding: 2.000em 20% 2.000em 20%; }
 	}
 	@media (min-width: 1200px) {
 		html { font-size: 100%; }
-		#aboutcontainer { padding-right: 10%; padding-left: 10%; }
-		#newscontainer { padding-right: 13%; padding-left: 13%; }
-		#contactcontainer { padding-right: 22%; padding-left: 22%; }
+		#aboutcontainer { padding: 2.000em 10% 2.000em 10%; }
+		#newscontainer { padding: 2.000em 13% 2.000em 13%; }
+		#contactcontainer { padding: 2.000em 22% 2.000em 22%; }
 	}
 	@media (min-width: 1300px) {
 		html { font-size: 102%; }
-		#aboutcontainer { padding-right: 11%; padding-left: 11%; }
-		#newscontainer { padding-right: 14%; padding-left: 14%; }
-		#contactcontainer { padding-right: 24%; padding-left: 24%; }
+		#aboutcontainer { padding: 2.000em 11% 2.000em 11%; }
+		#newscontainer { padding: 2.000em 14% 2.000em 14%; }
+		#contactcontainer { padding: 2.000em 24% 2.000em 24%; }
 	}
 	@media (min-width: 1400px) {
 		html { font-size: 104%; }
-		#aboutcontainer { padding-right: 12%; padding-left: 12%; }
-		#newscontainer { padding-right: 15%; padding-left: 15%; }
-		#contactcontainer { padding-right: 26%; padding-left: 26%; }
+		#aboutcontainer { padding: 2.000em 12% 2.000em 12%; }
+		#newscontainer { padding: 2.000em 15% 2.000em 15%; }
+		#contactcontainer { padding: 2.000em 26% 2.000em 26%; }
 	}
 	@media (min-width: 1500px) {
 		html { font-size: 106%; }
-		#aboutcontainer { padding-right: 13%; padding-left: 13%; }
-		#newscontainer { padding-right: 16%; padding-left: 16%; }
-		#contactcontainer { padding-right: 28%; padding-left: 28%; }
+		#aboutcontainer { padding: 2.000em 13% 2.000em 13%; }
+		#newscontainer { padding: 2.000em 16% 2.000em 16%; }
+		#contactcontainer { padding: 2.000em 28% 2.000em 28%; }
 	}
 	@media (min-width: 1600px) {
 		html { font-size: 108%; }
-		#aboutcontainer { padding-right: 14%; padding-left: 14%; }
-		#newscontainer { padding-right: 17%; padding-left: 17%; }
-		#contactcontainer { padding-right: 29%; padding-left: 29%; }
+		#aboutcontainer { padding: 2.000em 14% 2.000em 14%; }
+		#newscontainer { padding: 2.000em 17% 2.000em 17%; }
+		#contactcontainer { padding: 2.000em 29% 2.000em 29%; }
 	}
 	@media (min-width: 1700px) {
 		html { font-size: 110%; }
-		#aboutcontainer { padding-right: 15%; padding-left: 15%; }
-		#newscontainer { padding-right: 18%; padding-left: 18%; }
-		#contactcontainer { padding-right: 30%; padding-left: 30%; }
+		#aboutcontainer { padding: 2.000em 15% 2.000em 15%; }
+		#newscontainer { padding-right: padding: 2.000em 18% 2.000em 18%; }
+		#contactcontainer { padding: 2.000em 30% 2.000em 30%; }
 	}
 	@media (min-width: 1800px) {
 		html { font-size: 112%; }
-		#aboutcontainer { padding-right: 16%; padding-left: 16%; }
-		#newscontainer { padding-right: 19%; padding-left: 19%; }
-		#contactcontainer { padding-right: 31%; padding-left: 31%; }
+		#aboutcontainer { padding: 2.000em 16% 2.000em 16%; }
+		#newscontainer { padding: 2.000em 19% 2.000em 19%; }
+		#contactcontainer { padding: 2.000em 31% 2.000em 31%; }
 	}
 	@media (min-width: 1900px) {
 		html { font-size: 114%; }
-		#aboutcontainer { padding-right: 17%; padding-left: 17%; }
-		#newscontainer { padding-right: 20%; padding-left: 20%; }
-		#contactcontainer { padding-right: 32%; padding-left: 32%; }
+		#aboutcontainer { padding: 2.000em 17% 2.000em 17%; }
+		#newscontainer { padding: 2.000em 20% 2.000em 20%; }
+		#contactcontainer { padding: 2.000em 32% 2.000em 32%; }
 	}
 	@media (min-width: 2000px) {
 		html { font-size: 116%; }
-		#aboutcontainer { padding-right: 18%; padding-left: 18%; }
-		#newscontainer { padding-right: 21%; padding-left: 21%; }
-		#contactcontainer { padding-right: 33%; padding-left: 33%; }
+		#aboutcontainer { padding: 2.000em 18% 2.000em 18%; }
+		#newscontainer { padding: 2.000em 21% 2.000em 21%; }
+		#contactcontainer { padding: 2.000em 33% 2.000em 33%; }
 	}
 	@media (min-width: 2100px) {
 		html { font-size: 118%; }
-		#aboutcontainer { padding-right: 19%; padding-left: 19%; }
-		#newscontainer { padding-right: 22%; padding-left: 22%; }
-		#contactcontainer { padding-right: 34%; padding-left: 34%; }
+		#aboutcontainer { padding: 2.000em 19% 2.000em 19%; }
+		#newscontainer { padding: 2.000em 22% 2.000em 22%; }
+		#contactcontainer { padding: 2.000em 34% 2.000em 34%; }
 	}
 	@media (min-width: 2200px) {
 		html { font-size: 120%; }
-		#aboutcontainer { padding-right: 20%; padding-left: 20%; }
-		#newscontainer { padding-right: 23%; padding-left: 23%; }
-		#contactcontainer { padding-right: 36%; padding-left: 36%; }
+		#aboutcontainer { padding: 2.000em 20% 2.000em 20%; }
+		#newscontainer { padding: 2.000em 23% 2.000em 23%; }
+		#contactcontainer { padding: 2.000em 36% 2.000em 36%; }
 	}
 	@media (min-width: 2300px) {
 		html { font-size: 122%; }
-		#aboutcontainer { padding-right: 21%; padding-left: 21%; }
-		#newscontainer { padding-right: 24%; padding-left: 24%; }
-		#contactcontainer { padding-right: 37%; padding-left: 37%; }
+		#aboutcontainer { padding: 2.000em 21% 2.000em 21%; }
+		#newscontainer { padding: 2.000em 24% 2.000em 24%; }
+		#contactcontainer { padding: 2.000em 37% 2.000em 37%; }
 	}
 	@media (min-width: 2400px) {
 		html { font-size: 124%; }
-		#aboutcontainer { padding-right: 22%; padding-left: 22%; }
-		#newscontainer { padding-right: 25%; padding-left: 25%; }
-		#contactcontainer { padding-right: 38%; padding-left: 38%; }
+		#aboutcontainer { padding: 2.000em 22% 2.000em 22%; }
+		#newscontainer { padding: 2.000em 25% 2.000em 25%; }
+		#contactcontainer { padding: 2.000em 38% 2.000em 38%; }
 	}
 	</style>
 	</head>
