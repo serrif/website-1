@@ -88,6 +88,13 @@
 		background: #7b7b7b;
 		background: rgba(255,255,255,.04);
 	}
+	h2:before {
+		font-family: 'icons';
+		content: "\2709";
+		position: relative;
+		top: 2px;
+		margin: 0 0.625em 0 0;
+	}
 	h2 {
 		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-size: 1.750em;
@@ -100,14 +107,23 @@
 	p {
 		margin: 0 0 2.375em 0;
 		line-height: 1.6;
+		cursor: default;
 	}
 	a {
 		text-decoration: none;
-		color: rgba(255,255,255,.4);
-		transition: all .2s ease-in-out;
+		text-transform: uppercase;
+		color: #fff;
+		border: #fff solid 1px;
+		padding: 0.500em 0.625em 0.500em 0.688em;
+		margin: 1.625em 0 0 0;
+		-moz-border-radius: 0.313em;
+		-webkit-border-radius: 0.313em;
+		-o-border-radius: 0.313em;
+		border-radius: 0.313em;
+		transition: background .2s ease-in-out;
 	}
 	a:hover, a:focus {
-		color: rgba(255,255,255,.2);
+		background: rgba(255,255,255,.05);
 	}
 	/* Contact */
 	#contact {
@@ -123,28 +139,6 @@
 		padding: 2.000em 5.625em 2.000em 5.625em;
 		font-size: 1.000em;
 		text-align: center;
-	}
-	#contact h2:before {
-		font-family: 'icons';
-		content: "\2709";
-		position: relative;
-		top: 2px;
-		margin: 0 0.625em 0 0;
-	}
-	#contact a {
-		text-transform: uppercase;
-		color: #fff;
-		border: #fff solid 1px;
-		padding: 0.500em 0.625em 0.500em 0.688em;
-		margin: 1.625em 0 0 0;
-		-moz-border-radius: 0.313em;
-		-webkit-border-radius: 0.313em;
-		-o-border-radius: 0.313em;
-		border-radius: 0.313em;
-		transition: background .2s ease-in-out;
-	}
-	#contact a:hover {
-		background: rgba(255,255,255,.05);
 	}
 	/* Responsive Design */
 	@media (min-width: 0px) {
