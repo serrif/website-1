@@ -120,35 +120,36 @@
 	html, body {
 		width: 100%;
 		height: 100%;
-		margin: 0;
-		padding: 0;
 	}
 	body {
 		font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		color: #fff;
 		background: #000;
-		webkit-tap-highlight-color: rgba(255,255,255,.2);
+		-webkit-tap-highlight-color: rgba(255,255,255,.2);
 		animation: fadein 1.5s;
+		line-height: 1;
 	}
 	::-moz-selection {
-		background: #fcfcfc;
-		background: rgba(255,255,255,.2);
+		background: #7b7b7b;
+		background: rgba(255,255,255,.04);
 	}
 	::selection {
-		background: #fcfcfc;
-		background: rgba(255,255,255,.2);
+		background: #7b7b7b;
+		background: rgba(255,255,255,.04);
 	}
 	::-webkit-input-placeholder {
-		color: #808080;
+		color: rgba(0,0,0,.6);
 	}
 	:-moz-placeholder {
-		color: #808080;
+		color: rgba(0,0,0,.6);
+		opacity: 1;
 	}
 	::-moz-placeholder {
-		color: #808080;
+		color: rgba(0,0,0,.6);
+		opacity: 1;
 	}
 	:-ms-input-placeholder {
-		color: #808080;
+		color: rgba(0,0,0,.6);
 	}
 	h1, h2, h3, p, #logo, #ip {
 		cursor: default;
@@ -165,18 +166,17 @@
 		font-weight: normal;
 	}
 	h1 {
+		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-size: 16px;
 		text-transform: uppercase;
-		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-		margin: 0 0 45px 0;
-		line-height: 16px;
+		margin: 0 0 38px 0;
+		line-height: 30px;
 	}
 	h2 {
+		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-size: 28px;
 		text-transform: uppercase;
-		text-align: center;
-		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-		margin: 0 0 25px;
+		margin: 0 0 25px 0;
 	}
 	a {
 		text-decoration: none;
@@ -195,11 +195,11 @@
 	#intro a:last-of-type:before, #contact h2:before {
 		content: "\2709";
 	}
-	#intro, #news {
-		color: #fff;
-		display: table;
+	#intro, #about, #news, #contact {
 		width: 100%;
 		height: 100%;
+		color: #fff;
+		display: table;
 	}
 	#intro {
 		background: #aa0000;
@@ -210,16 +210,12 @@
 		text-align: center;
 		padding: 30px 0 30px 0;
 	}
-	#intro a:before {
-		top: 1px;
-		position: relative;
-	}
 	#intro a {
 		background: #fff;
 		color: #aa0000;
 		font-size: 19px;
 		transition: background .2s ease-in-out;
-		padding: 7px 15px 7px 15px;
+		padding: 8px 15px 6px 15px;
 	}
 	#intro a:hover {
 		background: rgba(255,255,255,0.9);
@@ -227,17 +223,16 @@
 	#intro a:first-of-type {
 		border-radius: 21px 0px 0px 21px;
 		border-right: 1px solid #aa0000;
-		padding: 7px 14px 7px 20px;
+		padding: 8px 14px 6px 20px;
 	}
 	#intro a:last-of-type {
 		border-radius: 0px 21px 21px 0px;
 		border-left: 1px solid #aa0000;
-		padding: 7px 20px 7px 14px;
-
+		padding: 8px 20px 6px 14px;
 	}
 	#icon:before {
 		font-size: 350px;
-		line-height: 390px;
+		line-height: 400px;
 		content: "\1F525";
 	}
 	#logo {
@@ -246,13 +241,6 @@
 		font-family: montserratbold,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		letter-spacing: 1px;
 		text-align: center;
-		margin: 0;
-	}
-	#about, #news, #contact {
-		width: 100%;
-		height: 100%;
-		color: #fff;
-		display: table;
 	}
 	#about, #contact {
 		background: #000;
@@ -263,23 +251,24 @@
 	#about-body, #news-body, #contact-body {
 		display: table-cell;
 		vertical-align: middle;
-		padding: 40px 90px 40px 90px;
 		font-size: 16px;
 		text-align: center;
+	}
+	#about-body {
+		padding: 40px 90px 40px 90px;
 	}
 	#news-body {
 		padding: 40px 150px 40px 150px;
 	}
 	#contact-body {
-		padding: 40px 210px 40px 210px;
+		padding: 40px 230px 40px 230px;
 	}
 	#about p {
 		text-align: center;
-		margin: 0 0 40px;
+		margin: 0 0 40px 0;
 		line-height: 1.6;
 	}
 	#about h2:before, #contact h2:before, #news h2:before {
-		font-weight: normal;
 		position: relative;
 		top: 2px;
 		margin: 0 16px 0 0;
@@ -292,13 +281,13 @@
 		color: #000;
 		background: #fff;
 		padding: 7px 7px 7px 10px;
-		border-radius: 6px 0px 0px 6px;
+		border-radius: 5px 0px 0px 5px;
 	}
 	#ip-address {
 		border: #fff solid 1px;
 		color: #fff;
 		padding: 6px 10px 7px 9px;
-		border-radius: 0px 6px 6px 0px;
+		border-radius: 0px 5px 5px 0px;
 	}
 	#box {
 		height: 60%;
@@ -318,7 +307,7 @@
 	#box li:last-child {
 		margin: 0;
 	}
-	.date {
+	#box span {
 		font-size: 13px;
 		color: rgba(255,255,255,.4);
 	}
@@ -350,23 +339,6 @@
 	#twitter:hover:before {
 		background: rgba(0,132,180,1);
 	}
-	label {
-		text-align: left;
-		margin: 0 0 24px 0;
-		display: block;
-	}
-	label span {
-		display: block;
-		margin: 0 0 12px 0;
-		font-size: 16px;
-	}
-	label input, label textarea {
-		width: 100%;
-		box-sizing: border-box;
-	}
-	label:last-of-type {
-		margin: 0;
-	}
 	input, textarea {
 		font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-size: 16px;
@@ -375,12 +347,14 @@
 		background: #fff;
 		padding: 9px 11px 9px 11px;
 		border-radius: 4px;
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
 		transition: background .2s ease-in-out;
 		resize: none;
-		margin: 0;
 	}
-	input:focus, textarea:focus {
-		background: rgba(255,255,255,.9);
+	input {
+		margin: 0 0 24px 0;
 	}
 	button {
 		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -389,8 +363,8 @@
 		color: #fff;
 		background: none;
 		border: #fff solid 1px;
-		margin: 35px 0 0 0;
 		padding: 8px 10px 8px 11px;
+		margin: 26px 0 0 0;
 		border-radius: 5px;
 		cursor: pointer;
 		transition: background .2s ease-in-out;
@@ -423,55 +397,55 @@
 				<ul>
 					<li>
 						<p>We've created a new spawn for the server and added a Flatlands world for easier building.</p>
-						<span class="date">November 17, 2015</span>
+						<span>November 17, 2015</span>
 					</li>
 					<li>
 						<p>The server has been moved to a new host with better specs! It should also restart much faster than before after a crash.</p>
-						<span class="date">October 4, 2015</span>
+						<span>October 4, 2015</span>
 					</li>
 					<li>
 						<p>Players can now get some nice ranks/tags using the commands /rank and /ranks.</p>
-						<span class="date">September 2, 2015</span>
+						<span>September 2, 2015</span>
 					</li>
 					<li>
 						<p>We've unblocked another command! You'll have to find out which one it is though. ;)</p>
-						<span class="date">August 11, 2015</span>
+						<span>August 11, 2015</span>
 					</li>
 					<li>
 						<p>A "News" section has been added to our website. We've also created a contact form to make it easier for you to send us messages.</p>
-						<span class="date">June 21, 2015</span>
+						<span>June 21, 2015</span>
 					</li>
 					<li>
 						<p>The server should once again run 24/7, after having to solve a few problems. Apologies for the recent downtime.</p>
-						<span class="date">June 15, 2015</span>
+						<span>June 15, 2015</span>
 					</li>
 					<li>
 						<p>We've migrated to a new hosting provider with better server specifications!</p>
-						<span class="date">May 28, 2015</span>
+						<span>May 28, 2015</span>
 					</li>
 					<li>
 						<p>There have been a few issues with our email address recently, which resulted in emails not getting sent to us. We have now fixed it.</p>
-						<span class="date">May 2, 2015</span>
+						<span>May 2, 2015</span>
 					</li>
 					<li>
 						<p>Recently, DisguiseCraft stopped working due to a new issue in the server software. We will push a fix for this tomorrow. Another little detail; you will also be able to spawn and disguise as a Giant.</p>
-						<span class="date">April 25, 2015</span>
+						<span>April 25, 2015</span>
 					</li>
 					<li>
 						<p>A few new commands have been added to the server.</p>
-						<span class="date">April 12, 2015</span>
+						<span>April 12, 2015</span>
 					</li>
 					<li>
 						<p>The server is finally online again, now with a new IP: flame.ga</p>
-						<span class="date">April 12, 2015</span>
+						<span>April 12, 2015</span>
 					</li>
 					<li>
 						<p>Our website has been updated.</p>
-						<span class="date">February 16, 2015</span>
+						<span>February 16, 2015</span>
 					</li>
 					<li>
 						<p>The server was created.</p>
-						<span class="date">June 2, 2014</span>
+						<span>June 2, 2014</span>
 					</li>
 				</ul>
 			</div>
@@ -482,14 +456,8 @@
 		<div id="contact-body">
 			<h2>Contact</h2>
 			<form action="https://formspree.io/hello@flame.ga" method="POST">
-				<label>
-					<span>Email</span>
-					<input type="email" name="_replyto" placeholder="Enter your email address" required>
-				</label>
-				<label>
-					<span>Message</span>
-					<textarea name="body" rows="10" placeholder="Enter your message" required></textarea>
-				</label>
+				<input type="email" name="_replyto" placeholder="Your email address" required>
+				<textarea name="body" rows="10" placeholder="Your message" required></textarea>
 				<input type="hidden" name="_next" value="/sent"/>
 				<button type="submit">Send</button>
 			</form>
