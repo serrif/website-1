@@ -4,8 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Flame.ga provides you a fun and interesting experience in Minecraft. On this server, you can do whatever you want, without any consequenses; grief, troll, use hacks - you name it.">
+	<meta property="twitter:title" content="Flame.ga &#187; Free OP Server" />
 	<title>Flame.ga &#187; Free OP Server</title>
 	<style type="text/css">
+	/* Fonts */
 	@font-face {
 		font-family: 'montserratlight';
 		src: url('fonts/montserrat-light.eot');
@@ -58,6 +60,7 @@
 		font-weight: normal;
 		font-style: normal;
 	}
+	/* FadeIn Animation */
 	@-webkit-keyframes fadein {
 		from {
 			opacity:0;
@@ -90,6 +93,7 @@
 			opacity:1;
 		}
 	}
+	/* Main */
 	html, body, div, span, h1, h2, p, a, s, small, strike, strong, sub, b, u, i, ul, li, form {
 		margin: 0;
 		padding: 0;
@@ -104,12 +108,10 @@
 	}
 	body {
 		font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 16px;
 		color: #fff;
 		background: #000;
 		-webkit-tap-highlight-color: rgba(255,255,255,.2);
-		-moz-animation: fadein 1s;
-		-webkit-animation: fadein 1s;
-		animation: fadein 1s;
 		line-height: 1;
 	}
 	::-moz-selection {
@@ -133,15 +135,6 @@
 	}
 	:-ms-input-placeholder {
 		color: rgba(0,0,0,.6);
-	}
-	h1, h2, p, #box, #logo, #about span {
-		cursor: default;
-	}
-	input:focus, textarea:focus, button:hover, button:focus, #intro a:hover, #intro a:focus {
-		outline: 0;
-	}
-	#facebook:before, h2:before, #intro i, #intro a:before, #twitter:before {
-		font-family: 'icons';
 	}
 	h1, h2 {
 		text-transform: uppercase;
@@ -167,6 +160,16 @@
 	a:hover, a:focus {
 		color: rgba(255,255,255,.2);
 	}
+	/* Combined Rules */
+	h1, h2, p, #box, #logo, #about span {
+		cursor: default;
+	}
+	input:focus, textarea:focus, button:hover, button:focus, #intro a:hover, #intro a:focus {
+		outline: 0;
+	}
+	#facebook:before, h2:before, #intro i, #intro a:before, #twitter:before {
+		font-family: 'icons';
+	}
 	#intro a:first-of-type:before, #about h2:before {
 		content: "\2139";
 	}
@@ -182,13 +185,23 @@
 		color: #fff;
 		display: table;
 	}
+	#about, #contact {
+		background: #000;
+	}
+	#intro-body, #about-body, #news-body, #contact-body {
+		display: table-cell;
+		vertical-align: middle;
+		font-size: 16px;
+		text-align: center;
+		-moz-animation: fadein 1s;
+		-webkit-animation: fadein 1s;
+		animation: fadein 1s;
+	}
+	/* Intro */
 	#intro {
 		background: #aa0000;
 	}
 	#intro-body {
-		display: table-cell;
-		vertical-align: middle;
-		text-align: center;
 		padding: 30px 0 30px 0;
 	}
 	#intro i:before {
@@ -223,31 +236,9 @@
 		border-left: 1px solid #aa0000;
 		padding: 8px 20px 6px 14px;
 	}
-	#about, #contact {
-		background: #000;
-	}
-	#news {
-		background: #0b0b0b;
-	}
-	#about-body, #news-body, #contact-body {
-		display: table-cell;
-		vertical-align: middle;
-		font-size: 16px;
-		text-align: center;
-	}
+	/* About */
 	#about-body {
 		padding: 40px 90px 40px 90px;
-	}
-	#news-body {
-		padding: 40px 150px 40px 150px;
-	}
-	#contact-body {
-		padding: 40px 230px 40px 230px;
-	}
-	#about p {
-		text-align: center;
-		margin: 0 0 40px 0;
-		line-height: 1.6;
 	}
 	#about h2:before, #contact h2:before, #news h2:before {
 		position: relative;
@@ -256,6 +247,11 @@
 	}
 	#about h2:before {
 		font-size: 29px;
+	}
+	#about p {
+		text-align: center;
+		margin: 0 0 40px 0;
+		line-height: 1.6;
 	}
 	#about span {
 		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -269,6 +265,13 @@
 		color: #fff;
 		padding: 6px 10px 7px 9px;
 		border-radius: 0px 5px 5px 0px;
+	}
+	/* News */
+	#news {
+		background: #0b0b0b;
+	}
+	#news-body {
+		padding: 40px 150px 40px 150px;
 	}
 	#box {
 		height: 60%;
@@ -319,6 +322,10 @@
 	}
 	#twitter:hover:before {
 		background: rgba(0,132,180,1);
+	}
+	/* Contact */
+	#contact-body {
+		padding: 40px 230px 40px 230px;
 	}
 	input, textarea {
 		font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
