@@ -97,19 +97,7 @@
 			opacity:1;
 		}
 	}
-	html, body, div, span, applet, object, iframe,
-	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-	a, abbr, acronym, address, big, cite, code,
-	del, dfn, em, img, ins, kbd, q, s, samp,
-	small, strike, strong, sub, sup, tt, var,
-	b, u, i, center,
-	dl, dt, dd, ol, ul, li,
-	fieldset, form, label, legend,
-	table, caption, tbody, tfoot, thead, tr, th, td,
-	article, aside, canvas, details, embed, 
-	figure, figcaption, footer, header, hgroup, 
-	menu, nav, output, ruby, section, summary,
-	time, mark, audio, video {
+	html, body, div, span, h1, h2, p, a, s, small, strike, strong, sub, b, u, i, ul, li, form {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -151,16 +139,16 @@
 	:-ms-input-placeholder {
 		color: rgba(0,0,0,.6);
 	}
-	h1, h2, h3, p, #logo, #ip {
+	h1, h2, p, #box, #logo, #about span {
 		cursor: default;
 	}
 	input:focus, textarea:focus, button:hover, button:focus, #intro a:hover, #intro a:focus {
 		outline: 0;
 	}
-	#facebook:before, h2:before, #icon, #intro a:before, #twitter:before {
+	#facebook:before, h2:before, #intro i, #intro a:before, #twitter:before {
 		font-family: 'icons';
 	}
-	h1, h2, h3 {
+	h1, h2 {
 		text-transform: uppercase;
 		font-style: normal;
 		font-weight: normal;
@@ -168,14 +156,12 @@
 	h1 {
 		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-size: 16px;
-		text-transform: uppercase;
 		margin: 0 0 38px 0;
 		line-height: 30px;
 	}
 	h2 {
 		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-size: 28px;
-		text-transform: uppercase;
 		margin: 0 0 25px 0;
 	}
 	a {
@@ -210,6 +196,18 @@
 		text-align: center;
 		padding: 30px 0 30px 0;
 	}
+	#intro i:before {
+		font-size: 350px;
+		line-height: 400px;
+		content: "\1F525";
+	}
+	#intro p {
+		font-size: 49px;
+		text-transform: uppercase;
+		font-family: montserratbold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		letter-spacing: 1px;
+		text-align: center;
+	}
 	#intro a {
 		background: #fff;
 		color: #aa0000;
@@ -218,7 +216,7 @@
 		padding: 8px 15px 6px 15px;
 	}
 	#intro a:hover {
-		background: rgba(255,255,255,0.9);
+		background: rgba(255,255,255,.9);
 	}
 	#intro a:first-of-type {
 		border-radius: 21px 0px 0px 21px;
@@ -229,18 +227,6 @@
 		border-radius: 0px 21px 21px 0px;
 		border-left: 1px solid #aa0000;
 		padding: 8px 20px 6px 14px;
-	}
-	#icon:before {
-		font-size: 350px;
-		line-height: 400px;
-		content: "\1F525";
-	}
-	#logo {
-		font-size: 49px;
-		text-transform: uppercase;
-		font-family: montserratbold,"Helvetica Neue",Helvetica,Arial,sans-serif;
-		letter-spacing: 1px;
-		text-align: center;
 	}
 	#about, #contact {
 		background: #000;
@@ -276,14 +262,14 @@
 	#about h2:before {
 		font-size: 29px;
 	}
-	#ip-label {
+	#about span {
 		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		color: #000;
 		background: #fff;
 		padding: 7px 7px 7px 10px;
 		border-radius: 5px 0px 0px 5px;
 	}
-	#ip-address {
+	#about i {
 		border: #fff solid 1px;
 		color: #fff;
 		padding: 6px 10px 7px 9px;
@@ -326,14 +312,14 @@
 		margin: 0 0 0 6px;
 	}
 	#facebook:before {
-		background: rgba(59,89,152,0.7);
+		background: rgba(59,89,152,.7);
 		content: '\f09a';
 	}
 	#facebook:hover:before {
-		background: rgba(59,89,152,0.9);
+		background: rgba(59,89,152,.9);
 	}
 	#twitter:before {
-		background: rgba(0,132,180,0.8);
+		background: rgba(0,132,180,.8);
 		content: '\f099';
 	}
 	#twitter:hover:before {
@@ -377,8 +363,8 @@
 	<body>
 	<div id="intro">
 		<div id="intro-body">
-			<p id="icon"></p>
-			<p id="logo">Flame.ga</p>
+			<i></i>
+			<p>Flame.ga</p>
 			<h1>Free OP Server in Minecraft</h1>
 			<a href="#about" title="About"></a><a href="#news" title="News"></a><a href="#contact" title="Contact"></a>
 		</div>
@@ -387,7 +373,7 @@
 		<div id="about-body">
 			<h2>About</h2>
 			<p>Flame.ga provides you a fun and interesting experience in Minecraft. On this server, you can do whatever you want, without any consequenses; grief, troll, use hacks - you name it. You get access to a large amount of free OP (operator) commands to use whenever you like, as well as a few server plugins, such as WorldEdit and DisguiseCraft. To give you a fresh and lag-free experience, the server will reset once every day.</p>
-			<span id="ip-label">IP</span><span id="ip-address">flame.ga</span>
+			<span>IP</span><i>flame.ga</i>
 		</div>
 	</div>
 	<div id="news">
