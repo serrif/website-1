@@ -136,13 +136,13 @@
 	#facebook:before, h2:before, #intro i, #intro a:before, #twitter:before {
 		font-family: 'icons';
 	}
-	#intro a:first-of-type:before, #about h2:before {
+	#aboutbutton:before, #about h2:before {
 		content: "\2139";
 	}
-	#intro a:before, #news h2:before {
+	#newsbutton:before, #news h2:before {
 		content: "\1F56B";
 	}
-	#intro a:last-of-type:before, #contact h2:before {
+	#contactbutton:before, #contact h2:before {
 		content: "\2709";
 	}
 	#intro, #about, #news, #contact {
@@ -184,12 +184,11 @@
 		color: #aa0000;
 		font-size: 1.188em;
 		transition: background .2s ease-in-out;
-		padding: 0.438em 0.875em 0.313em 0.875em;
 	}
 	#intro a:hover {
 		background: rgba(255,255,255,.9);
 	}
-	#intro a:first-of-type {
+	#aboutbutton {
 		-moz-border-radius: 1.313em 0 0 1.313em;
 		-webkit-border-radius: 1.313em 0 0 1.313em;
 		-o-border-radius: 1.313em 0 0 1.313em;
@@ -197,7 +196,10 @@
 		border-right: 1px solid #aa0000;
 		padding: 0.438em 0.813em 0.313em 1.188em;
 	}
-	#intro a:last-of-type {
+	#newsbutton {
+		padding: 0.438em 0.875em 0.313em 0.875em;
+	}
+	#contactbutton {
 		-moz-border-radius: 0 1.313em 1.313em 0;
 		-webkit-border-radius: 0 1.313em 1.313em 0;
 		-o-border-radius: 0 1.313em 1.313em 0;
@@ -493,7 +495,7 @@
 			<i></i>
 			<p>Flame.ga</p>
 			<h1>Free OP Server in Minecraft</h1>
-			<a href="#about" title="About"></a><a href="#news" title="News"></a><a href="#contact" title="Contact"></a>
+			<a href="#about" id="aboutbutton" title="About"></a><a href="#news" id="newsbutton" title="News"></a><a href="#contact"  id="contactbutton" title="Contact"></a>
 		</div>
 	</div>
 	<div id="about">
