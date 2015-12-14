@@ -60,6 +60,23 @@
 		font-weight: normal;
 		font-style: normal;
 	}
+	/* Animation */
+	@-moz-keyframes fadein{
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+	@-webkit-keyframes fadein {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+	@-o-keyframes fadein {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+	@keyframes fadein{
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
 	/* Main */
 	html, body, div, span, h1, h2, p, a, s, small, strike, strong, sub, b, u, i, ul, li, form {
 		margin: 0;
@@ -173,6 +190,10 @@
 		vertical-align: middle;
 		font-size: 1.000em;
 		text-align: center;
+		-moz-animation: fadein 1s;
+		-webkit-animation: fadein 1s;
+		-o-animation: fadein 1s;
+		animation: fadein 1s;
 	}
 	/* Intro */
 	#intro {

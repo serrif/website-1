@@ -59,6 +59,23 @@
 		font-weight: normal;
 		font-style: normal;
 	}
+	/* Animation */
+	@-moz-keyframes fadein{
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+	@-webkit-keyframes fadein {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+	@-o-keyframes fadein {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+	@keyframes fadein{
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
 	/* Main */
 	html, body, div, h2, p, a {
 		margin: 0;
@@ -143,6 +160,10 @@
 		padding: 2.000em 5.625em 2.000em 5.625em;
 		font-size: 1.000em;
 		text-align: center;
+		-moz-animation: fadein 1s;
+		-webkit-animation: fadein 1s;
+		-o-animation: fadein 1s;
+		animation: fadein 1s;
 	}
 	/* Responsive Design */
 	@media (min-width: 0px) {
