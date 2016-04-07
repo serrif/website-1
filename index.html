@@ -102,7 +102,7 @@
 		color: rgba(255,255,255,.2);
 	}
 	/* Combined Rules */
-	a, a:before, button {
+	a, a:before {
 		-moz-transition: all .15s ease-in-out;
 		-webkit-transition: all .15s ease-in-out;
 		-o-transition: all .15s ease-in-out;
@@ -110,9 +110,6 @@
 	}
 	h1, h2, p, #box, #logo, #about span {
 		cursor: default;
-	}
-	input:focus, textarea:focus, button:hover, button:focus, #intro a:hover, #intro a:focus {
-		outline: 0;
 	}
 	#facebook:before, h2:before, #intro i, #intro a:before, #twitter:before {
 		font-family: 'icons';
@@ -129,10 +126,9 @@
 	#intro, #about, #news {
 		width: 100%;
 		height: 100%;
-		color: #fff;
 		display: table;
 	}
-	#about {
+	#about, #downloads {
 		background: #000;
 	}
 	#introcontainer, #aboutcontainer, #newscontainer, #downloadscontainer {
@@ -176,7 +172,6 @@
 	}
 	#newsbutton {
 		padding: 0.438em 0.875em 0.313em 0.875em;
-		border-right: 1px solid #aa0000;
 	}
 	#downloadsbutton {
 		border-radius: 0 1.313em 1.313em 0;
@@ -272,8 +267,6 @@
 	#downloads {
 		width: 100%;
 		height: 40%;
-		background: #0b0b0b;
-		color: #fff;
 		display: table;
 	}
 	#downloads a {
