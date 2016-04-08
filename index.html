@@ -8,6 +8,7 @@
 	<title>{{ site.title }}</title>
 	<meta name="description" content="{{ site.description }}">
 	<link rel="canonical" href="{{ site.url }}/">
+	<link rel="alternate" type="application/atom+xml" href="/feed.xml">
 	<style type="text/css">
 	/* Fonts */
 	@font-face {
@@ -382,8 +383,8 @@
 		#newscontainer { padding: 2.000em 25% 2.000em 25%; }
 	}
 	</style>
-	</head>
-	<body>
+</head>
+<body>
 	<div id="intro">
 		<div id="introcontainer">
 			<i></i>
@@ -404,10 +405,12 @@
 			<h2>News</h2>
 			<div id="box">
 				<ul>
-					{% for post in site.posts %}<li>
+					{% for post in site.posts %}
+					<li>
 						{{ post.content }}
 						<span>{{ post.date | date: "%B %e, %Y" }}</span>
-					</li>{% endfor %}
+					</li>
+					{% endfor %}
 				</ul>
 			</div>
 		</div>
