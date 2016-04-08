@@ -49,7 +49,7 @@
 		to { opacity: 1; }
 	}
 	/* Main */
-	html, body, div, span, h1, h2, p, a, s, small, strike, strong, sub, b, u, i, ul, li {
+	* {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -62,10 +62,10 @@
 		height: 100%;
 	}
 	body {
+		background: #000;
+		color: #fff;
 		font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-size: 1.000em;
-		color: #fff;
-		background: #000;
 		line-height: 1;
 		-webkit-tap-highlight-color: rgba(255,255,255,.2);
 	}
@@ -78,44 +78,35 @@
 		background: rgba(255,255,255,.04);
 	}
 	h1, h2 {
-		text-transform: uppercase;
+		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-style: normal;
 		font-weight: normal;
+		text-transform: uppercase;
 	}
 	h1 {
-		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-size: 1.000em;
-		margin: 0 0 2.125em 0;
 		line-height: 1.875em;
+		margin: 0 0 2.125em 0;
 	}
 	h2:before {
 		position: relative;
 		top: 2px;
+		cursor: default;
 		margin: 0 0.625em 0 0;
 	}
 	h2 {
-		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-size: 1.750em;
 		margin: 0 0 0.813em 0;
 	}
 	a {
-		text-decoration: none;
 		color: rgba(255,255,255,.4);
+		text-decoration: none;
 	}
 	a:hover, a:focus {
 		color: rgba(255,255,255,.2);
 	}
 	/* Combined Rules */
-	a, a:before {
-		-moz-transition: all .15s ease-in-out;
-		-webkit-transition: all .15s ease-in-out;
-		-o-transition: all .15s ease-in-out;
-		transition: all .15s ease-in-out;
-	}
-	h1, h2, p, #box, #logo, #about span {
-		cursor: default;
-	}
-	#facebook:before, h2:before, #intro i, #intro a:before, #twitter:before {
+	h2:before, #intro i, #intro a:before {
 		font-family: 'icons';
 	}
 	#aboutbutton:before, #about h2:before {
@@ -128,7 +119,6 @@
 		content: "\2193";
 	}
 	#intro, #about, #news {
-		width: 100%;
 		height: 100%;
 		display: table;
 	}
@@ -153,6 +143,7 @@
 	#intro i:before {
 		font-size: 21.875em;
 		content: "\1F525";
+		cursor: default;
 	}
 	#intro p {
 		font-size: 3.063em;
@@ -239,7 +230,6 @@
 	}
 	/* Downloads */
 	#downloads {
-		width: 100%;
 		height: 40%;
 		display: table;
 	}
