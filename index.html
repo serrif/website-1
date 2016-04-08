@@ -406,4 +406,4 @@
 	</div>
 </body>
 </html>{% endcapture %}
-{{ content | strip_newlines }}
+{{ content | strip_newlines | replace:'	','' }}
