@@ -405,7 +405,7 @@
 			<div id="box">
 				<ul>
 					{% for post in site.posts %}<li>
-						<p>{{ post.content }}</p>
+						{{ post.content }}
 						<span>{{ post.date | date: "%B %e, %Y" }}</span>
 					</li>{% endfor %}
 					<li>
