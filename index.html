@@ -400,16 +400,14 @@
 	<div id="news">
 		<div id="newscontainer">
 			<h2>News</h2>
-			<div id="box">
-				<ul>
-					{% for post in site.posts %}
-					<li>
-						{{ post.content }}
-						<span>{{ post.date | date: "%B %e, %Y" }}</span>
-					</li>
-					{% endfor %}
-				</ul>
-			</div>
+			<ul>
+				{% for post in site.posts %}
+				<li>
+					{{ post.content }}
+					<span>{{ post.date | date: "%B %e, %Y" }}</span>
+				</li>
+				{% endfor %}
+			</ul>
 		</div>
 	</div>
 	<div id="downloads">
