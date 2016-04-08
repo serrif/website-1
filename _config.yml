@@ -1,6 +1,7 @@
 title: Flame.ga » Free OP Server
 description: Flame.ga provides you a powerful experience in Minecraft. On this server, you can do whatever you want, without any consequenses; grief, troll, use hacks - you name it.
 url: https://flame.ga
+permalink: /#news
 author: Flame.ga
 exclude:
   - CNAME
@@ -8,4 +9,3 @@ exclude:
 gems:
   - jekyll-feed
   - jekyll-sitemap
-permalink: /
