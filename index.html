@@ -9,7 +9,7 @@
 	<meta name="description" content="{{ site.description }}">
 	<link rel="canonical" href="{{ site.url }}/">
 	<link rel="alternate" type="application/atom+xml" href="/feed.xml">
-	{% capture style %}<style type="text/css">
+	<style type="text/css">
 	/* Fonts */
 	@font-face {
 		font-family: 'montserratlight';
@@ -366,7 +366,7 @@
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 22% 2.000em 22%; }
 		#newscontainer { padding: 2.000em 25% 2.000em 25%; }
 	}
-	</style>{% endcapture %}{{ content replace:' ','' }}
+	</style>
 </head>
 <body>
 	<div id="intro">
@@ -405,4 +405,4 @@
 		</div>
 	</div>
 </body>
-</html>{% endcapture %}{{ content | strip_newlines | replace:'	','' }}
+</html>{% endcapture %}{{ content | strip_newlines | replace:'	','' | replace:' { ','' | replace:' } ','' }}
