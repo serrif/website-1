@@ -374,14 +374,21 @@
 			<i></i>
 			<p>Flame.ga</p>
 			<h1>Free OP Server in Minecraft</h1>
-			<a href="#about" id="aboutbutton" title="About"></a><a href="#news" id="newsbutton" title="News"></a><a href="#downloads" id="downloadsbutton" title="Downloads"></a>
+			<a href="#about" id="aboutbutton" title="About"></a>
+			<a href="#news" id="newsbutton" title="News"></a>
+			<a href="#downloads" id="downloadsbutton" title="Downloads"></a>
 		</div>
 	</div>
 	<div id="about">
 		<div id="aboutcontainer">
 			<h2>About</h2>
-			<p>Flame.ga provides you a powerful experience in Minecraft. On this server, you can do whatever you want, without any consequenses; grief, troll, use hacks - you name it. You get access to a large amount of free OP (operator) commands to use whenever you like, as well as a few server plugins, such as WorldEdit and DisguiseCraft. To give you a fresh and lag-free experience, the server will reset once every day.</p>
-			<div id="ip"><span>IP for 1.8</span><i>flame.ga</i></div>
+			<p>
+				Flame.ga provides you a powerful experience in Minecraft. On this server, you can do whatever you want, without any consequenses; grief, troll, use hacks - you name it. You get access to a large amount of free OP (operator) commands to use whenever you like, as well as a few server plugins, such as WorldEdit and DisguiseCraft. To give you a fresh and lag-free experience, the server will reset once every day.
+			</p>
+			<div id="ip">
+				<span>IP for 1.8</span>
+				<i>flame.ga</i>
+			</div>
 		</div>
 	</div>
 	<div id="news">
@@ -389,10 +396,10 @@
 			<h2>News</h2>
 			<ul>
 				{% for post in site.posts %}
-				<li>
-					{{ post.content }}
-					<span>{{ post.date | date: "%B %e, %Y" }}</span>
-				</li>
+					<li>
+						{{ post.content }}
+						<span>{{ post.date | date: "%B %e, %Y" }}</span>
+					</li>
 				{% endfor %}
 			</ul>
 		</div>
@@ -400,8 +407,11 @@
 	<div id="downloads">
 		<div id="downloadscontainer">
 			<h2>Downloads</h2>
-			<p>Feel free to download a copy of the server's schematics and worlds. Updates every five minutes.</p>
-			<a href="https://github.com/flameserver/downloads/archive/schematics.zip">Schematics</a><a href="https://github.com/flameserver/downloads/archive/worlds.zip">Worlds</a>
+			<p>
+				Feel free to download a copy of the server's schematics and worlds. Updates every five minutes.
+			</p>
+			<a href="https://github.com/flameserver/downloads/archive/schematics.zip">Schematics</a>
+			<a href="https://github.com/flameserver/downloads/archive/worlds.zip">Worlds</a>
 		</div>
 	</div>
 </body>
