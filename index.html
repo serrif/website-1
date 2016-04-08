@@ -89,10 +89,9 @@
 		margin: 0 0 2.125em 0;
 	}
 	h2:before {
-		position: relative;
-		top: 2px;
 		cursor: default;
 		margin: 0 0.625em 0 0;
+		vertical-align: top;
 	}
 	h2 {
 		font-size: 1.750em;
@@ -125,6 +124,9 @@
 	}
 	#about, #downloads {
 		background: #000;
+	}
+	#aboutcontainer, #downloadscontainer {
+		padding: 2.000em 5.625em 2.000em 5.625em;
 	}
 	#introcontainer, #aboutcontainer, #newscontainer, #downloadscontainer {
 		display: table-cell;
@@ -178,13 +180,7 @@
 		border-left: 1px solid #aa0000;
 		padding: 0.438em 1.063em 0.313em 0.875em;
 	}
-	/* About */
-	#aboutcontainer, #downloadscontainer {
-		padding: 2.000em 5.625em 2.000em 5.625em;
-	}
-	#about h2:before {
-		font-size: 1.025em;
-	}
+	/* IP */
 	#ip, #ip span, #ip i {
 		display: inline-block;
 	}
