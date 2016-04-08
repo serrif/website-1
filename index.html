@@ -404,6 +404,10 @@
 			<h2>News</h2>
 			<div id="box">
 				<ul>
+					{% for post in site.posts %}<li>
+						<p>{{ post.content }}</p>
+						<span>{{ post.date | date: "%B %e, %Y" }}</span>
+					</li>{% endfor %}
 					<li>
 						<p>You can now download copies of schematics on the server, perfect if you want to move your buildings outside the server.</p>
 						<span>April 8, 2016</span>
