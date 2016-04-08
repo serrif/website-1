@@ -1,5 +1,6 @@
 ---
 ---
+{% capture content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -406,3 +407,5 @@
 	</div>
 </body>
 </html>
+{% endcapture %}
+{{ content | strip_newlines }}
