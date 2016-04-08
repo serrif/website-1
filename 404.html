@@ -2,7 +2,7 @@
 permalink: /404
 sitemap: false
 ---
-<!DOCTYPE html>
+{% capture content %}<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -17,4 +17,4 @@ sitemap: false
 	}
 	</style>
 </head>
-</html>
+</html>{% endcapture %}{{ content | strip_newlines | replace:' ','' }}
