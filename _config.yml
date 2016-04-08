@@ -8,4 +8,4 @@ exclude:
 gems:
   - jekyll-feed
   - jekyll-sitemap
-permalink: /:categories/:title/
+permalink: /
