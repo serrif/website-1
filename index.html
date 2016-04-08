@@ -1,7 +1,6 @@
 ---
 ---
-{% capture content %}
-<!DOCTYPE html>
+{% capture content %}<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -406,6 +405,5 @@
 		</div>
 	</div>
 </body>
-</html>
-{% endcapture %}
-{{ content | strip_newlines }}
+</html>{% endcapture %}
+{% assign content = nil %}
