@@ -236,6 +236,10 @@
 	#feedbackcontainer {
 		padding: 2.000em 14.375em 2.000em 14.375em;
 	}
+	textarea::-moz-focus-inner, button::-moz-focus-inner { 
+		border: 0;
+		padding: 0;
+	}
 	textarea {
 		font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-size: 1.000em;
@@ -259,7 +263,9 @@
 		display: inline-block;
 		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-size: 1.000em;
-		padding: 0.625em 0.688em 0.625em 0.688em;
+		height: 2.500em;
+		line-height: 2.500em;
+		padding: 0 0.688em 0 0.688em;
 		text-transform: uppercase;
 	}
 	button:hover, button:focus, #downloads a:hover, #downloads a:focus {
