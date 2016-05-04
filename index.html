@@ -250,21 +250,19 @@
 		box-sizing: border-box;
 		resize: none;
 	}
-	input {
-		margin: 0 0 1.500em 0;
-	}
-	button {
-		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-		font-size: 1.000em;
-		text-transform: uppercase;
-		color: #fff;
+	button, #downloads a {
 		background: none;
 		border: #fff solid 1px;
-		padding: 0.500em 0.625em 0.500em 0.688em;
 		border-radius: 0.313em;
+		color: #fff;
 		cursor: pointer;
+		display: inline-block;
+		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 1.000em;
+		padding: 0.625em 0.688em 0.625em 0.688em;
+		text-transform: uppercase;
 	}
-	button:hover, button:focus {
+	button:hover, button:focus, #downloads a:hover, #downloads a:focus {
 		background: rgba(255,255,255,.05);
 	}
 	/* Downloads */
@@ -274,21 +272,8 @@
 		width: 100%;
 		height: 40%;
 	}
-	#downloads a {
-		border: #fff solid 1px;
-		border-radius: 0.313em;
-		color: #fff;
-		display: inline-block;
-		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-		font-size: 1.000em;
-		padding: 0.625em 0.688em 0.625em 0.688em;
-		text-transform: uppercase;
-	}
 	#downloads a:last-child {
 		margin: 0 0 0 0.500em;
-	}
-	#downloads a:hover, #downloads a:focus {
-		background: rgba(255,255,255,.05);
 	}
 	/* Responsive Design */
 	@media (min-width: 0px) {
