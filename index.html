@@ -114,21 +114,24 @@
 	#newsbutton:before, #news h2:before {
 		content: "\1F56B";
 	}
+	#feedbackbutton:before, #feedback h2:before {
+		content: "\2709";
+	}
 	#downloadsbutton:before, #downloads h2:before {
 		content: "\2193";
 	}
-	#intro, #about, #news {
+	#intro, #about, #feedback, #news {
 		width: 100%;
 		height: 100%;
 		display: table;
 	}
-	#about, #downloads {
+	#about, #feedback {
 		background: #000;
 	}
 	#aboutcontainer, #downloadscontainer {
 		padding: 2.000em 5.625em 2.000em 5.625em;
 	}
-	#introcontainer, #aboutcontainer, #newscontainer, #downloadscontainer {
+	#introcontainer, #aboutcontainer, #newscontainer, #feedbackcontainer, #downloadscontainer {
 		display: table-cell;
 		vertical-align: middle;
 		font-size: 1.000em;
@@ -174,6 +177,10 @@
 	}
 	#newsbutton {
 		padding: 0.438em 0.875em 0.313em 0.875em;
+		border-right: 1px solid #aa0000;
+	}
+	#feedbackbutton {
+		padding: 0.438em 0.938em 0.313em 0.813em;
 	}
 	#downloadsbutton {
 		border-radius: 0 1.313em 1.313em 0;
@@ -225,11 +232,47 @@
 		color: rgba(255,255,255,.4);
 		font-size: 0.813em;
 	}
+	/* Feedback */
+	#feedbackcontainer {
+		padding: 2.000em 14.375em 2.000em 14.375em;
+	}
+	input, textarea {
+		font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 1.000em;
+		border: 0;
+		color: #000;
+		background: #fff;
+		padding: 0.563em 0.688em 0.563em 0.688em;
+		border-radius: 0.250em;
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		resize: none;
+	}
+	input {
+		margin: 0 0 1.500em 0;
+	}
+	button, #downloads a {
+		font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 1.000em;
+		text-transform: uppercase;
+		color: #fff;
+		background: none;
+		border: #fff solid 1px;
+		padding: 0.500em 0.625em 0.500em 0.688em;
+		margin: 1.625em 0 0 0;
+		border-radius: 0.313em;
+		cursor: pointer;
+	}
+	button:hover, button:focus, #downloads a:hover, #downloads a:focus {
+		background: rgba(255,255,255,.05);
+	}
 	/* Downloads */
 	#downloads {
+		background: #0b0b0b;
+		display: table;
 		width: 100%;
 		height: 40%;
-		display: table;
 	}
 	#downloads a {
 		border: #fff solid 1px;
@@ -250,7 +293,7 @@
 	/* Responsive Design */
 	@media (min-width: 0px) {
 		html { font-size: 76%; }
-		#aboutcontainer, #newscontainer, #downloadscontainer { padding-right: 3%; padding-left: 3%; }
+		#aboutcontainer, #newscontainer, #feedbackcontainer, #downloadscontainer { padding-right: 3%; padding-left: 3%; }
 	}
 	@media (min-width: 100px) {
 		html { font-size: 78%; }
@@ -261,110 +304,131 @@
 	@media (min-width: 300px) {
 		html { font-size: 82%; }
 		#newscontainer { padding: 2.000em 4% 2.000em 4%; }
+		#feedbackcontainer { padding: 2.000em 4% 2.000em 4%; }
 	}
 	@media (min-width: 400px) {
 		html { font-size: 84%; }
 		#newscontainer { padding: 2.000em 5% 2.000em 5%; }
+		#feedbackcontainer { padding: 2.000em 6% 2.000em 6%; }
 	}
 	@media (min-width: 500px) {
 		html { font-size: 86%; }
 		#newscontainer { padding: 2.000em 6% 2.000em 6%; }
+		#feedbackcontainer { padding: 2.000em 8% 2.000em 8%; }
 	}
 	@media (min-width: 600px) {
 		html { font-size: 88%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 4% 2.000em 4%; }
 		#newscontainer { padding: 2.000em 7% 2.000em 7%; }
+		#feedbackcontainer { padding: 2.000em 10% 2.000em 10%; }
 	}
 	@media (min-width: 700px) {
 		html { font-size: 90%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 5% 2.000em 5%; }
 		#newscontainer { padding: 2.000em 8% 2.000em 8%; }
+		#contactcontainer { padding: 2.000em 12% 2.000em 12%; }
 	}
 	@media (min-width: 800px) {
 		html { font-size: 92%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 6% 2.000em 6%; }
 		#newscontainer { padding: 2.000em 9% 2.000em 9%; }
+		#feedbackcontainer { padding: 2.000em 14% 2.000em 14%; }
 	}
 	@media (min-width: 900px) {
 		html { font-size: 94%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 7% 2.000em 7%; }
 		#newscontainer { padding: 2.000em 10% 2.000em 10%; }
+		#feedbackcontainer { padding: 2.000em 16% 2.000em 16%; }
 	}
 	@media (min-width: 1000px) {
 		html { font-size: 96%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 8% 2.000em 8%; }
 		#newscontainer { padding: 2.000em 11% 2.000em 11%; }
-		#contactcontainer { padding: 2.000em 18% 2.000em 18%; }
+		#feedbackcontainer { padding: 2.000em 18% 2.000em 18%; }
 	}
 	@media (min-width: 1100px) {
 		html { font-size: 98%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 9% 2.000em 9%; }
 		#newscontainer { padding: 2.000em 12% 2.000em 12%; }
+		#feedbackcontainer { padding: 2.000em 20% 2.000em 20%; }
 	}
 	@media (min-width: 1200px) {
 		html { font-size: 100%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 10% 2.000em 10%; }
 		#newscontainer { padding: 2.000em 13% 2.000em 13%; }
+		#feedbackcontainer { padding: 2.000em 22% 2.000em 22%; }
 	}
 	@media (min-width: 1300px) {
 		html { font-size: 102%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 11% 2.000em 11%; }
 		#newscontainer { padding: 2.000em 14% 2.000em 14%; }
+		#feedbackcontainer { padding: 2.000em 24% 2.000em 24%; }
 	}
 	@media (min-width: 1400px) {
 		html { font-size: 104%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 12% 2.000em 12%; }
 		#newscontainer { padding: 2.000em 15% 2.000em 15%; }
+		#feedbackcontainer { padding: 2.000em 26% 2.000em 26%; }
 	}
 	@media (min-width: 1500px) {
 		html { font-size: 106%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 13% 2.000em 13%; }
 		#newscontainer { padding: 2.000em 16% 2.000em 16%; }
+		#feedbackcontainer { padding: 2.000em 28% 2.000em 28%; }
 	}
 	@media (min-width: 1600px) {
 		html { font-size: 108%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 14% 2.000em 14%; }
 		#newscontainer { padding: 2.000em 17% 2.000em 17%; }
+		#feedbackcontainer { padding: 2.000em 29% 2.000em 29%; }
 	}
 	@media (min-width: 1700px) {
 		html { font-size: 110%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 15% 2.000em 15%; }
 		#newscontainer { padding-right: padding: 2.000em 18% 2.000em 18%; }
+		#feedbackcontainer { padding: 2.000em 30% 2.000em 30%; }
 	}
 	@media (min-width: 1800px) {
 		html { font-size: 112%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 16% 2.000em 16%; }
 		#newscontainer { padding: 2.000em 19% 2.000em 19%; }
+		#feedbackcontainer { padding: 2.000em 31% 2.000em 31%; }
 	}
 	@media (min-width: 1900px) {
 		html { font-size: 114%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 17% 2.000em 17%; }
 		#newscontainer { padding: 2.000em 20% 2.000em 20%; }
+		#feedbackcontainer { padding: 2.000em 32% 2.000em 32%; }
 	}
 	@media (min-width: 2000px) {
 		html { font-size: 116%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 18% 2.000em 18%; }
 		#newscontainer { padding: 2.000em 21% 2.000em 21%; }
+		#feedbackcontainer { padding: 2.000em 33% 2.000em 33%; }
 	}
 	@media (min-width: 2100px) {
 		html { font-size: 118%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 19% 2.000em 19%; }
 		#newscontainer { padding: 2.000em 22% 2.000em 22%; }
+		#feedbackcontainer { padding: 2.000em 34% 2.000em 34%; }
 	}
 	@media (min-width: 2200px) {
 		html { font-size: 120%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 20% 2.000em 20%; }
 		#newscontainer { padding: 2.000em 23% 2.000em 23%; }
+		#feedbackcontainer { padding: 2.000em 36% 2.000em 36%; }
 	}
 	@media (min-width: 2300px) {
 		html { font-size: 122%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 21% 2.000em 21%; }
 		#newscontainer { padding: 2.000em 24% 2.000em 24%; }
+		#feedbackcontainer { padding: 2.000em 37% 2.000em 37%; }
 	}
 	@media (min-width: 2400px) {
 		html { font-size: 124%; }
 		#aboutcontainer, #downloadscontainer { padding: 2.000em 22% 2.000em 22%; }
 		#newscontainer { padding: 2.000em 25% 2.000em 25%; }
+		#feedbackcontainer { padding: 2.000em 38% 2.000em 38%; }
 	}
 	</style>
 </head>
@@ -402,6 +466,16 @@
 					</li>
 				{% endfor %}
 			</ul>
+		</div>
+	</div>
+	<div id="feedback">
+		<div id="feedbackcontainer">
+			<h2>Feedback</h2>
+			<form action="https://formspree.io/hello@flame.ga" method="POST">
+				<textarea name="body" rows="10" placeholder="Feel free to send us your feedback about the server" required></textarea>
+				<input type="hidden" name="_next" value="/sent"/>
+				<button type="submit">Send</button>
+			</form>
 		</div>
 	</div>
 	<div id="downloads">
