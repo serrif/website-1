@@ -1,0 +1,185 @@
+/* Animation */
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@keyframes fadein{
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+/* Main */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background: #000;
+	color: #fff;
+	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1.000em;
+	line-height: 1;
+	-webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+::-moz-selection {
+	background: #7b7b7b;
+	background: rgba(255,255,255,.04);
+}
+::selection {
+	background: #7b7b7b;
+	background: rgba(255,255,255,.04);
+}
+h2:before {
+	content: "\2709";
+	cursor: default;
+	font-family: 'icons';
+	margin: 0 0.625em 0 0;
+	vertical-align: top;
+}
+h2 {
+	font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1.750em;
+	font-style: normal;
+	font-weight: normal;
+	margin: 0 0 0.813em 0;
+	text-transform: uppercase;
+}
+p {
+	margin: 0 0 1.875em 0;
+	line-height: 1.6;
+}
+a {
+	border: #fff solid 1px;
+	border-radius: 0.313em;
+	color: #fff;
+	display: inline-block;
+	font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1.000em;
+	height: 2.313em;
+	line-height: 2.313em;
+	padding: 0 0.688em 0 0.688em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+a:hover, a:focus {
+	background: rgba(255,255,255,.05);
+}
+/* Feedback */
+#feedback {
+    background: #000;
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+#feedbackcontainer {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 1.000em;
+	padding: 2.000em 14.375em 2.000em 14.375em;
+	text-align: center;
+	-webkit-animation: fadein 1s;
+	animation: fadein 1s;
+}
+/* Responsive Design */
+@media (min-width: 0px) {
+	html { font-size: 76%; }
+	#feedbackcontainer { padding-right: 3%; padding-left: 3%; }
+}
+@media (min-width: 100px) {
+	html { font-size: 78%; }
+}
+@media (min-width: 200px) {
+	html { font-size: 80%; }
+}
+@media (min-width: 300px) {
+	html { font-size: 82%; }
+}
+@media (min-width: 400px) {
+	html { font-size: 84%; }
+}
+@media (min-width: 500px) {
+	html { font-size: 86%; }
+}
+@media (min-width: 600px) {
+	html { font-size: 88%; }
+	#feedbackcontainer { padding: 2.000em 4% 2.000em 4%; }
+}
+@media (min-width: 700px) {
+	html { font-size: 90%; }
+	#feedbackcontainer { padding: 2.000em 5% 2.000em 5%; }
+}
+@media (min-width: 800px) {
+	html { font-size: 92%; }
+	#feedbackcontainer { padding: 2.000em 6% 2.000em 6%; }
+}
+@media (min-width: 900px) {
+	html { font-size: 94%; }
+	#feedbackcontainer { padding: 2.000em 7% 2.000em 7%; }
+}
+@media (min-width: 1000px) {
+	html { font-size: 96%; }
+	#feedbackcontainer { padding: 2.000em 8% 2.000em 8%; }
+}
+@media (min-width: 1100px) {
+	html { font-size: 98%; }
+	#feedbackcontainer { padding: 2.000em 9% 2.000em 9%; }
+}
+@media (min-width: 1200px) {
+	html { font-size: 100%; }
+	#feedbackcontainer { padding: 2.000em 10% 2.000em 10%; }
+}
+@media (min-width: 1300px) {
+	html { font-size: 102%; }
+	#feedbackcontainer { padding: 2.000em 11% 2.000em 11%; }
+}
+@media (min-width: 1400px) {
+	html { font-size: 104%; }
+	#feedbackcontainer { padding: 2.000em 12% 2.000em 12%; }
+}
+@media (min-width: 1500px) {
+	html { font-size: 106%; }
+	#feedbackcontainer { padding: 2.000em 13% 2.000em 13%; }
+}
+@media (min-width: 1600px) {
+	html { font-size: 108%; }
+	#feedbackcontainer { padding: 2.000em 14% 2.000em 14%; }
+}
+@media (min-width: 1700px) {
+	html { font-size: 110%; }
+	#feedbackcontainer { padding: 2.000em 15% 2.000em 15%; }
+}
+@media (min-width: 1800px) {
+	html { font-size: 112%; }
+	#feedbackcontainer { padding: 2.000em 16% 2.000em 16%; }
+}
+@media (min-width: 1900px) {
+	html { font-size: 114%; }
+	#feedbackcontainer { padding: 2.000em 17% 2.000em 17%; }
+}
+@media (min-width: 2000px) {
+	html { font-size: 116%; }
+	#feedbackcontainer { padding: 2.000em 18% 2.000em 18%; }
+}
+@media (min-width: 2100px) {
+	html { font-size: 118%; }
+	#feedbackcontainer { padding: 2.000em 19% 2.000em 19%; }
+}
+@media (min-width: 2200px) {
+	html { font-size: 120%; }
+	#feedbackcontainer { padding: 2.000em 20% 2.000em 20%; }
+}
+@media (min-width: 2300px) {
+	html { font-size: 122%; }
+	#feedbackcontainer { padding: 2.000em 21% 2.000em 21%; }
+}
+@media (min-width: 2400px) {
+	html { font-size: 124%; }
+	#feedbackcontainer { padding: 2.000em 22% 2.000em 22%; }
+}

@@ -1,0 +1,385 @@
+/* Animation */
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@keyframes fadein{
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+/* Main */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background: #000;
+	color: #fff;
+	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1.000em;
+	line-height: 1;
+	-webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+::-moz-selection {
+	background: #7b7b7b;
+	background: rgba(255,255,255,.04);
+}
+::selection {
+	background: #7b7b7b;
+	background: rgba(255,255,255,.04);
+}
+h1, h2 {
+	font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+h1 {
+	font-size: 1.000em;
+	line-height: 1.875em;
+	margin: 0 0 2.125em 0;
+}
+h2:before {
+	cursor: default;
+	margin: 0 0.625em 0 0;
+	vertical-align: top;
+}
+h2 {
+	font-size: 1.750em;
+	margin: 0 0 0.813em 0;
+}
+a {
+	color: rgba(255,255,255,.4);
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: rgba(255,255,255,.2);
+}
+/* Combined Rules */
+h2:before, #intro i, #intro a:before {
+	font-family: 'icons';
+}
+#aboutbutton:before, #about h2:before {
+	content: "\2139";
+}
+#newsbutton:before, #news h2:before {
+	content: "\1F56B";
+}
+#feedbackbutton:before, #feedback h2:before {
+	content: "\2709";
+}
+#downloadsbutton:before, #downloads h2:before {
+	content: "\2193";
+}
+#intro, #about, #feedback, #news {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+#about, #feedback {
+	background: #000;
+}
+#aboutcontainer, #downloadscontainer {
+	padding: 2.000em 5.625em 2.000em 5.625em;
+}
+#introcontainer, #aboutcontainer, #newscontainer, #feedbackcontainer, #downloadscontainer {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 1.000em;
+	text-align: center;
+	-webkit-animation: fadein 1s;
+	animation: fadein 1s;
+}
+#about p, #feedback p, #downloads p {
+	margin: 0 0 1.875em 0;
+	line-height: 1.6;
+}
+/* Intro */
+#intro {
+	background: #aa0000;
+}
+#introcontainer {
+	padding: 3.125em 0 3.125em 0;
+}
+#intro i:before {
+	font-size: 21.875em;
+	content: "\1F525";
+	cursor: default;
+}
+#intro p {
+	font-size: 3.063em;
+	text-transform: uppercase;
+	font-family: montserratbold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	letter-spacing: 1px;
+	margin: 0.438em 0 0 0;
+}
+#intro a {
+	background: #fff;
+	color: #aa0000;
+	font-size: 1.188em;
+}
+#intro a:hover {
+	background: rgba(255,255,255,.9);
+}
+#aboutbutton {
+	border-radius: 1.313em 0 0 1.313em;
+	border-right: 1px solid #aa0000;
+	padding: 0.438em 0.813em 0.313em 1.125em;
+}
+#newsbutton {
+	padding: 0.438em 0.875em 0.313em 0.875em;
+	border-right: 1px solid #aa0000;
+}
+#feedbackbutton {
+	padding: 0.438em 0.938em 0.313em 0.813em;
+}
+#downloadsbutton {
+	border-radius: 0 1.313em 1.313em 0;
+	border-left: 1px solid #aa0000;
+	padding: 0.438em 1.063em 0.313em 0.875em;
+}
+/* IP */
+#ip, #ip span, #ip i {
+	display: inline-block;
+}
+#ip {
+	border: #fff solid 1px;
+	border-radius: 0.313em;
+}
+#ip span {
+	background: #fff;
+	border-radius: 0.188em 0 0 0.188em;
+	color: #000;
+	font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding: 0.563em 0.563em 0.563em 0.625em;
+}
+#ip i {
+	color: #fff;
+	padding: 0.500em 0.563em 0.500em 0.563em;
+}
+/* News */
+#news {
+	background: #0b0b0b;
+}
+#newscontainer {
+	padding: 2.000em 9.375em 2.000em 9.375em;
+}
+#news ul {
+	height: 23em;
+	margin: 0 0 1.563em 0;
+	overflow: auto;
+	overflow-x: hidden;
+	padding: 0 0.625em 0 0;
+	text-align: left;
+}
+#news li {
+	margin: 0 0 1.250em 0;
+	line-height: 1.5;
+}
+#news li:last-child {
+	margin: 0;
+}
+#news span {
+	color: rgba(255,255,255,.4);
+	font-size: 0.813em;
+}
+/* Feedback */
+#feedbackcontainer {
+	padding: 2.000em 14.375em 2.000em 14.375em;
+}
+textarea::-moz-focus-inner, button::-moz-focus-inner { 
+	border: 0;
+	padding: 0;
+}
+textarea {
+	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1.000em;
+	border: 0;
+	color: #000;
+	background: #fff;
+	padding: 0.563em 0.688em 0.563em 0.688em;
+	margin: 0 0 1.875em 0;
+	border-radius: 0.250em;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	resize: none;
+}
+button, #downloads a {
+	background: none;
+	border: #fff solid 1px;
+	border-radius: 0.313em;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1.000em;
+	height: 2.313em;
+	line-height: 2.313em;
+	padding: 0 0.688em 0 0.688em;
+	text-transform: uppercase;
+}
+button:hover, button:focus, #downloads a:hover, #downloads a:focus {
+	background: rgba(255,255,255,.05);
+}
+.hide {
+	display: none;
+}
+/* Downloads */
+#downloads {
+	background: #0b0b0b;
+	display: table;
+	width: 100%;
+	height: 40%;
+}
+#downloads a:last-child {
+	margin: 0 0 0 0.500em;
+}
+/* Responsive Design */
+@media (min-width: 0px) {
+	html { font-size: 76%; }
+	#aboutcontainer, #newscontainer, #feedbackcontainer, #downloadscontainer { padding-right: 3%; padding-left: 3%; }
+}
+@media (min-width: 100px) {
+	html { font-size: 78%; }
+}
+@media (min-width: 200px) {
+	html { font-size: 80%; }
+}
+@media (min-width: 300px) {
+	html { font-size: 82%; }
+	#newscontainer { padding: 2.000em 4% 2.000em 4%; }
+	#feedbackcontainer { padding: 2.000em 4% 2.000em 4%; }
+}
+@media (min-width: 400px) {
+	html { font-size: 84%; }
+	#newscontainer { padding: 2.000em 5% 2.000em 5%; }
+	#feedbackcontainer { padding: 2.000em 6% 2.000em 6%; }
+}
+@media (min-width: 500px) {
+	html { font-size: 86%; }
+	#newscontainer { padding: 2.000em 6% 2.000em 6%; }
+	#feedbackcontainer { padding: 2.000em 8% 2.000em 8%; }
+	}
+@media (min-width: 600px) {
+	html { font-size: 88%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 4% 2.000em 4%; }
+	#newscontainer { padding: 2.000em 7% 2.000em 7%; }
+	#feedbackcontainer { padding: 2.000em 10% 2.000em 10%; }
+}
+@media (min-width: 700px) {
+	html { font-size: 90%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 5% 2.000em 5%; }
+	#newscontainer { padding: 2.000em 8% 2.000em 8%; }
+	#contactcontainer { padding: 2.000em 12% 2.000em 12%; }
+}
+@media (min-width: 800px) {
+	html { font-size: 92%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 6% 2.000em 6%; }
+	#newscontainer { padding: 2.000em 9% 2.000em 9%; }
+	#feedbackcontainer { padding: 2.000em 14% 2.000em 14%; }
+}
+@media (min-width: 900px) {
+	html { font-size: 94%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 7% 2.000em 7%; }
+	#newscontainer { padding: 2.000em 10% 2.000em 10%; }
+	#feedbackcontainer { padding: 2.000em 16% 2.000em 16%; }
+}
+@media (min-width: 1000px) {
+	html { font-size: 96%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 8% 2.000em 8%; }
+	#newscontainer { padding: 2.000em 11% 2.000em 11%; }
+	#feedbackcontainer { padding: 2.000em 18% 2.000em 18%; }
+}
+@media (min-width: 1100px) {
+	html { font-size: 98%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 9% 2.000em 9%; }
+	#newscontainer { padding: 2.000em 12% 2.000em 12%; }
+	#feedbackcontainer { padding: 2.000em 20% 2.000em 20%; }
+}
+@media (min-width: 1200px) {
+	html { font-size: 100%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 10% 2.000em 10%; }
+	#newscontainer { padding: 2.000em 13% 2.000em 13%; }
+	#feedbackcontainer { padding: 2.000em 22% 2.000em 22%; }
+}
+@media (min-width: 1300px) {
+	html { font-size: 102%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 11% 2.000em 11%; }
+	#newscontainer { padding: 2.000em 14% 2.000em 14%; }
+	#feedbackcontainer { padding: 2.000em 24% 2.000em 24%; }
+}
+@media (min-width: 1400px) {
+	html { font-size: 104%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 12% 2.000em 12%; }
+	#newscontainer { padding: 2.000em 15% 2.000em 15%; }
+	#feedbackcontainer { padding: 2.000em 26% 2.000em 26%; }
+}
+@media (min-width: 1500px) {
+	html { font-size: 106%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 13% 2.000em 13%; }
+	#newscontainer { padding: 2.000em 16% 2.000em 16%; }
+	#feedbackcontainer { padding: 2.000em 28% 2.000em 28%; }
+}
+@media (min-width: 1600px) {
+	html { font-size: 108%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 14% 2.000em 14%; }
+	#newscontainer { padding: 2.000em 17% 2.000em 17%; }
+	#feedbackcontainer { padding: 2.000em 29% 2.000em 29%; }
+}
+@media (min-width: 1700px) {
+	html { font-size: 110%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 15% 2.000em 15%; }
+	#newscontainer { padding-right: padding: 2.000em 18% 2.000em 18%; }
+	#feedbackcontainer { padding: 2.000em 30% 2.000em 30%; }
+}
+@media (min-width: 1800px) {
+	html { font-size: 112%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 16% 2.000em 16%; }
+	#newscontainer { padding: 2.000em 19% 2.000em 19%; }
+	#feedbackcontainer { padding: 2.000em 31% 2.000em 31%; }
+}
+@media (min-width: 1900px) {
+	html { font-size: 114%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 17% 2.000em 17%; }
+	#newscontainer { padding: 2.000em 20% 2.000em 20%; }
+	#feedbackcontainer { padding: 2.000em 32% 2.000em 32%; }
+}
+@media (min-width: 2000px) {
+	html { font-size: 116%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 18% 2.000em 18%; }
+	#newscontainer { padding: 2.000em 21% 2.000em 21%; }
+	#feedbackcontainer { padding: 2.000em 33% 2.000em 33%; }
+}
+@media (min-width: 2100px) {
+	html { font-size: 118%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 19% 2.000em 19%; }
+	#newscontainer { padding: 2.000em 22% 2.000em 22%; }
+	#feedbackcontainer { padding: 2.000em 34% 2.000em 34%; }
+}
+@media (min-width: 2200px) {
+	html { font-size: 120%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 20% 2.000em 20%; }
+	#newscontainer { padding: 2.000em 23% 2.000em 23%; }
+	#feedbackcontainer { padding: 2.000em 36% 2.000em 36%; }
+}
+@media (min-width: 2300px) {
+	html { font-size: 122%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 21% 2.000em 21%; }
+	#newscontainer { padding: 2.000em 24% 2.000em 24%; }
+	#feedbackcontainer { padding: 2.000em 37% 2.000em 37%; }
+}
+@media (min-width: 2400px) {
+	html { font-size: 124%; }
+	#aboutcontainer, #downloadscontainer { padding: 2.000em 22% 2.000em 22%; }
+	#newscontainer { padding: 2.000em 25% 2.000em 25%; }
+	#feedbackcontainer { padding: 2.000em 38% 2.000em 38%; }
+}
