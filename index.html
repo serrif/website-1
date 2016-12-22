@@ -8,9 +8,12 @@
 	<title>{{ site.title }}</title>
 	<meta name="description" content="{{ site.description }}">
 	<link rel="canonical" href="{{ site.url }}/">
-	<link rel="alternate" type="application/atom+xml" href="/feed.xml">
 	<style type="text/css">
-		{% capture css %}{% include fonts.css %}{% include index.css %}{% endcapture %}{{ css | scssify }}
+		{% capture style %}
+		{% include fonts.css %}
+		{% include index.css %}
+		{% endcapture %}
+		{{ style | scssify }}
 	</style>
 </head>
 <body>
@@ -20,8 +23,6 @@
 			<p>Flame.ga</p>
 			<h1>Free OP Server in Minecraft</h1>
 			<a href="#about" id="aboutbutton" title="About"></a>
-			<a href="#news" id="newsbutton" title="News"></a>
-			<a href="#feedback" id="feedbackbutton" title="Feedback"></a>
 			<a href="#downloads" id="downloadsbutton" title="Downloads"></a>
 		</div>
 	</div>
@@ -35,35 +36,6 @@
 				<span>IP</span>
 				<i>flame.ga</i>
 			</div>
-		</div>
-	</div>
-	<div id="news">
-		<div id="newscontainer">
-			<h2>News</h2>
-			<ul>
-				{% for post in site.posts %}
-					<li>
-						{{ post.content }}
-						<span>{{ post.date | date: "%B %e, %Y" }}</span>
-					</li>
-				{% endfor %}
-			</ul>
-		</div>
-	</div>
-	<div id="feedback">
-		<div id="feedbackcontainer">
-			<h2>Feedback</h2>
-			<p>
-				Do you have anything you would like to say about the server? Suggestions for new features? Send us your feedback below.
-			</p>
-			<form action="https://formspree.io/contact@flame.ga" method="POST">
-				<input type="hidden" name="_subject" value="New feedback submission for Flame.ga" />
-				<textarea name="message" rows="7" placeholder="Your message" required></textarea>
-				<input type="text" name="_gotcha" class="hide" />
-				<input type="text" name="_format" value="plain" class="hide" />
-				<input type="hidden" name="_next" value="/sent"/>
-				<button type="submit">Send</button>
-			</form>
 		</div>
 	</div>
 	<div id="downloads">
