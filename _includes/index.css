@@ -192,9 +192,7 @@ a:focus {
 		display: inline-block;
 	}
 	.main-container {
-		padding-left: 4%;
-		padding-right: 4%;
-		padding-top: 8em;
+		padding: 8.125em 4% 3.000em 4%;
 	}
 }
 @media (min-width: 700px) {
