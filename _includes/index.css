@@ -83,7 +83,7 @@ a:focus {
 	animation: fadein 1s;
 	display: table-cell;
 	vertical-align: middle;
-	padding: 3.000em 5.625em 3.000em 10.625em;
+	padding: 3.000em 4% 3.000em 12%;
 	text-align: center;
 }
 .main p {
