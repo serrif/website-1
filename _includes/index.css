@@ -65,7 +65,7 @@ a:focus {
 .logo:before {
 	content: '\1F525';
 }
-.join:before {
+.play:before {
 	content: "\2139";
 }
 .downloads:before {
