@@ -134,7 +134,6 @@ h2:before,
 }
 #downloadsbutton {
 	border-radius: 0 1.313em 1.313em 0;
-	border-left: 1px solid #aa0000;
 	padding: 0.438em 1.063em 0.313em 0.875em;
 }
 /* About */
@@ -169,6 +168,22 @@ h2:before,
 }
 #downloads a:last-child {
 	margin: 0 0 0 0.500em;
+}
+#downloads a {
+	border: #fff solid 1px;
+	border-radius: 0.313em;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1.000em;
+	height: 2.313em;
+	line-height: 2.313em;
+	padding: 0 0.688em 0 0.688em;
+	text-transform: uppercase;
+}
+#downloads a:hover, #downloads a:focus {
+	background: rgba(255,255,255,.05);
 }
 /* Responsive Design */
 @media (min-width: 0px) {
