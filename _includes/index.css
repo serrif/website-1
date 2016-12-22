@@ -1,9 +1,16 @@
 /* Animation */
-@keyframes fadein{
-	from { opacity: 0; }
-	to { opacity: 1; }
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
+
 /* Main */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -18,376 +25,384 @@ body {
 	height: 100%;
 }
 body {
-	background: #000;
-	color: #fff;
-	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	background: #f5f5f5;
+	color: #565656;
+	font-family: montserratlight, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.000em;
 	line-height: 1;
-	-webkit-tap-highlight-color: rgba(255,255,255,.2);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 ::-moz-selection {
-	background: #7b7b7b;
-	background: rgba(255,255,255,.04);
+	background: rgba(0, 0, 0, .3);
 }
+
 ::selection {
-	background: #7b7b7b;
-	background: rgba(255,255,255,.04);
+	background: rgba(0, 0, 0, .3);
 }
 h1,
 h2 {
-	font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #aa0000;
+	font-family: montserratbold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 3.000em;
 	font-style: normal;
 	font-weight: normal;
+	letter-spacing: 1px;
+	margin: 0 0 0.438em 0;
 	text-transform: uppercase;
 }
-h1 {
-	font-size: 1.000em;
-	line-height: 1.875em;
-	margin: 0 0 2.125em 0;
-}
-h2:before {
-	cursor: default;
-	margin: 0 0.625em 0 0;
-	vertical-align: top;
-}
-h2 {
-	font-size: 1.750em;
-	margin: 0 0 0.813em 0;
-}
 a {
-	color: rgba(255,255,255,.4);
+	color: #aa0000;
 	text-decoration: none;
 }
 a:hover,
 a:focus {
-	color: rgba(255,255,255,.2);
+	color: #d10000;
 }
-/* Combined Rules */
-h2:before,
-#intro i,
-#intro a:before {
-	font-family: 'icons';
+
+/* Icons */
+
+.logo:before {
+	content: '\1F525';
 }
-#aboutbutton:before,
-#about h2:before {
+.join:before {
 	content: "\2139";
 }
-#downloadsbutton:before,
-#downloads h2:before {
+.downloads:before {
 	content: "\2193";
 }
-#intro,
-#about {
-	width: 100%;
-	height: 100%;
+
+/* Main */
+
+.main {
 	display: table;
+	height: 100%;
+	width: 100%;
 }
-#aboutcontainer,
-#downloadscontainer {
-	padding: 2.000em 5.625em 2.000em 5.625em;
-}
-#introcontainer,
-#aboutcontainer,
-#downloadscontainer {
+.main-container {
+	animation: fadein 1s;
 	display: table-cell;
 	vertical-align: middle;
-	font-size: 1.000em;
+	padding: 3.000em 5.625em 3.000em 10.625em;
 	text-align: center;
-	animation: fadein 1s;
 }
-#about p,
-#downloads p {
+.main p {
 	margin: 0 0 1.875em 0;
 	line-height: 1.6;
 }
-/* Intro */
-#intro {
+
+/* Navigation */
+
+#navigation {
 	background: #aa0000;
-}
-#introcontainer {
-	padding: 3.125em 0 3.125em 0;
-}
-#intro i:before {
-	font-size: 21.875em;
-	content: "\1F525";
-	cursor: default;
-}
-#intro p {
-	font-size: 3.063em;
-	text-transform: uppercase;
-	font-family: montserratbold,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	letter-spacing: 1px;
-	margin: 0.438em 0 0 0;
-}
-#intro a {
-	background: #fff;
-	color: #aa0000;
-	font-size: 1.188em;
-}
-#intro a:hover {
-	background: rgba(255,255,255,.9);
-}
-#aboutbutton {
-	border-radius: 1.313em 0 0 1.313em;
-	border-right: 1px solid #aa0000;
-	padding: 0.438em 0.813em 0.313em 1.125em;
-}
-#downloadsbutton {
-	border-radius: 0 1.313em 1.313em 0;
-	padding: 0.438em 1.063em 0.313em 0.875em;
-}
-/* About */
-#about {
-	background: #000;
-}
-/* IP */
-#ip, #ip span, #ip i {
-	display: inline-block;
-}
-#ip {
-	border: #fff solid 1px;
-	border-radius: 0.313em;
-}
-#ip span {
-	background: #fff;
-	border-radius: 0.188em 0 0 0.188em;
-	color: #000;
-	font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	padding: 0.563em 0.563em 0.563em 0.625em;
-}
-#ip i {
-	color: #fff;
-	padding: 0.500em 0.563em 0.500em 0.563em;
-}
-/* Downloads */
-#downloads {
-	background: #0b0b0b;
 	display: table;
-	width: 100%;
-	height: 40%;
+	height: 100%;
+	position: fixed;
+	table-layout: fixed;
+	text-align: center;
 }
-#downloads a:last-child {
-	margin: 0 0 0 0.500em;
+#navigation span {
+	display: table-row;
 }
-#downloads a {
-	border: #fff solid 1px;
-	border-radius: 0.313em;
+#navigation a:before {
+	font-family: 'icons';
+}
+#navigation a.logo {
+	font-size: 3.250em;
+	padding: 0.250em;
+}
+#navigation a {
+	color: #f5f5f5;
+	display: table-cell;
+	font-size: 1.875em;
+	padding: 0.875em;
+	vertical-align: middle;
+}
+#navigation a:hover,
+#navigation a:focus {
 	color: #fff;
+}
+
+/* Buttons */
+
+.button {
+	background: #aa0000;
+	border-radius: 0.375em;
+	color: #f5f5f5;
 	cursor: pointer;
 	display: inline-block;
-	font-family: montserratregular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: montserratregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.000em;
-	height: 2.313em;
-	line-height: 2.313em;
-	padding: 0 0.688em 0 0.688em;
+	margin: 0 0.313em 0 0.313em;
+	padding: 0.938em;
 	text-transform: uppercase;
 }
-#downloads a:hover, #downloads a:focus {
-	background: rgba(255,255,255,.05);
+.button:hover,
+.button:focus {
+	background: #d10000;
+	color: #f5f5f5;
 }
+
 /* Responsive Design */
+
 @media (min-width: 0px) {
-	html { font-size: 76%; }
-	#aboutcontainer, #downloadscontainer { padding-right: 3%; padding-left: 3%; }
+	html {
+		font-size: 84%;
+	}
 }
 @media (min-width: 100px) {
-	html { font-size: 78%; }
+	html {
+		font-size: 86%;
+	}
 }
 @media (min-width: 200px) {
-	html { font-size: 80%; }
+	html {
+		font-size: 88%;
+	}
 }
 @media (min-width: 300px) {
-	html { font-size: 82%; }
+	html {
+		font-size: 90%;
+	}
 }
 @media (min-width: 400px) {
-	html { font-size: 84%; }
+	html {
+		font-size: 92%;
+	}
 }
 @media (min-width: 500px) {
-	html { font-size: 86%; }
+	html {
+		font-size: 94%;
 	}
+}
 @media (min-width: 600px) {
-	html { font-size: 88%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 4% 2.000em 4%; }
+	html {
+		font-size: 96%;
+	}
 }
 @media (min-width: 700px) {
-	html { font-size: 90%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 5% 2.000em 5%; }
-	#newscontainer { padding: 2.000em 8% 2.000em 8%; }
-	#contactcontainer { padding: 2.000em 12% 2.000em 12%; }
+	html {
+		font-size: 98%;
+	}
 }
 @media (min-width: 800px) {
-	html { font-size: 92%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 6% 2.000em 6%; }
+	html {
+		font-size: 100%;
+	}
 }
 @media (min-width: 900px) {
-	html { font-size: 94%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 7% 2.000em 7%; }
+	html {
+		font-size: 102%;
+	}
 }
 @media (min-width: 1000px) {
-	html { font-size: 96%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 8% 2.000em 8%; }
+	html {
+		font-size: 104%;
+	}
 }
 @media (min-width: 1100px) {
-	html { font-size: 98%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 9% 2.000em 9%; }
+	html {
+		font-size: 106%;
+	}
 }
+
 @media (min-width: 1200px) {
-	html { font-size: 100%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 10% 2.000em 10%; }
+	html {
+		font-size: 108%;
+	}
 }
 @media (min-width: 1300px) {
-	html { font-size: 102%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 11% 2.000em 11%; }
+	html {
+		font-size: 110%;
+	}
 }
 @media (min-width: 1400px) {
-	html { font-size: 104%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 12% 2.000em 12%; }
+	html {
+		font-size: 112%;
+	}
 }
 @media (min-width: 1500px) {
-	html { font-size: 106%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 13% 2.000em 13%; }
+	html {
+		font-size: 114%;
+	}
 }
 @media (min-width: 1600px) {
-	html { font-size: 108%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 14% 2.000em 14%; }
+	html {
+		font-size: 116%;
+	}
 }
 @media (min-width: 1700px) {
-	html { font-size: 110%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 15% 2.000em 15%; }
+	html {
+		font-size: 118%;
+	}
 }
 @media (min-width: 1800px) {
-	html { font-size: 112%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 16% 2.000em 16%; }
+	html {
+		font-size: 120%;
+	}
 }
 @media (min-width: 1900px) {
-	html { font-size: 114%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 17% 2.000em 17%; }
+	html {
+		font-size: 122%;
+	}
 }
 @media (min-width: 2000px) {
-	html { font-size: 116%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 18% 2.000em 18%; }
+	html {
+		font-size: 124%;
+	}
 }
 @media (min-width: 2100px) {
-	html { font-size: 118%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 19% 2.000em 19%; }
+	html {
+		font-size: 126%;
+	}
 }
 @media (min-width: 2200px) {
-	html { font-size: 120%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 20% 2.000em 20%; }
+	html {
+		font-size: 128%;
+	}
 }
 @media (min-width: 2300px) {
-	html { font-size: 122%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 21% 2.000em 21%; }
+	html {
+		font-size: 130%;
+	}
 }
 @media (min-width: 2400px) {
-	html { font-size: 124%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 22% 2.000em 22%; }
+	html {
+		font-size: 132%;
+	}
 }
 @media (min-width: 2500px) {
-	html { font-size: 126%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 23% 2.000em 23%; }
+	html {
+		font-size: 134%;
+	}
 }
 @media (min-width: 2600px) {
-	html { font-size: 128%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 24% 2.000em 24%; }
+	html {
+		font-size: 136%;
+	}
 }
 @media (min-width: 2700px) {
-	html { font-size: 130%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 25% 2.000em 25%; }
+	html {
+		font-size: 138%;
+	}
 }
 @media (min-width: 2800px) {
-	html { font-size: 132%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 26% 2.000em 26%; }
+	html {
+		font-size: 140%;
+	}
 }
 @media (min-width: 2900px) {
-	html { font-size: 134%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 27% 2.000em 27%; }
+	html {
+		font-size: 142%;
+	}
 }
 @media (min-width: 3000px) {
-	html { font-size: 136%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 28% 2.000em 28%; }
+	html {
+		font-size: 144%;
+	}
 }
 @media (min-width: 3100px) {
-	html { font-size: 138%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 29% 2.000em 29%; }
+	html {
+		font-size: 146%;
+	}
 }
 @media (min-width: 3200px) {
-	html { font-size: 140%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 30% 2.000em 30%; }
+	html {
+		font-size: 148%;
+	}
 }
 @media (min-width: 3300px) {
-	html { font-size: 142%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 31% 2.000em 31%; }
+	html {
+		font-size: 150%;
+	}
 }
 @media (min-width: 3400px) {
-	html { font-size: 144%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 32% 2.000em 32%; }
+	html {
+		font-size: 152%;
+	}
 }
 @media (min-width: 3500px) {
-	html { font-size: 146%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 33% 2.000em 33%; }
+	html {
+		font-size: 154%;
+	}
 }
 @media (min-width: 3600px) {
-	html { font-size: 148%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 34% 2.000em 34%; }
+	html {
+		font-size: 156%;
+	}
 }
 @media (min-width: 3700px) {
-	html { font-size: 150%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 35% 2.000em 35%; }
+	html {
+		font-size: 158%;
+	}
 }
 @media (min-width: 3800px) {
-	html { font-size: 152%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 36% 2.000em 36%; }
+	html {
+		font-size: 160%;
+	}
 }
 @media (min-width: 3900px) {
-	html { font-size: 154%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 37% 2.000em 37%; }
+	html {
+		font-size: 162%;
+	}
 }
 @media (min-width: 4000px) {
-	html { font-size: 156%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 38% 2.000em 38%; }
+	html {
+		font-size: 164%;
+	}
 }
 @media (min-width: 4100px) {
-	html { font-size: 158%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 39% 2.000em 39%; }
+	html {
+		font-size: 166%;
+	}
 }
 @media (min-width: 4200px) {
-	html { font-size: 160%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 40% 2.000em 40%; }
+	html {
+		font-size: 168%;
+	}
 }
 @media (min-width: 4300px) {
-	html { font-size: 162%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 41% 2.000em 41%; }
+	html {
+		font-size: 170%;
+	}
 }
 @media (min-width: 4400px) {
-	html { font-size: 164%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 42% 2.000em 42%; }
+	html {
+		font-size: 172%;
+	}
 }
 @media (min-width: 4500px) {
-	html { font-size: 166%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 43% 2.000em 43%; }
+	html {
+		font-size: 174%;
+	}
 }
 @media (min-width: 4600px) {
-	html { font-size: 168%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 44% 2.000em 44%; }
+	html {
+		font-size: 176%;
+	}
 }
 @media (min-width: 4700px) {
-	html { font-size: 170%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 45% 2.000em 45%; }
+	html {
+		font-size: 178%;
+	}
 }
 @media (min-width: 4800px) {
-	html { font-size: 172%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 46% 2.000em 46%; }
+	html {
+		font-size: 180%;
+	}
 }
 @media (min-width: 4900px) {
-	html { font-size: 174%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 47% 2.000em 47%; }
+	html {
+		font-size: 182%;
+	}
 }
 @media (min-width: 5000px) {
-	html { font-size: 176%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 48% 2.000em 48%; }
+	html {
+		font-size: 184%
+	}
 }
 @media (min-width: 5100px) {
-	html { font-size: 178%; }
-	#aboutcontainer, #downloadscontainer { padding: 2.000em 49% 2.000em 49%; }
+	html {
+		font-size: 186%;
+	}
 }
