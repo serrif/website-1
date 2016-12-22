@@ -182,6 +182,7 @@ a:focus {
 }
 @media (max-width: 600px) {
 	#navigation {
+		bottom: 0;
 		height: auto;
 		width: 100%;
 	}
@@ -190,9 +191,6 @@ a:focus {
 	}
 	#navigation a {
 		display: inline-block;
-	}
-	.main-container:first-child {
-		padding-top: 8.000em;
 	}
 	.main-container {
 		padding-left: 4%;
