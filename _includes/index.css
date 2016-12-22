@@ -180,6 +180,25 @@ a:focus {
 		font-size: 96%;
 	}
 }
+@media (max-width: 600px) {
+	#navigation {
+		height: auto;
+		width: 100%;
+	}
+	#navigation span{
+		display: table-cell;
+	}
+	#navigation a {
+		display: inline-block;
+	}
+	.main-container:first-child {
+		padding-top: 8.000em;
+	}
+	.main-container {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+}
 @media (min-width: 700px) {
 	html {
 		font-size: 98%;
