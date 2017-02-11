@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://flame.ga/sitemap.xml
+Sitemap: https://kaboom.pw/sitemap.xml
