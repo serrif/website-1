@@ -46,7 +46,8 @@ h2 {
 	font-style: normal;
 	font-weight: normal;
 	letter-spacing: 1px;
-	margin: 0 0 0.438em 0;
+	line-height: 1.125em;
+	margin: 0 0 0.375em 0;
 	text-transform: uppercase;
 }
 a {
