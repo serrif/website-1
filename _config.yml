@@ -6,6 +6,3 @@ exclude:
   - LICENSE
 gems:
   - jekyll-sitemap
-webrick:
-  headers:
-    Content-Security-Policy: default-src https: 'unsafe-inline' 'unsafe-eval'
