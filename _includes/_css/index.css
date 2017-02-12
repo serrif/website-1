@@ -93,7 +93,7 @@ a:focus {
 #navigation a {
 	display: table-cell;
 	fill: #eee;
-	padding: 0.500em;
+	padding: 1.000em;
 	vertical-align: middle;
 }
 #navigation a:hover,
