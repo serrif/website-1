@@ -90,15 +90,10 @@ a:focus {
 #navigation span {
 	display: table-row;
 }
-#navigation a.logo {
-	font-size: 3.250em;
-	padding: 0.250em;
-}
 #navigation a {
 	display: table-cell;
 	fill: #eee;
-	font-size: 1.875em;
-	padding: 0.875em;
+	padding: 0.500em;
 	vertical-align: middle;
 }
 #navigation a:hover,
