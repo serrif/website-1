@@ -25,7 +25,7 @@ body {
 	height: 100%;
 }
 body {
-	background: #fff6e5;
+	background: #eee;
 	color: #777777;
 	font-family: montserratlight, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.000em;
@@ -42,7 +42,7 @@ body {
 }
 h1,
 h2 {
-	color: #ffaa00;
+	color: #555;
 	font-family: montserratbold, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 3.000em;
 	font-style: normal;
@@ -52,12 +52,12 @@ h2 {
 	text-transform: uppercase;
 }
 a {
-	color: #ffaa00;
+	color: #555;
 	text-decoration: none;
 }
 a:hover,
 a:focus {
-	color: #ffbb32;
+	color: #767676;
 }
 
 /* Icons */
@@ -94,7 +94,7 @@ a:focus {
 /* Navigation */
 
 #navigation {
-	background: #ffaa00;
+	background: #555;
 	display: table;
 	height: 100%;
 	position: fixed;
@@ -112,7 +112,7 @@ a:focus {
 	padding: 0.250em;
 }
 #navigation a {
-	color: #fff6e5;
+	color: #eee;
 	display: table-cell;
 	font-size: 1.875em;
 	padding: 0.875em;
@@ -126,9 +126,9 @@ a:focus {
 /* Buttons */
 
 .button {
-	background: #ffaa00;
+	background: #555;
 	border-radius: 0.375em;
-	color: #fff6e5;
+	color: #eee;
 	cursor: pointer;
 	display: inline-block;
 	font-family: montserratregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -139,8 +139,8 @@ a:focus {
 }
 .button:hover,
 .button:focus {
-	background: #ffbb32;
-	color: #fff6e5;
+	background: #767676;
+	color: #eee;
 }
 
 /* Responsive Design */
