@@ -8,7 +8,6 @@
 		opacity: 1;
 	}
 }
-
 /* Main */
 
 * {
@@ -29,10 +28,9 @@ body {
 	color: #777777;
 	font-family: montserratlight, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.000em;
-	line-height: 1;
+	line-height: 1.000em;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 ::-moz-selection {
 	background: rgba(0, 0, 0, .3);
 }
@@ -60,18 +58,6 @@ a:focus {
 	color: #767676;
 }
 
-/* Icons */
-
-.logo:before {
-	content: '\1F525';
-}
-.play:before {
-	content: "\2139";
-}
-.downloads:before {
-	content: "\2193";
-}
-
 /* Main */
 
 .main {
@@ -88,7 +74,7 @@ a:focus {
 }
 .main p {
 	margin: 0 0 1.875em 0;
-	line-height: 1.6;
+	line-height: 1.625em;
 }
 
 /* Navigation */
@@ -104,23 +90,20 @@ a:focus {
 #navigation span {
 	display: table-row;
 }
-#navigation a:before {
-	font-family: 'icons';
-}
 #navigation a.logo {
 	font-size: 3.250em;
 	padding: 0.250em;
 }
 #navigation a {
-	color: #eee;
 	display: table-cell;
+	fill: #eee;
 	font-size: 1.875em;
 	padding: 0.875em;
 	vertical-align: middle;
 }
 #navigation a:hover,
 #navigation a:focus {
-	color: #fff;
+	fill: #fff;
 }
 
 /* Buttons */
@@ -220,7 +203,6 @@ a:focus {
 		font-size: 106%;
 	}
 }
-
 @media (min-width: 1200px) {
 	html {
 		font-size: 108%;

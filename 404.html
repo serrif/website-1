@@ -6,15 +6,16 @@ sitemap: false
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ site.title }}</title>
-	<meta name="description" content="{{ site.description }}">
-	<link rel="canonical" href="{{ site.url }}/">
 	<meta http-equiv="refresh" content="0;url={{ site.url }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ site.title }} - Free OP Server in Minecraft</title>
+	<meta name="description" content="{{ site.description }}">
+	<meta http-equiv="Content-Security-Policy" content="default-src {{ site.url }} 'unsafe-inline' data:">
+	<link rel="canonical" href="{{ site.url }}/">
 	<style type="text/css">
-	html {
-		background: #000;
-	}
+		html {
+			background: #eee;
+		}
 	</style>
 </head>
 </html>{% endcapture %}{{ content | strip_newlines | replace:'	','' }}

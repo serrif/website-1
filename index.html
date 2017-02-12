@@ -5,9 +5,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ site.title }}</title>
+	<title>{{ site.title }} - Free OP Server in Minecraft</title>
 	<meta name="description" content="{{ site.description }}">
-    <meta http-equiv="Content-Security-Policy" content="default-src https://kaboom.pw 'unsafe-inline' data:">
+	<meta http-equiv="Content-Security-Policy" content="default-src {{ site.url }} 'unsafe-inline' data:">
 	<link rel="canonical" href="{{ site.url }}/">
 	<style type="text/css">
 		{% capture style %}
@@ -19,21 +19,39 @@
 </head>
 <body>
 	<div id="navigation">
-		<span><a href="#home" title="Home" class="logo"></a></span>
-		<span><a href="#play" title="Play" class="play"></a></span>
-		<span><a href="#downloads" title="Downloads" class="downloads"></a></span>
+		<span>
+			<a href="#home" title="Home">
+				<svg aria-hidden="true" height="1.125em" viewBox="0 0 24 24" width="1.125em">
+					<path d="{% include _icons/kaboom %}" />
+				</svg>
+			</a>
+		</span>
+		<span>
+			<a href="#play" title="Play">
+				<svg aria-hidden="true" height="1.125em" viewBox="0 0 24 24" width="1.125em">
+					<path d="{% include _icons/play %}" />
+				</svg>
+			</a>
+		</span>
+		<span>
+			<a href="#downloads" title="Downloads">
+				<svg aria-hidden="true" height="1.125em" viewBox="0 0 24 24" width="1.125em">
+					<path d="{% include _icons/downloads %}" />
+				</svg>
+			</a>
+		</span>
 	</div>
 	<div id="home" class="main">
 		<div class="main-container">
-			<h1>Welcome to Kaboom.pw!</h1>
-			<p>Kaboom.pw is a Minecraft server where you can do anything you want, whether it be building or testing commands. Enjoy access to many operator commands and server tools, such as WorldEdit and CommandSpy.</p>
+			<h1>Welcome to {{ site.title }}!</h1>
+			<p>{{ site.title }} is a Minecraft server where you can do anything you want, whether it be building or testing commands. Enjoy access to many operator commands and server tools, such as WorldEdit and CommandSpy.</p>
 			<a href="#play" class="button">Play</a>
 		</div>
 	</div>
 	<div id="play" class="main">
 		<div class="main-container">
 			<h2>Play</h2>
-			<p>If you want to play on Kaboom.pw, simply add the IP "kaboom.pw" to your server list in Minecraft.</p>
+			<p>If you want to play on {{ site.title }}, simply add the IP "{{ site.title | downcase }}" to your server list in Minecraft.</p>
 		</div>
 	</div>
 	<div id="downloads" class="main">
