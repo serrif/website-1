@@ -1,8 +1,0 @@
-title: Kaboom.pw
-description: Kaboom.pw is a Minecraft server where you can do anything you want, whether it be building or testing commands.
-url: https://kaboom.pw
-exclude:
-  - CNAME
-  - LICENSE
-gems:
-  - jekyll-sitemap
