@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+---
+---
+{% capture content %}<!DOCTYPE html>
 <html>
 <head>
 	<meta content="width=device-width,initial-scale=1" name="viewport">
-	<title>Kaboom.pw - Free OP | Anarchy | Creative</title>
-	<meta content="Kaboom.pw is a multiplayer server for Minecraft that combines free OP with anarchy. Do anything you want, without having to worry about rules." name="description">
-	<link href="https://kaboom.pw/" rel="canonical">
+	<title>{{ site.title }} - Free OP | Anarchy | Creative</title>
+	<meta content="{{ site.description }}" name="description">
+	<link href="{{ site.url }}/" rel="canonical">
 	<link href="/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
 	<link href="/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
 	<link href="/icons/manifest.json" rel="manifest">
@@ -17,43 +19,43 @@
 		<a class="home" href="#home" title="Home">
 			<span id="logo">
 				<svg aria-hidden="true" viewbox="0 0 24 24">
-					<path d="M20.263 3.12l.617.617-3.268 3.255.91.91c.335.335.335.884 0 1.218l-.856.857c.748 1.354 1.19 2.92 1.19 4.594 0 5.21-4.218 9.43-9.427 9.43C4.22 24 0 19.78 0 14.57c0-5.208 4.22-9.427 9.43-9.427 1.673 0 3.24.442 4.593 1.19l.857-.856c.334-.334.883-.334 1.217 0l.91.91zm.108-.75c-.08.08-.188.135-.294.135-.12 0-.228-.054-.31-.134L18.55 1.167c-.16-.174-.16-.443 0-.617.173-.16.442-.16.616 0l1.205 1.218c.175.16.175.443 0 .603zm3.08 3.08c-.093.08-.2.12-.307.12-.107 0-.214-.04-.31-.12L21.63 4.233c-.174-.16-.174-.443 0-.603.16-.175.442-.175.603 0l1.218 1.204c.162.174.162.443 0 .617zM24 3c0 .24-.19.43-.43.43h-1.284c-.24 0-.43-.19-.43-.43s.19-.43.43-.43h1.285c.24 0 .43.19.43.43zM21.43.43v1.284c0 .24-.19.43-.43.43s-.43-.19-.43-.43V.43c0-.24.19-.43.43-.43s.43.19.43.43zm2.02.736L22.233 2.37c-.08.08-.19.134-.295.134-.12 0-.228-.053-.31-.133-.172-.16-.172-.44 0-.602l1.207-1.22c.174-.16.443-.16.617 0 .16.175.16.443 0 .618z"></path>
+					<path d="{% include _icons/logo %}"></path>
 				</svg>
 			</span>
 		</a>
 		<a href="#play" title="Play">
 			<span>
 				<svg aria-hidden="true" viewbox="0 0 24 24">
-					<path d="M10.4 12.8v-1.6c0-.225-.176-.4-.4-.4H7.6V8.4c0-.225-.176-.4-.4-.4H5.6c-.226 0-.4.175-.4.4v2.4H2.8c-.226 0-.4.175-.4.4v1.6c0 .225.174.4.4.4h2.4v2.4c0 .225.174.4.4.4h1.6c.224 0 .4-.175.4-.4v-2.4H10c.224 0 .4-.175.4-.4zm7.2.8c0-.887-.714-1.6-1.6-1.6-.888 0-1.6.713-1.6 1.6 0 .887.712 1.6 1.6 1.6.886 0 1.6-.713 1.6-1.6zm3.2-3.2c0-.887-.714-1.6-1.6-1.6-.888 0-1.6.713-1.6 1.6 0 .887.712 1.6 1.6 1.6.886 0 1.6-.713 1.6-1.6zM24 12c0 3.538-2.863 6.4-6.4 6.4-1.626 0-3.1-.613-4.226-1.6h-2.75c-1.124.987-2.6 1.6-4.224 1.6C2.862 18.4 0 15.538 0 12c0-3.538 2.862-6.4 6.4-6.4h11.2c3.538 0 6.4 2.862 6.4 6.4z"></path>
+					<path d="{% include _icons/play %}"></path>
 				</svg>
 			</span>
 		</a>
 		<a href="#vote" title="Vote">
 			<span>
 				<svg aria-hidden="true" viewbox="0 0 24 24">
-					<path d="M3.84 18.72c0-.526-.435-.96-.96-.96-.54 0-.96.434-.96.96 0 .54.42.96.96.96.525 0 .96-.42.96-.96zm2.4-7.68v9.6c0 .525-.435.96-.96.96H.96c-.525 0-.96-.435-.96-.96v-9.6c0-.526.435-.96.96-.96h4.32c.525 0 .96.434.96.96zm17.76 0c0 .794-.315 1.65-.825 2.234.165.48.225.93.225 1.14.03.75-.195 1.456-.645 2.056.165.555.165 1.155 0 1.755-.15.555-.435 1.05-.81 1.41.09 1.125-.165 2.04-.736 2.715-.646.765-1.636 1.155-2.956 1.17H16.32c-2.146 0-4.17-.704-5.79-1.26-.945-.33-1.846-.645-2.37-.66-.51-.016-.96-.435-.96-.96v-9.616c0-.495.42-.915.914-.96.555-.045 1.995-1.83 2.655-2.7.54-.69 1.05-1.335 1.514-1.8.585-.584.75-1.484.93-2.354.166-.885.345-1.816.99-2.445.18-.18.42-.285.675-.285 3.36 0 3.36 2.685 3.36 3.84 0 1.23-.436 2.1-.84 2.88-.166.33-.316.48-.436.96h4.155c1.56 0 2.88 1.32 2.88 2.88z"></path>
+					<path d="{% include _icons/vote %}"></path>
 				</svg>
 			</span>
 		</a>
 		<a href="#downloads" title="Downloads">
 			<span>
 				<svg aria-hidden="true" viewbox="0 0 24 24">
-					<path d="M16 13.2c0-.225-.175-.4-.4-.4h-2.8V8.4c0-.213-.187-.4-.4-.4H10c-.213 0-.4.187-.4.4v4.4H6.8c-.225 0-.4.187-.4.4 0 .1.038.213.113.287l4.4 4.4c.075.075.175.113.287.113.1 0 .213-.038.287-.113l4.387-4.387c.076-.087.125-.187.125-.3zm8 2.8c0 2.65-2.15 4.8-4.8 4.8H5.6c-3.087 0-5.6-2.513-5.6-5.6 0-2.175 1.262-4.15 3.225-5.062C3.212 9.95 3.2 9.775 3.2 9.6c0-3.538 2.862-6.4 6.4-6.4 2.6 0 4.938 1.575 5.925 3.975.575-.5 1.313-.775 2.075-.775 1.762 0 3.2 1.438 3.2 3.2 0 .613-.175 1.213-.513 1.725C22.462 11.838 24 13.775 24 16z"></path>
+					<path d="{% include _icons/downloads %}"></path>
 				</svg>
 			</span>
 		</a>
 	</div>
 	<div class="main" id="home">
 		<div class="main-container">
-			<h1>Welcome to Kaboom.pw!</h1>
-			<p>Kaboom.pw is more than your regular free OP server for Minecraft. This public multiplayer server combines free OP with anarchy. Use powerful operator commands as much as you like, without having to worry about rules. Large plugins such as WorldEdit, CommandSpy and iControlU are available at any time.</p>
+			<h1>Welcome to {{ site.title }}!</h1>
+			<p>{{ site.title }} is more than your regular free OP server for Minecraft. This public multiplayer server combines free OP with anarchy. Use powerful operator commands as much as you like, without having to worry about rules. Large plugins such as WorldEdit, CommandSpy and iControlU are available at any time.</p>
 			<a class="button" href="#play">Play</a>
 		</div>
 	</div>
 	<div class="main" id="play">
 		<div class="main-container">
 			<h2>Play</h2>
-			<p>If you want to play on Kaboom.pw, simply add the IP "kaboom.pw" to the multiplayer server list in your Minecraft client. You can join with Minecraft PC/Java Edition and Minecraft Pocket Edition/Windows 10 Edition.</p>
+			<p>If you want to play on Kaboom.pw, simply add the IP "{{ site.title | downcase }}" to the multiplayer server list in your Minecraft client. You can join with Minecraft Java Edition.</p>
 		</div>
 	</div>
 	<div class="main" id="vote">
@@ -68,8 +70,10 @@
 	<div class="main" id="downloads">
 		<div class="main-container">
 			<h2>Downloads</h2>
-			<p>Below are links to download schematics and worlds of the server, to make it easy for you to export your creations.</p><a class="button" href="/downloads/schematics.zip">Schematics</a><a class="button" href="/downloads/worlds.zip">Worlds</a>
+			<p>Below are links to download schematics and worlds of the server, to make it easy for you to export your creations.</p>
+			<a class="button" href="/downloads/schematics.zip">Schematics</a>
+			<a class="button" href="/downloads/worlds.zip">Worlds</a>
 		</div>
 	</div>
 </body>
-</html>
+</html>{% endcapture %}{{ content | strip_newlines | replace:'	','' }}
