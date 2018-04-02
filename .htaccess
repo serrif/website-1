@@ -1,7 +1,6 @@
 AddDefaultCharset utf-8
 AddCharset UTF-8 .css .js
 FileETag MTime Size
-Options +ExecCGI
 ServerSignature Off
 SetEnvIf Host ^ suppress-error-charset
 
@@ -10,10 +9,6 @@ AddType application/manifest+json .webmanifest
 
 ErrorDocument 403 https://kaboom.pw/
 ErrorDocument 404 https://kaboom.pw/
-
-<FilesMatch report$>
-SetHandler cgi-script
-</FilesMatch>
 
 <FilesMatch ".(htm|html)$">
 Header set Content-Security-Policy "default-src 'none'; font-src data:; form-action 'self'; img-src 'self'; manifest-src 'self'; style-src 'self'; upgrade-insecure-requests"
