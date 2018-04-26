@@ -3,6 +3,7 @@ description: Kaboom.pw is a multiplayer server for Minecraft that combines free 
 url: https://kaboom.pw
 
 exclude:
+  - build.sh
   - Gemfile
   - LICENSE
 

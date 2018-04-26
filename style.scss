@@ -48,6 +48,14 @@ h2 {
 h1 {
 	font-size: 3.000em;
 }
+h1 svg {
+	top: 0.125em;
+	position: relative;
+	width: 1.000em;
+	height: 1.000em;
+	margin: 0 0.250em 0 0;
+	fill: #555;
+}
 h2 {
 	font-size: 2.125em;
 }
@@ -58,6 +66,7 @@ p + h2 {
 	margin: 1.375em 0 0 0;
 }
 p {
+	font-size: 0.938em;
 	line-height: 1.625;
 	margin: 1.000em 0;
 }
@@ -72,14 +81,14 @@ a:focus {
 	color: lighten($accentcolor, 15%);
 }
 .button {
-	background: $accentcolor;
+	background: $accentcolor url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z'/%3E%3C/svg%3E") right 0.375em center/1.750em 1.750em no-repeat;
 	border-radius: 0.375em;
 	color: $lightcolor;
 	display: block;
 	font-size: 0.875em;
 	line-height: 1.625;
 	margin: 2.250em 0 1.125em 0;
-	padding: 0.625em 1.000em;
+	padding: 0.625em 2.500em 0.625em 1.000em;
 }
 .button + .button {
 	margin: 0 0 1.125em 0;
@@ -102,6 +111,14 @@ a:focus {
 	font-weight: bold;
 	margin: 0 0 0.125em 0;
 	text-transform: uppercase;
+}
+.button svg {
+	top: 0.188em;
+	position: relative;
+	width: 1.000em;
+	height: 1.000em;
+	margin: 0 0.375em 0 0;
+	fill: #fff;
 }
 @media print {
 	body {
