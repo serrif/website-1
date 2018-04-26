@@ -5,8 +5,9 @@ layout: minify
 	"name": "Kaboom.pw",
 	"icons": [
 		{
-			"src": "/icons/android-chrome-192x192.png",
+			"src": "/icons/android-chrome.png",
 			"sizes": "any",
+			"type": "image/png"
 		}
 	]
 }
