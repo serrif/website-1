@@ -1,5 +1,5 @@
-#!/bin/bash
-cd $HOME/build/kaboom-website/
+#!/bin/sh
+cd $HOME/build/kaboom.pw/
 rm Gemfile.lock
 bundle install
 if bundle exec jekyll build --destination $HOME/html/kaboom.pw/; then
