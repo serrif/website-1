@@ -1,14 +1,13 @@
 #!/bin/bash
-cd $HOME/build-websites/kaboom-website/
+cd $HOME/build/kaboom-website/
 rm Gemfile.lock
-#bundle install
-jekyll build --destination $HOME/html/kaboom.pw/
-#if jekyll build --destination $HOME/html/kaboom.pw/; then
+bundle install
+if bundle exec jekyll build --destination $HOME/html/kaboom.pw/; then
 	cd $HOME/html/kaboom.pw/
-	#rm -rf *.br
-	#rm -rf *.gz
-	#for file in `find . -type f -name '*'`; do
-	#	$HOME/build-websites/zopfli $file
-	#	$HOME/build-websites/brotli $file
-	#done
-#fi
+	rm -rf *.br
+	rm -rf *.gz
+	for file in `find . -type f -name '*'`; do
+		$HOME/build/zopfli $file
+		$HOME/build/brotli $file
+	done
+fi

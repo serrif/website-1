@@ -7,8 +7,5 @@ exclude:
   - Gemfile
   - LICENSE
 
-kramdown:
-  entity_output: :as_input
-
 sass:
   style: :compressed
