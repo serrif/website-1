@@ -2,10 +2,10 @@
 layout: minify
 ---
 {
-	"name": "Kaboom.pw",
+	"name": "Kaboom",
 	"icons": [
 		{
-			"src": "/icons/android-chrome.png",
+			"src": "/web-manifest-icon.png",
 			"sizes": "any",
 			"type": "image/png"
 		}

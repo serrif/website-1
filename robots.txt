@@ -1,3 +1,4 @@
 ---
+layout: minify
 ---
 Sitemap: {{ site.url }}/sitemap.xml
