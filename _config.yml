@@ -10,6 +10,7 @@ exclude:
   - build.sh
   - Gemfile
   - LICENSE
+  - README.md
 
 sass:
   style: :compressed
