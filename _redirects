@@ -2,7 +2,11 @@ https://kaboom.netlify.com/* https://kaboom.pw/:splat 301!
 
 http://flame.ga/* https://kaboom.pw/:splat 301!
 http://www.flame.ga/* https://kaboom.pw/:splat 301!
+https://flame.ga/* https://kaboom.pw/:splat 301!
+https://www.flame.ga/* https://kaboom.pw/:splat 301!
 
 http://kaboom.pw/* https://kaboom.pw/:splat 301!
 http://www.kaboom.pw/* https://kaboom.pw/:splat 301!
+https://www.kaboom.pw/* https://kaboom.pw/:splat 301!
+
 https://kaboom.pw/* /index 404
