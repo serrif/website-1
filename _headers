@@ -1,5 +1,5 @@
 /
-  Content-Security-Policy: default-src 'none'; font-src data:; img-src 'self'; manifest-src 'self'; style-src 'unsafe-inline'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'none'; font-src data:; img-src data: 'self'; manifest-src 'self'; style-src 'unsafe-inline'; upgrade-insecure-requests
   Feature-Policy: accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; camera 'none'; encrypted-media 'none'; fullscreen 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none'; speaker 'none'; sync-xhr 'none'; usb 'none'; vr 'none'
   X-Frame-Options: DENY
   X-Xss-Protection: 1; mode=block
