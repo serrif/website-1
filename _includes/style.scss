@@ -120,6 +120,7 @@ p {
 #col1 {
 	animation: left-in .5s;
 	padding: 0 3em .250em 0;
+    width: 54%;
 }
 
 #col2 {
@@ -137,7 +138,6 @@ p {
 	padding: .5em 2.5em .5em 1em;
 	text-shadow: none;
 	transition: .08s;
-	white-space: nowrap;
 }
 
 .button:last-child {
@@ -188,14 +188,11 @@ p {
 
 	#col1 {
 		padding: 0 0 .250em;
+        width: auto;
 	}
 
 	#col2 {
 		margin: 2.250em 0 0;
-	}
-
-	.button {
-		white-space: normal;
 	}
 }
 
