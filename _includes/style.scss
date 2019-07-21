@@ -171,6 +171,95 @@ p {
 	margin: 0 .375em 0 0;
 }
 
+article {
+	margin: 0 auto;
+	max-width: 37em;
+	padding: 0 .625em;
+	text-align: center;
+}
+
+header {
+	animation: top-in .6s;
+}
+
+header a {
+	fill: $accentcolor;
+	float: left;
+	margin: .6em 0 0 0;
+	height: 1.750em;
+	width: 1.750em;
+}
+
+header h1 {
+	display: inline-block;
+	margin: 0 auto .438em;
+	font-size: 2.5em;
+}
+
+ul {
+	padding: 0;
+}
+
+li:nth-child(even) {
+	animation: left-in-delayed .7s;
+}
+
+li:nth-child(odd) {
+	animation: right-in-delayed .7s;
+}
+
+li {
+	background: $accentcolor;
+	border-radius: .375em;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, .04);
+	color: $lightcolor;
+	font-size: .938em;
+	margin: 0 0 1.125em 0;
+	padding: .75em 1em;
+	position: relative;
+	text-align: right;
+	text-shadow: none;
+}
+
+li:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	border: .625em solid transparent;
+	margin-top: -.625em;
+}
+
+li:nth-child(even):after {
+	left: 0;
+	border-right-color: $accentcolor;
+	border-left: 0;
+	margin-left: -.5em;
+}
+
+li:nth-child(odd):after {
+	right: 0;
+	border-left-color: $accentcolor;
+	border-right: 0;
+	margin-right: -.5em;
+}
+
+li p {
+	margin: 0 0 .4em;
+	text-align: left;
+}
+
+li svg {
+	fill: $lightcolor;
+	height: 1em;
+	padding: 0 .250em 0 0;
+	vertical-align: middle;
+	width: 1em;
+}
+
+li span {
+	font-size: .750em;
+}
+
 @media (max-width: 90em) {
 	html {
 		max-width: 42em;

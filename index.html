@@ -16,6 +16,18 @@ layout: main
 </div>
 
 <div id="col2">
+	<a href="news" class="button">
+		<span>
+			<svg viewBox="0 0 24 24">
+				<path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+			</svg>
+			News
+		</span>
+		{% for post in site.posts limit:1 %}
+			{{ post.content | strip_html | truncatewords: 10 }}
+		{% endfor %}
+	</a>
+
 	<a href="https://discordapp.com/invite/cmxJpVf" class="button">
 		<span>
 			<svg viewBox="0 0 24 24">
@@ -23,7 +35,7 @@ layout: main
 			</svg>
 			Chat
 		</span>
-		Join the {{ site.title }} Discord server, where you can chat with other players.
+		Join the Discord server to chat with other players.
 	</a>
 
 	<a href="https://github.com/kaboomserver" class="button">
@@ -33,6 +45,6 @@ layout: main
 			</svg>
 			Source Code
 		</span>
-		Source code of custom {{ site.title }} plugins and infrastructure is available.
+		Source code of custom plugins and infrastructure is available.
 	</a>
 </div>
