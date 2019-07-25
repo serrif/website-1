@@ -212,19 +212,19 @@ header h1 {
 	font-size: 2.5em;
 }
 
-ul {
+.news {
 	padding: 0;
 }
 
-li:nth-child(even) {
+.news li:nth-child(even) {
 	animation: left-in-delayed .7s;
 }
 
-li:nth-child(odd) {
+.news li:nth-child(odd) {
 	animation: right-in-delayed .7s;
 }
 
-li {
+.news li {
 	background: $accentcolor;
 	border-radius: .375em;
 	box-shadow: 0 2px 1px rgba(0, 0, 0, .04);
@@ -237,7 +237,7 @@ li {
 	text-shadow: none;
 }
 
-li:after {
+.news li:after {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -245,26 +245,26 @@ li:after {
 	margin-top: -.625em;
 }
 
-li:nth-child(even):after {
+.news li:nth-child(even):after {
 	left: 0;
 	border-right-color: $accentcolor;
 	border-left: 0;
 	margin-left: -.5em;
 }
 
-li:nth-child(odd):after {
+.news li:nth-child(odd):after {
 	right: 0;
 	border-left-color: $accentcolor;
 	border-right: 0;
 	margin-right: -.5em;
 }
 
-li p {
+.news p {
 	margin: 0 0 .4em;
 	text-align: left;
 }
 
-li svg {
+.news svg {
 	fill: $lightcolor;
 	height: 1em;
 	padding: 0 .250em 0 0;
@@ -272,7 +272,7 @@ li svg {
 	width: 1em;
 }
 
-li span {
+.news span {
 	font-size: .750em;
 }
 
