@@ -216,15 +216,15 @@ header h1 {
 	padding: 0;
 }
 
-.news li:nth-child(even) {
+.news ~ li:nth-child(even) {
 	animation: left-in-delayed .7s;
 }
 
-.news li:nth-child(odd) {
+.news ~ li:nth-child(odd) {
 	animation: right-in-delayed .7s;
 }
 
-.news li {
+.news ~ li {
 	background: $accentcolor;
 	border-radius: .375em;
 	box-shadow: 0 2px 1px rgba(0, 0, 0, .04);
@@ -237,7 +237,7 @@ header h1 {
 	text-shadow: none;
 }
 
-.news li:after {
+.news ~ li:after {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -245,14 +245,14 @@ header h1 {
 	margin-top: -.625em;
 }
 
-.news li:nth-child(even):after {
+.news ~ li:nth-child(even):after {
 	left: 0;
 	border-right-color: $accentcolor;
 	border-left: 0;
 	margin-left: -.5em;
 }
 
-.news li:nth-child(odd):after {
+.news ~ li:nth-child(odd):after {
 	right: 0;
 	border-left-color: $accentcolor;
 	border-right: 0;
