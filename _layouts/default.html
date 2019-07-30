@@ -7,10 +7,12 @@ layout: minify
 	<meta charset="utf-8">
 	<title>
 		{% if page.title %}
-			{{ page.title }} – 
+			{% unless page.url == "/" %}
+				{{ page.title }} – 
+			{% endunless %}
 		{% endif %}
 		{{ site.title }}
-		{% if page.title == null %}
+		{% if page.title == null or page.url == "/" %}
 			 - Free OP | Anarchy | Creative
 		{% endif %}
 	</title>

@@ -14,4 +14,4 @@ defaults:
   - scope:
         path: _posts
     values:
-        permalink: 'null'
+        permalink: ''
