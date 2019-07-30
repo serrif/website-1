@@ -3,9 +3,12 @@ description: Kaboom is a multiplayer server for Minecraft that combines free OP 
 url: https://kaboom.pw
 
 exclude:
-  - Gemfile
   - LICENSE
   - README.md
 
 sass:
   style: :compressed
+
+gems:
+  - jekyll-feed
+  - jekyll-sitemap

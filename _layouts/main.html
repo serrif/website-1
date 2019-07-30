@@ -6,7 +6,13 @@ layout: minify
 <head>
 	<meta charset="utf-8">
 	<title>
-		{{ site.title }} - Free OP | Anarchy | Creative
+		{% if page.title %}
+			{{ page.title }} – 
+		{% endif %}
+		{{ site.title }}
+		{% if page.title == null %}
+			 - Free OP | Anarchy | Creative
+		{% endif %}
 	</title>
 	<meta name="description" content="{{ site.description }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">

@@ -1,5 +1,6 @@
 ---
 layout: main
+title: News
 ---
 <article>
 	<header>
@@ -8,7 +9,7 @@ layout: main
 				<path d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"/>
 			</svg>
 		</a>
-		<h1>News</h1>
+		<h1>{{ page.title }}</h1>
 	</header>
 	<ul class="news">
 		{% for post in site.posts %}
