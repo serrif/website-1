@@ -1,7 +1,7 @@
 title: Kaboom
 description: Kaboom is a multiplayer server for Minecraft that combines free OP with anarchy. Do anything you want, without having to worry about rules.
 url: https://kaboom.pw
-#theme: null
+theme: null
 
 exclude:
   - LICENSE
@@ -10,8 +10,8 @@ exclude:
 sass:
   style: :compressed
 
-#defaults:
-#  - scope:
-#        path: _posts
-#    values:
-#        permalink:  ''
+defaults:
+  - scope:
+        path: _posts
+    values:
+        permalink:  ''
