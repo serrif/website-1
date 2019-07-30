@@ -12,3 +12,9 @@ sass:
 
 gems:
   - jekyll-sitemap
+
+defaults:
+  - scope:
+        path: _posts
+    values:
+        permalink:  ''
