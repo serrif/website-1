@@ -10,9 +10,6 @@ exclude:
 sass:
   style: :compressed
 
-gems:
-  - jekyll-sitemap
-
 defaults:
   - scope:
         path: _posts
