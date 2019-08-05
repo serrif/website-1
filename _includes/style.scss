@@ -157,21 +157,21 @@ li {
 	margin: 0 0 1.125em 0;
 	padding: .5em 2.5em .5em 1em;
 	text-shadow: none;
-	transition: .08s;
+	transition: .12s;
 }
 
 .button:last-child {
 	margin: 0;
 }
 
-.button:hover,
-.button:focus {
-	background-color: darken($accentcolor, 5%);
-	color: $lightcolor;
+.button:hover {
+	box-shadow: 0 8px 15px rgba(0, 0, 0, .22);
 }
 
 .button:focus {
-	box-shadow: inset 0 .250em .250em rgba(0, 0, 0, .1);
+	box-shadow:
+		inset 0 .250em .250em rgba(0, 0, 0, .1),
+		0 8px 15px rgba(0, 0, 0, .22);
 }
 
 .button span {
