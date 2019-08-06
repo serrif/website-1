@@ -170,7 +170,7 @@ li {
 
 .button:focus {
 	box-shadow:
-		inset 0 .250em .250em rgba(0, 0, 0, .1),
+		inset 0 -1px 1px .15em rgba(0, 0, 0, .15),
 		0 8px 15px rgba(0, 0, 0, .22);
 }
 
