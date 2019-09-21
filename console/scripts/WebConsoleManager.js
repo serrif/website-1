@@ -10,7 +10,7 @@ class WebConsoleManager {
 	*/
 	loadConnection(){		
 		//If not created yet, create it
-		this.activeConnection = new WebConsoleConnector("ws://play.kaboom.pw:53951");
+		this.activeConnection = new WebConsoleConnector("wss://play.kaboom.pw:53951");
 		this.activeConnection.connect();
 	}
 	
