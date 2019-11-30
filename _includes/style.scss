@@ -128,6 +128,7 @@ p {
 
 li {
 	line-height: 1.625;
+	margin: .5em;
 	text-align: left;
 }
 
@@ -236,7 +237,7 @@ header h1 {
 	color: $lightcolor;
 	font-size: .938em;
 	line-height: 0;
-	margin: 0 0 1.125em 0;
+	margin: 0 0 1.125em;
 	padding: .75em 1em;
 	position: relative;
 	text-align: right;
@@ -266,7 +267,7 @@ header h1 {
 }
 
 .news p {
-	margin: 0 0 .4em;
+	margin: 0 0 .65em;
 	text-align: left;
 }
 
