@@ -1,6 +1,5 @@
 $backgroundcolor: #555;
 $accentcolor: #FCFCFC;
-$lightcolor: #555;
 $linkcolor: #1B619F;
 
 @font-face {
@@ -164,7 +163,7 @@ a:hover {
 	background: $accentcolor url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23555' d='M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z'/%3E%3C/svg%3E") right 0.375em center/1.750em 1.750em no-repeat;
 	border-radius: .375em;
 	box-shadow: 0 2px 1px rgba(0, 0, 0, .04);
-	color: $lightcolor;
+	color: $backgroundcolor;
 	display: block;
 	line-height: 1.625;
 	margin: 0 0 1.125em 0;
@@ -179,7 +178,7 @@ a:hover {
 
 .button:hover {
 	box-shadow: 0 8px 15px rgba(0, 0, 0, .22);
-	color: $accentcolor;
+	color: $backgroundcolor;
 }
 
 .button:focus {
@@ -247,7 +246,7 @@ header h1 {
 	background: $accentcolor;
 	border-radius: .375em;
 	box-shadow: 0 2px 1px rgba(0, 0, 0, .04);
-	color: $lightcolor;
+	color: $backgroundcolor;
 	font-size: .938em;
 	line-height: 0;
 	margin: 0 0 1.125em;
@@ -285,7 +284,7 @@ header h1 {
 }
 
 .news svg {
-	fill: $lightcolor;
+	fill: $backgroundcolor;
 	height: 1em;
 	padding: 0 .250em 0 0;
 	vertical-align: middle;
