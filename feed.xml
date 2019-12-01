@@ -5,14 +5,14 @@ layout: minify
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>{{ site.title }} - News</title>
 	<subtitle>{{ site.description }}</subtitle>
-	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
 	<link href="{{ site.url }}/"/>
 	<link href="{{ site.url }}/feed.xml" rel="self"/>
 	{% for post in site.posts %}
 	<entry>
 		<title>{{ post.date | date: "%B %e, %Y" }}</title>
 		<content type="html">{{ post.content | xml_escape }}</content>
-		<published>{{ post.date | date_to_xmlschema }}</published>
+		<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
 		<link href="{{ site.url }}/news/"/>
 	</entry>
 	{% endfor %}
