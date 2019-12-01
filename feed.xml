@@ -1,12 +1,6 @@
 ---
 layout: minify
 ---
-{% capture time_seed %}
-  {{ 'now' | date: "%s" }}
-{% endcapture %}
-
-{% assign random = time_seed | times: 1103515245 | plus: 12345 | divided_by: 65536 | modulo: 32768 | modulo: 10 %}
-
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>{{ site.title }} News</title>
@@ -24,7 +18,7 @@ layout: minify
 		<content type="html">{{ post.content | xml_escape }}</content>
 		<published>{{ post.date | date_to_xmlschema }}</published>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<id>{{ site.url }}/news#{{ post.date | date: '%Y-%m-%d' }}</id>
+		<id>{{ site.url }}/news#{{ post.date | date: '%Y-%m-%d' }}a</id>
 		<link href="{{ site.url }}/news#{{ post.date | date: '%Y-%m-%d' }}"/>
 	</entry>
 	{% endfor %}
