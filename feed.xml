@@ -1,21 +1,30 @@
 ---
 layout: minify
 ---
+{% capture time_seed %}
+  {{ 'now' | date: "%s" }}
+{% endcapture %}
+
+{% assign random = time_seed | times: 1103515245 | plus: 12345 | divided_by: 65536 | modulo: 32768 | modulo: 10 %}
+
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>{{ site.title }} - News</title>
 	<subtitle>{{ site.description }}</subtitle>
-	<published>{{ site.time | date_to_xmlschema }}</published>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<link href="{{ site.url }}/"/>
 	<link href="{{ site.url }}/feed.xml" rel="self"/>
+	<id>{{ random }}</id>
 	{% for post in site.posts %}
 	<entry>
 		<title>{{ post.date | date: "%B %e, %Y" }}</title>
-		<author>{{ site.title }}</author>
+		<author>
+			<name>{{ site.title }}</name>
+		</author>
 		<content type="html">{{ post.content | xml_escape }}</content>
 		<published>{{ post.date | date_to_xmlschema }}</published>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<id>{{ post.id | xml_escape }}</id>
+		<id>{{ random }}</id>
 		<link href="{{ site.url }}/news/"/>
 	</entry>
 	{% endfor %}
