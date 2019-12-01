@@ -24,7 +24,7 @@ layout: minify
 		<content type="html">{{ post.content | xml_escape }}</content>
 		<published>{{ post.date | date_to_xmlschema }}</published>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<id>{{ post.url }}</id>
+		<id>{{ site.url }}{{ post.url }}</id>
 		<link href="{{ site.url }}/news/"/>
 	</entry>
 	{% endfor %}
