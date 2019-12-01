@@ -10,8 +10,8 @@ exclude:
 sass:
   style: :compressed
 
-#defaults:
-#  - scope:
-#        path: _posts
-#    values:
-#        permalink: ''
+defaults:
+  - scope:
+        path: _posts
+    values:
+        permalink: ''
