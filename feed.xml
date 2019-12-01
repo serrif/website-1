@@ -14,7 +14,7 @@ layout: minify
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<link href="{{ site.url }}/"/>
 	<link href="{{ site.url }}/feed.xml" rel="self"/>
-	<id>{{ random }}</id>
+	<id>{{ site.url }}/feed.xml</id>
 	{% for post in site.posts %}
 	<entry>
 		<title>{{ post.date | date: "%B %e, %Y" }}</title>
@@ -24,7 +24,7 @@ layout: minify
 		<content type="html">{{ post.content | xml_escape }}</content>
 		<published>{{ post.date | date_to_xmlschema }}</published>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<id>{{ random }}</id>
+		<id>{{ site.url }}/news/{{ post.date }}</id>
 		<link href="{{ site.url }}/news/"/>
 	</entry>
 	{% endfor %}
